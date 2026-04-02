@@ -60,10 +60,51 @@ export default function EducationalVitaeLandingPage() {
     "North Carolina: Reading K–12, Language Arts 6–9, Social Studies 6–9",
   ];
 
+  const sections = [
+    { id: "about", label: "About" },
+    { id: "what-i-do", label: "What I Do" },
+    { id: "philosophy", label: "Philosophy" },
+    { id: "systems", label: "Systems" },
+    { id: "impact", label: "Impact" },
+    { id: "experience", label: "Experience" },
+    { id: "education", label: "Education" },
+  ];
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
+      {/* Sticky Navigation */}
+      <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3 lg:px-10">
+          <div className="flex items-center gap-1 overflow-x-auto">
+            {sections.map((section) => (
+              <a
+                key={section.id}
+                href={`#${section.id}`}
+                className="whitespace-nowrap rounded-full px-3 py-1.5 text-sm text-slate-600 transition hover:bg-slate-100 hover:text-slate-900"
+              >
+                {section.label}
+              </a>
+            ))}
+          </div>
+          <div className="flex shrink-0 items-center gap-3">
+            <a
+              href="/cv.pdf"
+              className="rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+            >
+              View CV
+            </a>
+            <a
+              href="mailto:scottstephena@gmail.com"
+              className="rounded-full bg-emerald-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-emerald-700"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-sky-900 to-emerald-800 text-white">
+      <section id="about" className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-sky-900 to-emerald-800 text-white">
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_left,_white,_transparent_35%),radial-gradient(circle_at_bottom_right,_#93c5fd,_transparent_30%)]" />
         <div className="relative mx-auto max-w-6xl px-6 py-20 lg:px-10 lg:py-28">
           <div className="grid gap-10 lg:grid-cols-[1.25fr_.75fr] lg:items-end">
@@ -101,7 +142,7 @@ export default function EducationalVitaeLandingPage() {
       </section>
 
       {/* What I Do & Current Roles */}
-      <section className="mx-auto max-w-6xl px-6 py-16 lg:px-10">
+      <section id="what-i-do" className="mx-auto max-w-6xl px-6 py-16 lg:px-10">
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
             <h2 className="text-2xl font-semibold">What I Do</h2>
@@ -172,7 +213,7 @@ export default function EducationalVitaeLandingPage() {
       </section>
 
       {/* Leadership Philosophy */}
-      <section className="mx-auto max-w-5xl px-6 py-16 lg:px-10">
+      <section id="philosophy" className="mx-auto max-w-5xl px-6 py-16 lg:px-10">
         <div className="rounded-3xl bg-gradient-to-br from-sky-900 to-emerald-800 p-10 text-white shadow-xl">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-200">Leadership Philosophy</p>
           <h2 className="mt-3 text-3xl font-semibold text-balance md:text-4xl">Driven by a long-term vision of literacy leadership</h2>
@@ -189,7 +230,7 @@ export default function EducationalVitaeLandingPage() {
       </section>
 
       {/* Instructional Systems */}
-      <section className="bg-slate-50 py-16">
+      <section id="systems" className="bg-slate-50 py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <div className="mb-10">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-700">Instructional Systems</p>
@@ -253,7 +294,7 @@ export default function EducationalVitaeLandingPage() {
       </section>
 
       {/* Impact Section */}
-      <section className="bg-white py-16">
+      <section id="impact" className="bg-white py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <div className="mb-6">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-700">Impact</p>
@@ -298,7 +339,7 @@ export default function EducationalVitaeLandingPage() {
       </section>
 
       {/* Experience Section */}
-      <section className="bg-white py-16">
+      <section id="experience" className="bg-white py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <div className="mb-10 flex items-end justify-between gap-4">
             <div>
@@ -332,7 +373,7 @@ export default function EducationalVitaeLandingPage() {
       </section>
 
       {/* Education & Certifications */}
-      <section className="mx-auto max-w-6xl px-6 py-16 lg:px-10">
+      <section id="education" className="mx-auto max-w-6xl px-6 py-16 lg:px-10">
         <div className="grid gap-8 lg:grid-cols-[1fr_.9fr]">
           <div className="rounded-3xl bg-emerald-50 p-8 ring-1 ring-emerald-100">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-800">Education</p>
