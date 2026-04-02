@@ -201,12 +201,7 @@ export default function EducationalVitaeLandingPage() {
       Stephen Scott
     </h1>
 
-    <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-100 md:text-xl">
-      Literacy educator focused on building systems that move students from
-      comprehension to analysis and from paragraph writing to structured,
-      evidence-based essays.
-    </p>
-
+   
     <p className="mt-4 max-w-3xl text-base leading-8 text-slate-200">
       Experienced across middle grades intervention, secondary literacy,
       instructional coaching, and developmental college reading and writing.
