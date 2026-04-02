@@ -380,7 +380,7 @@ export default function EducationalVitaeLandingPage() {
             <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
               <p className="text-3xl font-bold text-sky-800">17% → 28%</p>
               <p className="mt-2 text-sm leading-7 text-slate-700">
-                Increased FAST proficiency across tiers and multilingual learners.
+                Increased FAST proficiency across tiers and multilingual learners (FAST PM1 to PM2, 2025-2026. PM3 results coming May 2026!).
               </p>
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
