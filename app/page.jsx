@@ -4,9 +4,7 @@
       Literacy Educator • Instructional Leader
     </p>
 
-    <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-white md:text-6xl">
-      Stephen Scott
-    </h1>
+    
 
     <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-100 md:text-xl">
       Literacy educator focused on building systems that move students from
