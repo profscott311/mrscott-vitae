@@ -201,9 +201,71 @@ export default function EducationalVitaeLandingPage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-white/10 bg-white/10 p-7 shadow-2xl backdrop-blur">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-200">
-                <div className="mb-6">
+            <div className="rounded-3xl border border-white/10 bg-white/10 p-7 shadow-2xl backdrop-blur lg:sticky lg:top-24">
+  <div className="flex flex-col gap-6 md:flex-row md:items-start">
+    <div className="flex-1">
+      <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-200">
+        Quick Snapshot
+      </p>
+
+      <div className="mt-5 space-y-4 text-sm leading-7 text-slate-100">
+        <p>
+          <span className="font-semibold text-white">Current roles:</span>{" "}
+          Intensive Reading Teacher and Developmental Reading and Writing Instructor
+        </p>
+        <p>
+          <span className="font-semibold text-white">Primary strength:</span>{" "}
+          building structured literacy systems that improve clarity, consistency, and student growth
+        </p>
+        <p>
+          <span className="font-semibold text-white">Relocation focus:</span>{" "}
+          Western North Carolina for the 2026–2027 school year
+        </p>
+      </div>
+
+      <div className="mt-6 rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur">
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-200">
+          Contact
+        </p>
+
+        <p className="mt-3 text-sm text-slate-300">Email</p>
+        <p className="text-base font-semibold text-white break-all">
+          scottstephena@gmail.com
+        </p>
+
+        <p className="mt-4 text-sm text-slate-300">Phone</p>
+        <p className="text-base font-semibold text-white">
+          314.368.9583
+        </p>
+
+        <div className="mt-5 flex flex-wrap gap-3">
+          <a
+            href="mailto:scottstephena@gmail.com?subject=Website%20Inquiry"
+            className="inline-flex items-center rounded-xl bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
+          >
+            Email Stephen
+          </a>
+          <a
+            href="/StephenScott_CV.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center rounded-xl border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/15"
+          >
+            View CV
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div className="mx-auto w-full max-w-[180px] shrink-0 md:mx-0 md:ml-2">
+      <img
+        src="/stephen_scott_headshot.jpg"
+        alt="Stephen Scott"
+        className="w-full rounded-2xl border border-white/10 object-cover shadow-lg"
+      />
+    </div>
+  </div>
+</div>
   <img
     src="/stephen_scott_headshot.jpg"
     alt="Stephen Scott"
