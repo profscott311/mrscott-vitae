@@ -119,7 +119,7 @@ export default function EducationalVitaeLandingPage() {
               View CV
             </a>
             <a
-              href="mailto:scottstephena@gmail.com"
+              href="mailto:scottstephena@gmail.com?subject=Website%20Inquiry"
               className="inline-flex rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800"
             >
               Contact
@@ -164,7 +164,7 @@ export default function EducationalVitaeLandingPage() {
                   href="mailto:scottstephena@gmail.com"
                   className="inline-flex items-center rounded-2xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/15"
                 >
-                  Contact Stephen
+                  Email Stephen
                 </a>
                 <a
                   href="#philosophy"
