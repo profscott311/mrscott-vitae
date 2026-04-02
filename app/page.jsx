@@ -1,6 +1,6 @@
 export default function EducationalVitaeLandingPage() {
   const highlights = [
-    "Literacy Instruction | Reading Development | Writing Systemsddd",
+    "Literacy Instruction | Reading Development | Writing Systems",
     "Middle Grades Reading • Secondary ELA • Developmental Writing • Intervention Systems",
     "Structured literacy routines grounded in Science of Reading",
     "Instructional coaching, PLC facilitation, and teacher mentoring",
