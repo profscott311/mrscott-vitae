@@ -1,11 +1,4 @@
 export default function EducationalVitaeLandingPage() {
-  const highlights = [
-    "Literacy Instruction | Reading Development | Writing Systems",
-    "Middle Grades Reading • Secondary ELA • Developmental Writing • Intervention Systems",
-    "Structured literacy routines grounded in Science of Reading",
-    "Instructional coaching, PLC facilitation, and teacher mentoring",
-  ];
-
   const experience = [
     {
       role: "Developmental Reading and Writing Instructor",
@@ -67,67 +60,9 @@ export default function EducationalVitaeLandingPage() {
     "North Carolina: Reading K–12, Language Arts 6–9, Social Studies 6–9",
   ];
 
-  const philosophy = [
-    {
-      title: "Explicit Instruction",
-      text: "Students grow when instruction is modeled clearly, practiced consistently, and built around routines they can internalize.",
-    },
-    {
-      title: "Visible Thinking",
-      text: "Reading and writing improve when students can see how strong readers annotate, infer, organize, and support claims with evidence.",
-    },
-    {
-      title: "Systems Over Randomness",
-      text: "Strong outcomes come from aligned systems: assessment, grouping, instruction, feedback, and re-teaching working together.",
-    },
-    {
-      title: "Language + Literacy Together",
-      text: "Multilingual learners benefit most when language development is embedded directly into reading, discussion, and writing instruction.",
-    },
-  ];
-
-  const quickLinks = [
-    { label: "What I Do", href: "#what-i-do" },
-    { label: "Philosophy", href: "#philosophy" },
-    { label: "Impact", href: "#impact" },
-    { label: "Experience", href: "#experience" },
-    { label: "Education", href: "#education" },
-  ];
-
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
-      <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/85 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4 lg:px-10">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Stephen Scott</p>
-            <p className="text-sm text-slate-600">Educational Vitae</p>
-          </div>
-          <nav className="hidden flex-wrap items-center gap-5 text-sm text-slate-600 lg:flex">
-            {quickLinks.map((link) => (
-              <a key={link.href} href={link.href} className="transition hover:text-slate-900">
-                {link.label}
-              </a>
-            ))}
-          </nav>
-          <div className="flex items-center gap-3">
-            <a
-              href="/StephenScott_CV.pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="hidden rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 sm:inline-flex"
-            >
-              View CV
-            </a>
-            <a
-              href="mailto:scottstephena@gmail.com"
-              className="inline-flex rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800"
-            >
-              Contact
-            </a>
-          </div>
-        </div>
-      </header>
-
+      {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-sky-900 to-emerald-800 text-white">
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_left,_white,_transparent_35%),radial-gradient(circle_at_bottom_right,_#93c5fd,_transparent_30%)]" />
         <div className="relative mx-auto max-w-6xl px-6 py-20 lg:px-10 lg:py-28">
@@ -145,33 +80,10 @@ export default function EducationalVitaeLandingPage() {
                 Experienced across middle grades, secondary ELA, and developmental college writing.
               </p>
               <div className="mt-8 flex flex-wrap gap-3 text-sm text-slate-100">
-                {highlights.map((item) => (
-                  <span key={item} className="rounded-full bg-white/10 px-4 py-2">
-                    {item}
-                  </span>
-                ))}
-              </div>
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                  href="/StephenScott_CV.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-lg transition hover:bg-slate-100"
-                >
-                  View CV
-                </a>
-                <a
-                  href="mailto:scottstephena@gmail.com"
-                  className="inline-flex items-center rounded-2xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/15"
-                >
-                  Contact Stephen
-                </a>
-                <a
-                  href="#philosophy"
-                  className="inline-flex items-center rounded-2xl border border-white/20 bg-transparent px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-                >
-                  Teaching Philosophy
-                </a>
+                <span className="rounded-full bg-white/10 px-4 py-2">Reading Systems</span>
+                <span className="rounded-full bg-white/10 px-4 py-2">Writing Progressions</span>
+                <span className="rounded-full bg-white/10 px-4 py-2">Intervention Design</span>
+                <span className="rounded-full bg-white/10 px-4 py-2">Data-Driven Instruction</span>
               </div>
             </div>
 
@@ -188,7 +100,8 @@ export default function EducationalVitaeLandingPage() {
         </div>
       </section>
 
-      <section id="what-i-do" className="mx-auto max-w-6xl px-6 py-16 lg:px-10">
+      {/* What I Do & Current Roles */}
+      <section className="mx-auto max-w-6xl px-6 py-16 lg:px-10">
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
             <h2 className="text-2xl font-semibold">What I Do</h2>
@@ -207,12 +120,12 @@ export default function EducationalVitaeLandingPage() {
 
               <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
                 <h3 className="text-sm font-semibold">Design Targeted Intervention</h3>
-                <p className="mt-1 text-sm text-slate-700">Data-driven grouping and instruction aligned to FAST and i-Ready to address highest-leverage skill gaps across Tier 1–3.</p>
+                <p className="mt-1 text-sm text-slate-700">Data-driven grouping and instruction (FAST, i-Ready) to address highest-leverage skill gaps across Tier 1–3.</p>
               </div>
 
               <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
                 <h3 className="text-sm font-semibold">Integrate Language + Literacy</h3>
-                <p className="mt-1 text-sm text-slate-700">Instruction tailored for classrooms with high multilingual populations, embedding language development into reading and writing.</p>
+                <p className="mt-1 text-sm text-slate-700">Instruction tailored for classrooms with 45–60% ELL/LF students, embedding language development into reading and writing.</p>
               </div>
 
               <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
@@ -258,25 +171,24 @@ export default function EducationalVitaeLandingPage() {
         </div>
       </section>
 
-      <section id="philosophy" className="mx-auto max-w-6xl px-6 py-16 lg:px-10">
+      {/* Leadership Philosophy */}
+      <section className="mx-auto max-w-5xl px-6 py-16 lg:px-10">
         <div className="rounded-3xl bg-gradient-to-br from-sky-900 to-emerald-800 p-10 text-white shadow-xl">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-200">Teaching Philosophy</p>
-          <h2 className="mt-3 text-3xl font-semibold md:text-4xl">A literacy philosophy built on clarity, consistency, and systems</h2>
-          <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-100">
-            I believe literacy improves when instruction is explicit, consistent, and grounded in routines that make thinking visible.
-            Students make the strongest gains when assessment, modeling, guided practice, feedback, and revision work together as one coherent system.
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-200">Leadership Philosophy</p>
+          <h2 className="mt-3 text-3xl font-semibold text-balance md:text-4xl">Driven by a long-term vision of literacy leadership</h2>
+          <p className="mt-6 text-lg leading-8 text-slate-100">
+            I believe literacy improves when instruction is explicit, consistent, and grounded in clear systems that make thinking visible.
+            My work is driven by a long-term commitment to grow from effective classroom teacher to literacy leader, instructional coach,
+            and ultimately a college-level educator and professor focused on literacy.
           </p>
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {philosophy.map((item) => (
-              <div key={item.title} className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur">
-                <h3 className="text-base font-semibold">{item.title}</h3>
-                <p className="mt-2 text-sm leading-7 text-slate-100">{item.text}</p>
-              </div>
-            ))}
-          </div>
+          <p className="mt-4 text-lg leading-8 text-slate-100">
+            Each role I take on is part of that progression: building strong classroom instruction, supporting teachers through coaching,
+            strengthening schoolwide literacy systems, and contributing to the broader field of literacy education.
+          </p>
         </div>
       </section>
 
+      {/* Instructional Systems */}
       <section className="bg-slate-50 py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <div className="mb-10">
@@ -292,7 +204,7 @@ export default function EducationalVitaeLandingPage() {
 
             <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
               <h3 className="text-lg font-semibold">FAST-Aligned Instruction</h3>
-              <p className="mt-2 text-sm text-slate-700">Instructional model aligned to assessment data, prioritizing highest-leverage reading skill gaps.</p>
+              <p className="mt-2 text-sm text-slate-700">Instructional model aligned to assessment data, prioritizing highest leverage reading skill gaps.</p>
             </div>
 
             <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
@@ -308,6 +220,7 @@ export default function EducationalVitaeLandingPage() {
         </div>
       </section>
 
+      {/* What You Can Expect */}
       <section className="bg-slate-50 py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <div className="mb-10">
@@ -339,7 +252,8 @@ export default function EducationalVitaeLandingPage() {
         </div>
       </section>
 
-      <section id="impact" className="bg-white py-16">
+      {/* Impact Section */}
+      <section className="bg-white py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <div className="mb-6">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-700">Impact</p>
@@ -358,37 +272,33 @@ export default function EducationalVitaeLandingPage() {
               while increasing students performing on or above grade level from 9% to 16%.
             </p>
             <p className="mt-4 text-base leading-8 text-slate-800">
-              Students demonstrated accelerated growth across tiers, with multiple students exceeding 200–500% of typical annual growth and progressing multiple grade levels.
-              Instruction emphasized structured literacy routines, vocabulary development, and data-driven small-group intervention.
+              Students demonstrated accelerated growth across tiers, with multiple students exceeding 200–500% of typical annual growth and progressing multiple grade levels
+              (e.g., Grade 3 to Grade 7). Instruction emphasized structured literacy routines, vocabulary development, and data-driven small group intervention.
             </p>
             <p className="mt-4 text-base leading-8 text-slate-800">
-              Instruction was delivered across multiple middle grades classrooms where approximately 45–60% of students were current or recently exited English Language Learners,
-              requiring integrated language development alongside literacy instruction.
+              Instruction was delivered across multiple middle grades classrooms (6–8) where approximately 45–60% of students were current or recently exited English Language Learners (ELL/LF), requiring integrated language development alongside literacy instruction.
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            <div className="rounded-2xl border border-slate-200 p-6 shadow-sm">
-              <p className="text-3xl font-semibold text-slate-900">D → C</p>
-              <p className="mt-2 text-sm text-slate-700">Contributed to schoolwide improvement and the highest school grade in school history.</p>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-2xl border p-6">
+              <p>Contributed to schoolwide improvement from D to C and highest grade in school history (2020–2023)</p>
             </div>
-            <div className="rounded-2xl border border-slate-200 p-6 shadow-sm">
-              <p className="text-3xl font-semibold text-slate-900">97%</p>
-              <p className="mt-2 text-sm text-slate-700">Graduation rate supported as Graduation Coach: 200 of 206 seniors graduated.</p>
+            <div className="rounded-2xl border p-6">
+              <p>Graduation Coach: 200 of 206 seniors graduated (97%) (2023–2024)</p>
             </div>
-            <div className="rounded-2xl border border-slate-200 p-6 shadow-sm">
-              <p className="text-3xl font-semibold text-slate-900">17% → 28%</p>
-              <p className="mt-2 text-sm text-slate-700">Increased FAST proficiency across tiers and multilingual learners.</p>
+            <div className="rounded-2xl border p-6">
+              <p>Increased F.A.S.T. proficiency from 17% to 28% across tiers and ELL students (2025–2026)</p>
             </div>
-            <div className="rounded-2xl border border-slate-200 p-6 shadow-sm">
-              <p className="text-3xl font-semibold text-slate-900">PLC + Coaching</p>
-              <p className="mt-2 text-sm text-slate-700">Led collaborative planning and literacy alignment work across teams.</p>
+            <div className="rounded-2xl border p-6">
+              <p>Led coaching and PLC work improving alignment, planning, and literacy instruction (2020–2024)</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="experience" className="bg-white py-16">
+      {/* Experience Section */}
+      <section className="bg-white py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <div className="mb-10 flex items-end justify-between gap-4">
             <div>
@@ -421,7 +331,8 @@ export default function EducationalVitaeLandingPage() {
         </div>
       </section>
 
-      <section id="education" className="mx-auto max-w-6xl px-6 py-16 lg:px-10">
+      {/* Education & Certifications */}
+      <section className="mx-auto max-w-6xl px-6 py-16 lg:px-10">
         <div className="grid gap-8 lg:grid-cols-[1fr_.9fr]">
           <div className="rounded-3xl bg-emerald-50 p-8 ring-1 ring-emerald-100">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-800">Education</p>
@@ -452,32 +363,21 @@ export default function EducationalVitaeLandingPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 pb-16 lg:px-10">
-        <div className="rounded-3xl bg-slate-900 px-8 py-10 text-white shadow-xl">
-          <div className="grid gap-6 lg:grid-cols-[1.2fr_.8fr] lg:items-center">
-            <div>
-              <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-300">Professional Materials</p>
-              <h2 className="mt-2 text-3xl font-semibold">View credentials, philosophy, and contact information in one place</h2>
-              <p className="mt-4 max-w-3xl text-base leading-8 text-slate-300">
-                This site is designed for school leaders, hiring teams, and educators who want a concise overview of my literacy work, instructional philosophy, and leadership trajectory.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-3 lg:justify-end">
-              <a
-                href="/StephenScott_CV.pdf"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
-              >
-                View CV
-              </a>
-              <a
-                href="mailto:scottstephena@gmail.com"
-                className="inline-flex items-center rounded-2xl border border-white/15 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
-              >
-                Contact Stephen
-              </a>
-            </div>
+      {/* Footer */}
+      <section className="bg-slate-900 py-16 text-white">
+        <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
+          <p className="text-sm font-medium uppercase tracking-[0.25em] text-sky-300">For Educators & School Leaders</p>
+          <h2 className="mt-3 text-3xl font-semibold text-balance md:text-4xl">A career centered on literacy growth, instructional clarity, and collaborative improvement.</h2>
+          <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-slate-300">
+            This page offers a concise overview of Stephen Scott&apos;s educational background,
+            literacy expertise, and leadership experience for educators, hiring teams, and
+            school communities interested in his work.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm text-slate-200">
+            <span className="rounded-full border border-white/15 px-4 py-2">Literacy Intervention</span>
+            <span className="rounded-full border border-white/15 px-4 py-2">Teacher Development</span>
+            <span className="rounded-full border border-white/15 px-4 py-2">Multilingual Learner Support</span>
+            <span className="rounded-full border border-white/15 px-4 py-2">Data-Informed Practice</span>
           </div>
         </div>
       </section>
