@@ -1,4 +1,4 @@
-<div className="grid gap-8 md:grid-cols-[1fr_220px] md:items-center">
+
   <div>
     <p className="mb-4 inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-sm font-medium text-sky-100 backdrop-blur">
       Literacy Educator • Instructional Leader
