@@ -146,7 +146,7 @@ export default function EducationalVitaeLandingPage() {
 
         <div className="relative mx-auto max-w-6xl px-6 py-20 lg:px-10 lg:py-24">
           <div className="grid gap-12 lg:grid-cols-[1.35fr_.65fr] lg:items-start">
-            <div className="flex flex-col gap-10 lg:flex-row lg:items-center">
+            className="grid gap-8 md:grid-cols-[1fr_220px] md:items-center"
               <div className="flex-1">
                 <p className="mb-4 inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-sm font-medium text-sky-100 backdrop-blur">
                   Literacy Educator • Instructional Leader
