@@ -116,7 +116,7 @@ export default function EducationalVitaeLandingPage() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
-      <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
+      <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4 lg:px-10">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-sky-800">
@@ -152,25 +152,27 @@ export default function EducationalVitaeLandingPage() {
         </div>
       </header>
 
-      <section className="bg-gradient-to-br from-slate-50 via-white to-emerald-50/60">
-        <div className="mx-auto max-w-6xl px-6 py-20 lg:px-10 lg:py-24">
+      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-sky-900 to-emerald-800 text-white">
+        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_left,_white,_transparent_35%),radial-gradient(circle_at_bottom_right,_#93c5fd,_transparent_30%)]" />
+
+        <div className="relative mx-auto max-w-6xl px-6 py-20 lg:px-10 lg:py-24">
           <div className="grid gap-12 lg:grid-cols-[1.2fr_.8fr] lg:items-center">
             <div>
-              <p className="mb-4 inline-flex rounded-full border border-sky-200 bg-sky-50 px-4 py-1 text-sm font-medium text-sky-800">
+              <p className="mb-4 inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-sm font-medium text-sky-100 backdrop-blur">
                 Literacy Educator • Instructional Leader
               </p>
 
-              <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
+              <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-white md:text-6xl">
                 Stephen Scott
               </h1>
 
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl">
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-100 md:text-xl">
                 Literacy educator focused on building systems that move students from
                 comprehension to analysis and from paragraph writing to structured,
                 evidence-based essays.
               </p>
 
-              <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">
+              <p className="mt-4 max-w-3xl text-base leading-8 text-slate-200">
                 Experienced across middle grades intervention, secondary literacy,
                 instructional coaching, and developmental college reading and writing.
               </p>
@@ -180,44 +182,44 @@ export default function EducationalVitaeLandingPage() {
                   href="/StephenScott_CV.pdf"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center rounded-xl bg-sky-800 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-900"
+                  className="inline-flex items-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-100"
                 >
                   View CV
                 </a>
                 <a
                   href="mailto:scottstephena@gmail.com?subject=Website%20Inquiry"
-                  className="inline-flex items-center rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-50"
+                  className="inline-flex items-center rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/15"
                 >
                   Email Stephen
                 </a>
                 <a
                   href="#contact"
-                  className="inline-flex items-center rounded-xl border border-emerald-200 bg-emerald-50 px-5 py-3 text-sm font-semibold text-emerald-800 transition hover:bg-emerald-100"
+                  className="inline-flex items-center rounded-xl border border-emerald-200/30 bg-emerald-400/10 px-5 py-3 text-sm font-semibold text-emerald-50 transition hover:bg-emerald-400/15"
                 >
                   Contact Info
                 </a>
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700">
+            <div className="rounded-3xl border border-white/10 bg-white/10 p-7 shadow-2xl backdrop-blur">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-200">
                 Quick Snapshot
               </p>
-              <div className="mt-5 space-y-4 text-sm leading-7 text-slate-700">
+              <div className="mt-5 space-y-4 text-sm leading-7 text-slate-100">
                 <p>
-                  <span className="font-semibold text-slate-900">Current roles:</span>{" "}
+                  <span className="font-semibold text-white">Current roles:</span>{" "}
                   Intensive Reading Teacher and Developmental Reading and Writing Instructor
                 </p>
                 <p>
-                  <span className="font-semibold text-slate-900">Primary strength:</span>{" "}
+                  <span className="font-semibold text-white">Primary strength:</span>{" "}
                   building structured literacy systems that improve clarity, consistency, and student growth
                 </p>
                 <p>
-                  <span className="font-semibold text-slate-900">Relocation focus:</span>{" "}
+                  <span className="font-semibold text-white">Relocation focus:</span>{" "}
                   Western North Carolina for the 2026–2027 school year
                 </p>
                 <p>
-                  <span className="font-semibold text-slate-900">Contact:</span>{" "}
+                  <span className="font-semibold text-white">Contact:</span>{" "}
                   scottstephena@gmail.com
                 </p>
               </div>
@@ -228,10 +230,10 @@ export default function EducationalVitaeLandingPage() {
             {statCards.map((card) => (
               <div
                 key={card.label}
-                className="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm"
+                className="rounded-2xl border border-white/10 bg-white/10 p-6 text-center shadow-lg backdrop-blur"
               >
-                <p className="text-2xl font-bold text-sky-800">{card.value}</p>
-                <p className="mt-2 text-sm text-slate-600">{card.label}</p>
+                <p className="text-2xl font-bold text-white">{card.value}</p>
+                <p className="mt-2 text-sm text-slate-200">{card.label}</p>
               </div>
             ))}
           </div>
@@ -255,7 +257,7 @@ export default function EducationalVitaeLandingPage() {
           {focusAreas.map((item) => (
             <div
               key={item.title}
-              className="rounded-2xl border border-slate-200 bg-slate-50/70 p-6 shadow-sm"
+              className="rounded-2xl border border-slate-200 bg-slate-50/80 p-6 shadow-sm transition hover:shadow-md"
             >
               <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
               <p className="mt-2 text-sm leading-7 text-slate-700">{item.text}</p>
