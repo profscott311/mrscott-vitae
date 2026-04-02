@@ -203,6 +203,13 @@ export default function EducationalVitaeLandingPage() {
 
             <div className="rounded-3xl border border-white/10 bg-white/10 p-7 shadow-2xl backdrop-blur">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-200">
+                <div className="mb-6">
+  <img
+    src="/stephen_scott_headshot.jpg"
+    alt="Stephen Scott"
+    className="w-full max-w-xs mx-auto rounded-2xl border border-white/10 shadow-lg object-cover"
+  />
+</div>
                 Quick Snapshot
               </p>
               <div className="mt-5 space-y-4 text-sm leading-7 text-slate-100">
