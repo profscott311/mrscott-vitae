@@ -56,17 +56,6 @@ export default function EducationalVitaeLandingPage() {
     },
   ];
 
-  const certifications = [
-    "Reading Endorsement",
-    "Literacy Coach Endorsement",
-    "Language Arts 5–9",
-    "Social Studies 5–9",
-    "Health K–12",
-    "ESOL K–12",
-    "Instructional Coaching Certified – University of Florida",
-    "North Carolina: Reading K–12, Language Arts 6–9, Social Studies 6–9",
-  ];
-
   const philosophy = [
     {
       title: "Explicit Instruction",
@@ -156,124 +145,66 @@ export default function EducationalVitaeLandingPage() {
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_left,_white,_transparent_35%),radial-gradient(circle_at_bottom_right,_#93c5fd,_transparent_30%)]" />
 
         <div className="relative mx-auto max-w-6xl px-6 py-20 lg:px-10 lg:py-24">
-          <div className="grid gap-12 lg:grid-cols-[1.2fr_.8fr] lg:items-center">
-            <div>
-              <p className="mb-4 inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-sm font-medium text-sky-100 backdrop-blur">
-                Literacy Educator • Instructional Leader
-              </p>
+          <div className="grid gap-12 lg:grid-cols-[1.35fr_.65fr] lg:items-start">
+            <div className="flex flex-col gap-10 lg:flex-row lg:items-center">
+              <div className="flex-1">
+                <p className="mb-4 inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-sm font-medium text-sky-100 backdrop-blur">
+                  Literacy Educator • Instructional Leader
+                </p>
 
-              <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-white md:text-6xl">
-                Stephen Scott
-              </h1>
+                <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-white md:text-6xl">
+                  Stephen Scott
+                </h1>
 
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-100 md:text-xl">
-                Literacy educator focused on building systems that move students from
-                comprehension to analysis and from paragraph writing to structured,
-                evidence-based essays.
-              </p>
+                <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-100 md:text-xl">
+                  Literacy educator focused on building systems that move students from
+                  comprehension to analysis and from paragraph writing to structured,
+                  evidence-based essays.
+                </p>
 
-              <p className="mt-4 max-w-3xl text-base leading-8 text-slate-200">
-                Experienced across middle grades intervention, secondary literacy,
-                instructional coaching, and developmental college reading and writing.
-              </p>
+                <p className="mt-4 max-w-3xl text-base leading-8 text-slate-200">
+                  Experienced across middle grades intervention, secondary literacy,
+                  instructional coaching, and developmental college reading and writing.
+                </p>
 
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                  href="/StephenScott_CV.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-100"
-                >
-                  View CV
-                </a>
-                <a
-                  href="mailto:scottstephena@gmail.com?subject=Website%20Inquiry"
-                  className="inline-flex items-center rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/15"
-                >
-                  Email Stephen
-                </a>
-                <a
-                  href="#contact"
-                  className="inline-flex items-center rounded-xl border border-emerald-200/30 bg-emerald-400/10 px-5 py-3 text-sm font-semibold text-emerald-50 transition hover:bg-emerald-400/15"
-                >
-                  Contact Info
-                </a>
+                <div className="mt-8 flex flex-wrap gap-4">
+                  <a
+                    href="/StephenScott_CV.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-100"
+                  >
+                    View CV
+                  </a>
+                  <a
+                    href="mailto:scottstephena@gmail.com?subject=Website%20Inquiry"
+                    className="inline-flex items-center rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/15"
+                  >
+                    Email Stephen
+                  </a>
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center rounded-xl border border-emerald-200/30 bg-emerald-400/10 px-5 py-3 text-sm font-semibold text-emerald-50 transition hover:bg-emerald-400/15"
+                  >
+                    Contact Info
+                  </a>
+                </div>
+              </div>
+
+              <div className="w-full max-w-[240px] mx-auto lg:mx-0 shrink-0">
+                <img
+                  src="/stephen_scott_headshot.jpg"
+                  alt="Stephen Scott"
+                  className="w-full rounded-2xl border border-white/10 object-cover shadow-xl"
+                />
               </div>
             </div>
 
             <div className="rounded-3xl border border-white/10 bg-white/10 p-7 shadow-2xl backdrop-blur lg:sticky lg:top-24">
-  <div className="flex flex-col gap-6 md:flex-row md:items-start">
-    <div className="flex-1">
-      <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-200">
-        Quick Snapshot
-      </p>
-
-      <div className="mt-5 space-y-4 text-sm leading-7 text-slate-100">
-        <p>
-          <span className="font-semibold text-white">Current roles:</span>{" "}
-          Intensive Reading Teacher and Developmental Reading and Writing Instructor
-        </p>
-        <p>
-          <span className="font-semibold text-white">Primary strength:</span>{" "}
-          building structured literacy systems that improve clarity, consistency, and student growth
-        </p>
-        <p>
-          <span className="font-semibold text-white">Relocation focus:</span>{" "}
-          Western North Carolina for the 2026–2027 school year
-        </p>
-      </div>
-
-      <div className="mt-6 rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur">
-        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-200">
-          Contact
-        </p>
-
-        <p className="mt-3 text-sm text-slate-300">Email</p>
-        <p className="text-base font-semibold text-white break-all">
-          scottstephena@gmail.com
-        </p>
-
-        <p className="mt-4 text-sm text-slate-300">Phone</p>
-        <p className="text-base font-semibold text-white">
-          314.368.9583
-        </p>
-
-        <div className="mt-5 flex flex-wrap gap-3">
-          <a
-            href="mailto:scottstephena@gmail.com?subject=Website%20Inquiry"
-            className="inline-flex items-center rounded-xl bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
-          >
-            Email Stephen
-          </a>
-          <a
-            href="/StephenScott_CV.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center rounded-xl border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/15"
-          >
-            View CV
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div className="mx-auto w-full max-w-[180px] shrink-0 md:mx-0 md:ml-2">
-      <img
-        src="/stephen_scott_headshot.jpg"
-        alt="Stephen Scott"
-        className="w-full rounded-2xl border border-white/10 object-cover shadow-lg"
-      />
-    </div>
-  </div>
-</div>
-  <img
-    src="/stephen_scott_headshot.jpg"
-    alt="Stephen Scott"
-    className="w-full max-w-xs mx-auto rounded-2xl border border-white/10 shadow-lg object-cover"
-  />
-</div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-200">
                 Quick Snapshot
               </p>
+
               <div className="mt-5 space-y-4 text-sm leading-7 text-slate-100">
                 <p>
                   <span className="font-semibold text-white">Current roles:</span>{" "}
@@ -291,6 +222,39 @@ export default function EducationalVitaeLandingPage() {
                   <span className="font-semibold text-white">Contact:</span>{" "}
                   scottstephena@gmail.com
                 </p>
+              </div>
+
+              <div className="mt-6 rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-200">
+                  Contact
+                </p>
+
+                <p className="mt-3 text-sm text-slate-300">Email</p>
+                <p className="text-base font-semibold text-white break-all">
+                  scottstephena@gmail.com
+                </p>
+
+                <p className="mt-4 text-sm text-slate-300">Phone</p>
+                <p className="text-base font-semibold text-white">
+                  314.368.9583
+                </p>
+
+                <div className="mt-5 flex flex-wrap gap-3">
+                  <a
+                    href="mailto:scottstephena@gmail.com?subject=Website%20Inquiry"
+                    className="inline-flex items-center rounded-xl bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
+                  >
+                    Email Stephen
+                  </a>
+                  <a
+                    href="/StephenScott_CV.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center rounded-xl border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/15"
+                  >
+                    View CV
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -335,7 +299,7 @@ export default function EducationalVitaeLandingPage() {
         </div>
       </section>
 
-      <section id="philosophy" className="bg-slate-900 py-16 text-white">
+      <section id="philosophy" className="bg-gradient-to-br from-slate-900 via-sky-900 to-slate-800 py-16 text-white">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <div className="mb-10">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
@@ -344,7 +308,7 @@ export default function EducationalVitaeLandingPage() {
             <h2 className="mt-2 text-3xl font-bold">
               Clarity, consistency, and systems
             </h2>
-            <p className="mt-4 max-w-4xl text-base leading-8 text-slate-300">
+            <p className="mt-4 max-w-4xl text-base leading-8 text-slate-200">
               I believe literacy improves when instruction is explicit, consistent,
               and grounded in routines that make thinking visible. Students make the
               strongest gains when assessment, modeling, guided practice, feedback,
@@ -356,10 +320,10 @@ export default function EducationalVitaeLandingPage() {
             {philosophy.map((item) => (
               <div
                 key={item.title}
-                className="rounded-2xl border border-white/10 bg-white/5 p-6"
+                className="rounded-2xl border border-white/15 bg-white/10 p-6 backdrop-blur"
               >
                 <h3 className="text-lg font-semibold text-white">{item.title}</h3>
-                <p className="mt-2 text-sm leading-7 text-slate-300">{item.text}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-200">{item.text}</p>
               </div>
             ))}
           </div>
@@ -506,15 +470,64 @@ export default function EducationalVitaeLandingPage() {
               Licensure & Endorsements
             </h2>
 
-            <div className="mt-6 flex flex-wrap gap-3">
-              {certifications.map((cert) => (
-                <span
-                  key={cert}
-                  className="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700"
-                >
-                  {cert}
-                </span>
-              ))}
+            <div className="mt-6 space-y-6 text-sm">
+              <div>
+                <p className="font-semibold text-sky-800 text-base">North Carolina</p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {[
+                    "Reading K–12",
+                    "Language Arts 6–9",
+                    "Social Studies 6–9",
+                  ].map((cert) => (
+                    <span
+                      key={cert}
+                      className="rounded-full bg-sky-100 px-3 py-1 text-xs font-medium text-sky-900"
+                    >
+                      {cert}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="font-semibold text-emerald-800 text-base">Florida</p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {[
+                    "Reading Endorsement",
+                    "Literacy Coach Endorsement",
+                    "Language Arts 5–9",
+                    "Social Studies 5–9",
+                    "Health K–12",
+                    "ESOL K–12",
+                    "Instructional Coaching Certified – University of Florida",
+                  ].map((cert) => (
+                    <span
+                      key={cert}
+                      className="rounded-full bg-emerald-100 px-3 py-1 text-xs text-emerald-900"
+                    >
+                      {cert}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="font-semibold text-slate-700 text-base">Missouri</p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {[
+                    "Language Arts 5–9",
+                    "Social Studies 5–9",
+                    "Health K–12",
+                  ].map((cert) => (
+                    <span
+                      key={cert}
+                      className="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-800"
+                    >
+                      {cert}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -522,37 +535,37 @@ export default function EducationalVitaeLandingPage() {
 
       <section id="contact" className="pb-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
-          <div className="rounded-3xl bg-slate-900 px-8 py-10 text-white shadow-xl">
+          <div className="rounded-3xl border border-slate-200 bg-slate-50 px-8 py-10 shadow-sm">
             <div className="grid gap-8 lg:grid-cols-[1.2fr_.8fr] lg:items-center">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">
                   Contact
                 </p>
-                <h2 className="mt-2 text-3xl font-bold">
+                <h2 className="mt-2 text-3xl font-bold text-slate-900">
                   Professional materials and contact information
                 </h2>
-                <p className="mt-4 max-w-3xl text-base leading-8 text-slate-300">
+                <p className="mt-4 max-w-3xl text-base leading-8 text-slate-700">
                   This site is designed for school leaders, hiring teams, and educators
                   who want a concise overview of my literacy work, instructional philosophy,
                   and leadership trajectory.
                 </p>
               </div>
 
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                <p className="text-sm text-slate-300">Email</p>
-                <p className="mt-1 text-base font-semibold text-white">
+              <div className="rounded-2xl border border-slate-200 bg-white p-6">
+                <p className="text-sm text-slate-500">Email</p>
+                <p className="mt-1 text-base font-semibold text-slate-900 break-all">
                   scottstephena@gmail.com
                 </p>
 
-                <p className="mt-4 text-sm text-slate-300">Phone</p>
-                <p className="mt-1 text-base font-semibold text-white">
+                <p className="mt-4 text-sm text-slate-500">Phone</p>
+                <p className="mt-1 text-base font-semibold text-slate-900">
                   314.368.9583
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-3">
                   <a
                     href="mailto:scottstephena@gmail.com?subject=Website%20Inquiry"
-                    className="inline-flex items-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
+                    className="inline-flex items-center rounded-xl bg-sky-800 px-5 py-3 text-sm font-semibold text-white transition hover:bg-sky-900"
                   >
                     Email Stephen
                   </a>
@@ -560,7 +573,7 @@ export default function EducationalVitaeLandingPage() {
                     href="/StephenScott_CV.pdf"
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center rounded-xl border border-white/15 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
+                    className="inline-flex items-center rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-50"
                   >
                     View CV
                   </a>
