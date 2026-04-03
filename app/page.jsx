@@ -24,19 +24,12 @@ export default function HomePage() {
     },
     {
       title: "Literacy-Focused",
-      text: "Uses explicit vocabulary, morphology, annotation, and scaffolded writing routines to move students toward stronger comprehension and analysis.",
+      text: "Uses explicit vocabulary, morphology, annotation, and scaffolded writing routines to strengthen comprehension and academic writing.",
     },
     {
       title: "Data-Informed",
-      text: "Uses FAST, I-Ready, formative assessment, and student work to adjust instruction, target intervention, and support growth.",
+      text: "Uses FAST, i-Ready, formative assessment, and student work to adjust instruction, target support, and monitor progress.",
     },
-  ];
-
-  const selectedImpact = [
-    "Designed structured literacy routines across middle grades intervention and developmental college reading and writing.",
-    "Led coaching, PLC, and mentoring work to strengthen literacy instruction, standards alignment, and teacher support.",
-    "Used assessment and classroom evidence to guide intervention, feedback cycles, and instructional planning.",
-    "Built writing and reading systems focused on clarity, consistency, scaffolding, and measurable student growth.",
   ];
 
   const experience = [
@@ -53,7 +46,7 @@ export default function HomePage() {
       ],
       impact: [
         "Built structured reading and writing routines that connect comprehension, revision, and academic communication.",
-        "Created scaffolded support systems for developing readers and multilingual learners.",
+        "Created scaffolded supports for developing readers and multilingual learners.",
       ],
     },
     {
@@ -63,7 +56,7 @@ export default function HomePage() {
       bullets: [
         "Deliver targeted Tier 2 literacy instruction aligned with evidence-based reading practices for students below benchmark.",
         "Implement explicit, research-based literacy routines to support comprehension, fluency, and writing development.",
-        "Use MTSS data sources including FAST, I-Ready, and classroom evidence to monitor progress and adjust instruction.",
+        "Use MTSS data sources including FAST, i-Ready, and classroom evidence to monitor progress and adjust instruction.",
         "Differentiate through small groups, scaffolds, modeling, and structured routines to support varied proficiency levels.",
         "Collaborate with ELA teachers and school leadership to align interventions with grade-level standards and schoolwide literacy goals.",
       ],
@@ -73,7 +66,7 @@ export default function HomePage() {
       ],
     },
     {
-      title: "ELA Teacher | Reading Teacher | Instructional Coach | Graduation Coach",
+      title: "ELA Teacher · Reading Teacher · Instructional Coach · Graduation Coach",
       org: "Orange County Public Schools · Orlando, FL",
       dates: "August 2015 – May 2025",
       bullets: [
@@ -128,6 +121,25 @@ export default function HomePage() {
     ],
   };
 
+  const siteImpactResults = [
+    {
+      value: "191",
+      label: "Students in uploaded grade 6–8 reading growth snapshot",
+    },
+    {
+      value: "114%",
+      label: "Average progress to annual typical growth",
+    },
+    {
+      value: "43%",
+      label: "Already at or above 100% of annual typical growth",
+    },
+    {
+      value: "+12.7",
+      label: "Average scale score gain in the uploaded snapshot",
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/85 backdrop-blur">
@@ -163,7 +175,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
           <div className="grid gap-10 md:grid-cols-[1fr_260px] md:items-center">
             <div>
-              <p className="inline-flex rounded-full border border-white/15 bg-white/10 px-5 py-2 text-base font-medium text-sky-100">
+              <p className="inline-flex rounded-full border border-white/15 bg-white/10 px-5 py-2 text-[1.02rem] font-medium text-sky-100">
                 Literacy Educator • Instructional Leader
               </p>
 
@@ -369,11 +381,32 @@ export default function HomePage() {
 
         <div className="mt-10 rounded-3xl border border-emerald-300/15 bg-emerald-400/5 p-6">
           <h3 className="text-lg font-semibold text-white">Selected Impact Results</h3>
-          <ul className="mt-4 grid gap-3 text-sm leading-7 text-slate-300 md:grid-cols-2">
-            {selectedImpact.map((item) => (
-              <li key={item}>{item}</li>
+
+          <div className="mt-6 grid gap-4 md:grid-cols-4">
+            {siteImpactResults.map((item) => (
+              <div
+                key={item.label}
+                className="rounded-2xl border border-white/10 bg-slate-950/50 p-5"
+              >
+                <p className="text-3xl font-bold text-white">{item.value}</p>
+                <p className="mt-2 text-sm leading-6 text-slate-300">{item.label}</p>
+              </div>
             ))}
-          </ul>
+          </div>
+
+          <div className="mt-6 space-y-3 text-sm leading-7 text-slate-300">
+            <p>
+              These results are drawn from the uploaded grade 6–8 reading growth
+              snapshot and are presented as an instructional snapshot rather than a
+              schoolwide claim.
+            </p>
+
+            <p>
+              The larger point is consistency: structured literacy routines,
+              scaffolded support, data review, and targeted intervention are
+              producing measurable movement across the students in that set.
+            </p>
+          </div>
         </div>
       </section>
 
