@@ -11,6 +11,7 @@ export default function HomePage() {
     "Writing systems",
     "Curriculum design",
     "Standards alignment",
+    "Assessment design",
   ];
 
   const focusRight = [
@@ -18,6 +19,7 @@ export default function HomePage() {
     "Instructional coaching",
     "Data-informed instruction",
     "Multilingual learner support",
+    "Teacher mentoring",
   ];
 
   const strengths = [
@@ -113,8 +115,8 @@ export default function HomePage() {
       label: "FAST PM1 to PM2 average scale score growth in grades 6, 7, and 8",
     },
     {
-      value: "30 / 47",
-      label: "Students in current intensive reading groups already at or above annual typical growth",
+      value: "17% → 28%",
+      label: "Proficiency increase across current grade 6–8 FAST reading groups",
     },
   ];
 
@@ -295,12 +297,12 @@ export default function HomePage() {
           <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-6">
             <h3 className="text-lg font-semibold text-white">Core Focus Areas</h3>
 
-            <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
+            <div className="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
               <div className="flex flex-wrap gap-3">
                 {focusLeft.map((item) => (
                   <span
                     key={item}
-                    className="rounded-full border border-emerald-300/20 bg-emerald-400/10 px-3 py-1 text-sm text-emerald-100"
+                    className="rounded-full border border-emerald-300/20 bg-emerald-400/10 px-4 py-2 text-[0.95rem] text-emerald-100"
                   >
                     {item}
                   </span>
@@ -311,7 +313,7 @@ export default function HomePage() {
                 {focusRight.map((item) => (
                   <span
                     key={item}
-                    className="rounded-full border border-sky-300/20 bg-sky-400/10 px-3 py-1 text-sm text-sky-100"
+                    className="rounded-full border border-sky-300/20 bg-sky-400/10 px-4 py-2 text-[0.95rem] text-sky-100"
                   >
                     {item}
                   </span>
@@ -412,8 +414,8 @@ export default function HomePage() {
 
           <p className="mt-6 text-sm leading-7 text-slate-300">
             These examples reflect impact across different roles and contexts,
-            including school improvement, graduation support, and current intensive
-            reading growth.
+            including school improvement, graduation support, and current reading
+            growth data.
           </p>
         </div>
       </section>
