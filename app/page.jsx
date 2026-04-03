@@ -148,9 +148,12 @@ export default function HomePage() {
         "Literacy Coach Endorsement",
         "Instructional Coaching Certified, University of Florida",
       ],
-      missouri: [
-        "Middle School Education: Language Arts",
-        "Middle School Education: Social Studies",
+missouri: [
+  "Language Arts 5–9",
+  "Social Studies 5–9",
+  "Health K–12",
+],
+],
       ],
     },
   };
