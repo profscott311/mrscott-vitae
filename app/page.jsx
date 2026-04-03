@@ -6,29 +6,32 @@ export default function HomePage() {
     { value: "PLCs · Coaching · Mentoring", label: "Instructional leadership experience" },
   ];
 
-  const focusAreas = [
+  const focusLeft = [
     "Structured literacy",
-    "Reading intervention",
     "Writing systems",
-    "Instructional coaching",
     "Curriculum design",
-    "Data-informed instruction",
     "Standards alignment",
+  ];
+
+  const focusRight = [
+    "Reading intervention",
+    "Instructional coaching",
+    "Data-informed instruction",
     "Multilingual learner support",
   ];
 
   const strengths = [
     {
       title: "Systems Builder",
-      text: "Builds repeatable instructional systems for reading, writing, intervention, and feedback instead of relying on isolated lessons.",
+      text: "Builds repeatable instructional systems for reading, writing, intervention, and feedback instead of relying on disconnected lessons.",
     },
     {
       title: "Literacy-Focused",
-      text: "Uses explicit vocabulary, morphology, annotation, and scaffolded writing routines to strengthen comprehension and academic writing.",
+      text: "Uses explicit vocabulary, morphology, annotation, and writing routines to strengthen comprehension and academic communication.",
     },
     {
       title: "Data-Informed",
-      text: "Uses FAST, i-Ready, formative assessment, and student work to adjust instruction, target support, and monitor progress.",
+      text: "Uses FAST, i-Ready, classroom evidence, and student work to adjust instruction, target support, and monitor progress.",
     },
   ];
 
@@ -44,10 +47,6 @@ export default function HomePage() {
         "Support multilingual learners through language modeling, scaffolded tasks, and targeted feedback.",
         "Maintain high expectations for academic progress while coaching students in goal setting, revision, and persistence.",
       ],
-      impact: [
-        "Built structured reading and writing routines that connect comprehension, revision, and academic communication.",
-        "Created scaffolded supports for developing readers and multilingual learners.",
-      ],
     },
     {
       title: "Intensive Middle School Reading Teacher",
@@ -60,28 +59,35 @@ export default function HomePage() {
         "Differentiate through small groups, scaffolds, modeling, and structured routines to support varied proficiency levels.",
         "Collaborate with ELA teachers and school leadership to align interventions with grade-level standards and schoolwide literacy goals.",
       ],
-      impact: [
-        "Used grade 6–8 reading data and classroom evidence to guide intervention and instructional adjustments.",
-        "Built benchmark-aligned literacy routines focused on comprehension, writing, and student independence.",
-      ],
     },
     {
-      title: "ELA Teacher · Reading Teacher · Instructional Coach · Graduation Coach",
-      org: "Orange County Public Schools · Orlando, FL",
+      title: "Orange County Public Schools",
+      org: "Orlando, FL",
       dates: "August 2015 – May 2025",
-      bullets: [
-        "Led instructional coaching cycles including co-planning, modeling, observation, and feedback to strengthen literacy instruction across grade levels.",
-        "Facilitated PLCs and served as a District PLC Representative, guiding teams through data analysis, standards alignment, and assessment refinement.",
-        "Completed OCPS Advanced Coaching Academy and Facilitative Coaching Series and supported new teachers as a Lead Mentor and New Teacher Induction Facilitator.",
-        "Contributed to schoolwide literacy improvement through literacy leadership work and curriculum vetting.",
-        "Provided digital instructional leadership as a District Curriculum Technology Leader and digital resource developer.",
-        "Integrated structured literacy routines and delivered Tier 2 and Tier 3 interventions aligned with MTSS expectations.",
-        "Supported multilingual learners through explicit language routines and scaffolded access to grade-level texts.",
-        "As Graduation Coach, monitored credits, coordinated tutoring, and led family communication to support student progression and re-engagement.",
+      roles: [
+        {
+          role: "ELA Teacher",
+          text: "Delivered standards-aligned literacy instruction with a focus on reading, writing, intervention, and academic growth.",
+        },
+        {
+          role: "Reading Teacher",
+          text: "Integrated structured literacy routines and targeted Tier 2 and Tier 3 support aligned with MTSS expectations.",
+        },
+        {
+          role: "Instructional Coach",
+          text: "Led coaching cycles, co-planning, modeling, observation, and feedback to strengthen literacy instruction across grade levels.",
+        },
+        {
+          role: "Graduation Coach",
+          text: "Monitored credits, coordinated tutoring, and led family communication to support student progression and re-engagement.",
+        },
       ],
-      impact: [
-        "Led coaching, PLC, mentoring, and curriculum support across multiple literacy-focused roles.",
-        "Supported schoolwide systems for teacher development, intervention, and instructional consistency.",
+      bullets: [
+        "Facilitated PLCs and served as a District PLC Representative, guiding teams through data analysis, standards alignment, and assessment refinement.",
+        "Completed OCPS Advanced Coaching Academy and Facilitative Coaching Series.",
+        "Supported new teachers as a Lead Mentor and New Teacher Induction Facilitator.",
+        "Contributed to literacy leadership work, curriculum vetting, and digital instructional support.",
+        "Supported multilingual learners through explicit language routines and scaffolded access to grade-level texts.",
       ],
     },
     {
@@ -94,51 +100,62 @@ export default function HomePage() {
         "Designed instruction to build reading, writing, and content understanding across middle school classrooms.",
         "Recognized as a Teacher of the Year Finalist.",
       ],
-      impact: [
-        "Built an early foundation in literacy diagnostics, assessment design, and middle school intervention.",
-        "Developed cross-content teaching experience while supporting adolescent readers and writers.",
-      ],
+    },
+  ];
+
+  const impactHighlights = [
+    {
+      value: "D → C",
+      label: "Westridge Middle improved its school grade during that span",
+    },
+    {
+      value: "Highest",
+      label: "School grade reached in that time period at Westridge",
+    },
+    {
+      value: "+5 · +6 · +9",
+      label: "FAST PM1 to PM2 average scale score growth in grades 6, 7, and 8",
+    },
+    {
+      value: "Multi-Role",
+      label: "Experience across teaching, coaching, mentoring, PLCs, and graduation support",
     },
   ];
 
   const credentials = {
     degrees: [
-      "M.Ed. in English Education, emphasis in literacy · University of Missouri",
-      "B.S. in Middle School Education, Language Arts and Social Studies (5–9) · Missouri State University",
+      {
+        degree: "M.Ed. in English Education",
+        school: "University of Missouri",
+        detail: "Emphasis in Literacy",
+      },
+      {
+        degree: "B.S. in Middle School Education",
+        school: "Missouri State University",
+        detail: "Language Arts and Social Studies (5–9)",
+      },
     ],
-    certifications: [
-      "Reading K–12",
-      "Language Arts 5–9",
-      "Social Studies 5–9",
-      "Health K–12",
-      "ESOL K–12",
-      "Reading Endorsement",
-      "Literacy Coach Endorsement",
-      "Instructional Coaching Certified, University of Florida",
-      "North Carolina: Language Arts 6–9",
-      "North Carolina: Social Studies 6–9",
-      "North Carolina: Reading K–12",
-    ],
+    certifications: {
+      northCarolina: [
+        "ELA 6–9",
+        "Social Studies 6–9",
+        "Reading K–12",
+      ],
+      florida: [
+        "Language Arts 5–9",
+        "Social Studies 5–9",
+        "Health K–12",
+        "ESOL K–12",
+        "Reading Endorsement",
+        "Literacy Coach Endorsement",
+        "Instructional Coaching Certified, University of Florida",
+      ],
+      missouri: [
+        "Middle School Education: Language Arts",
+        "Middle School Education: Social Studies",
+      ],
+    },
   };
-
-  const siteImpactResults = [
-    {
-      value: "191",
-      label: "Students in uploaded grade 6–8 reading growth snapshot",
-    },
-    {
-      value: "114%",
-      label: "Average progress to annual typical growth",
-    },
-    {
-      value: "43%",
-      label: "Already at or above 100% of annual typical growth",
-    },
-    {
-      value: "+12.7",
-      label: "Average scale score gain in the uploaded snapshot",
-    },
-  ];
 
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
@@ -248,7 +265,7 @@ export default function HomePage() {
       </section>
 
       <section id="focus" className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid gap-10 md:grid-cols-[1.25fr_0.75fr]">
+        <div className="grid gap-10 md:grid-cols-[1.15fr_0.85fr]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-300">
               Instructional Focus
@@ -269,16 +286,12 @@ export default function HomePage() {
               <p>
                 Across middle school and college settings, I have designed and
                 implemented instruction that integrates reading, writing, speaking,
-                and listening rather than treating them as disconnected pieces. The
-                through line is simple: clear systems, purposeful support, and
-                stronger academic performance.
+                and listening rather than treating them as disconnected pieces.
               </p>
 
               <p>
-                I am especially drawn to work at the intersection of literacy,
-                curriculum, coaching, and assessment. The goal is not just student
-                activity. The goal is better thinking, stronger writing, and more
-                consistent instructional alignment.
+                The through line is simple: clear systems, purposeful support, and
+                stronger academic performance.
               </p>
             </div>
           </div>
@@ -286,27 +299,18 @@ export default function HomePage() {
           <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-6">
             <h3 className="text-lg font-semibold text-white">Core Focus Areas</h3>
 
-            <div className="mt-5 flex flex-wrap gap-3">
-              {focusAreas.map((item) => (
-                <span
-                  key={item}
-                  className="rounded-full border border-emerald-300/20 bg-emerald-400/10 px-3 py-1 text-sm text-emerald-100"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
+            <div className="mt-6 grid grid-cols-1 gap-y-3 text-sm text-slate-200 md:grid-cols-2">
+              <div className="space-y-3">
+                {focusLeft.map((item) => (
+                  <p key={item}>{item}</p>
+                ))}
+              </div>
 
-            <div className="mt-8 border-t border-white/10 pt-6">
-              <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-300">
-                Professional Summary
-              </h4>
-              <p className="mt-4 text-sm leading-7 text-slate-300">
-                Experienced educator and instructional leader skilled in curriculum
-                development, instructional coaching, teacher mentoring, and
-                data-informed literacy practice across K–12 and college-level
-                settings.
-              </p>
+              <div className="space-y-3 md:text-right">
+                {focusRight.map((item) => (
+                  <p key={item}>{item}</p>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -335,6 +339,23 @@ export default function HomePage() {
                   <p className="text-sm text-slate-400">{job.dates}</p>
                 </div>
 
+                {job.roles && (
+                  <div className="mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                    <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-300">
+                      Roles Within OCPS
+                    </p>
+
+                    <div className="mt-4 space-y-4 border-l border-white/10 pl-5">
+                      {job.roles.map((item) => (
+                        <div key={item.role}>
+                          <p className="text-sm font-semibold text-white">{item.role}</p>
+                          <p className="mt-1 text-sm leading-7 text-slate-300">{item.text}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
                 <ul className="mt-5 space-y-3 text-sm leading-7 text-slate-300">
                   {job.bullets.map((bullet) => (
                     <li key={bullet} className="rounded-xl bg-white/[0.03] px-4 py-3">
@@ -342,17 +363,6 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
-
-                <div className="mt-6 rounded-2xl border border-emerald-300/15 bg-emerald-400/5 p-5">
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-200">
-                    Selected Impact
-                  </p>
-                  <ul className="mt-3 space-y-2 text-sm leading-7 text-slate-300">
-                    {job.impact.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
               </div>
             ))}
           </div>
@@ -383,7 +393,7 @@ export default function HomePage() {
           <h3 className="text-lg font-semibold text-white">Selected Impact Results</h3>
 
           <div className="mt-6 grid gap-4 md:grid-cols-4">
-            {siteImpactResults.map((item) => (
+            {impactHighlights.map((item) => (
               <div
                 key={item.label}
                 className="rounded-2xl border border-white/10 bg-slate-950/50 p-5"
@@ -396,15 +406,14 @@ export default function HomePage() {
 
           <div className="mt-6 space-y-3 text-sm leading-7 text-slate-300">
             <p>
-              These results are drawn from the uploaded grade 6–8 reading growth
-              snapshot and are presented as an instructional snapshot rather than a
-              schoolwide claim.
+              This section is meant to show concrete outcomes without pretending
+              every result came from the same role or the same context.
             </p>
 
             <p>
-              The larger point is consistency: structured literacy routines,
-              scaffolded support, data review, and targeted intervention are
-              producing measurable movement across the students in that set.
+              The stronger story is the combination: literacy instruction,
+              intervention, coaching, PLC work, and school support systems tied to
+              measurable improvement across multiple settings.
             </p>
           </div>
         </div>
@@ -413,28 +422,25 @@ export default function HomePage() {
       <section className="bg-slate-900/60">
         <div className="mx-auto max-w-6xl px-6 py-16">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-300">
-            Educational Approach
+            How I Work
           </p>
           <h2 className="mt-3 text-3xl font-bold text-white">
-            Clear instruction, strong scaffolds, meaningful growth
+            Clear systems. Strong teaching. Real support.
           </h2>
 
           <div className="mt-8 rounded-3xl border border-white/10 bg-slate-950/60 p-8">
             <p className="text-base leading-8 text-slate-300">
-              I believe effective literacy instruction should be rigorous,
-              explicit, and accessible. Students need clear expectations,
-              purposeful modeling, guided practice, and real opportunities to
-              revise, reflect, and improve. Good instruction does not hide the
-              process. It makes the process visible enough for students to build
-              independence over time.
+              I do my best work in settings where strong teaching, collaboration,
+              and practical systems matter. I value structure, clarity, and the
+              kind of instructional support that helps both students and teachers
+              improve over time.
             </p>
 
             <p className="mt-4 text-base leading-8 text-slate-300">
-              I also believe strong teaching depends on teamwork, responsibility,
-              problem solving, information processing, and adaptability. Teachers
-              need to collaborate, study student evidence, respond to data, and
-              adjust instruction in real time. That is as true in intervention and
-              developmental education as it is in any other setting.
+              I am especially drawn to literacy work that connects curriculum,
+              intervention, coaching, and feedback. The goal is not to make things
+              look good on paper. The goal is to help people get better at the
+              work itself.
             </p>
           </div>
         </div>
@@ -445,26 +451,64 @@ export default function HomePage() {
           Credentials
         </p>
         <h2 className="mt-3 text-3xl font-bold text-white">
-          Education, certifications, and licensure
+          Education, Licensure, and Certifications
         </h2>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
-          <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-6">
-            <h3 className="text-lg font-semibold text-white">Degrees</h3>
-            <ul className="mt-4 space-y-4 text-sm leading-7 text-slate-300">
-              {credentials.degrees.map((degree) => (
-                <li key={degree}>{degree}</li>
+        <div className="mt-10 grid gap-6 lg:grid-cols-[0.95fr_1.35fr]">
+          <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-7">
+            <h3 className="text-lg font-semibold text-white">Education</h3>
+
+            <div className="mt-6 space-y-5">
+              {credentials.degrees.map((item) => (
+                <div
+                  key={item.degree}
+                  className="rounded-2xl border border-white/10 bg-white/[0.03] p-5"
+                >
+                  <p className="text-lg font-semibold text-white">{item.degree}</p>
+                  <p className="mt-1 text-slate-200">{item.school}</p>
+                  <p className="mt-2 text-sm text-slate-400">{item.detail}</p>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
 
-          <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-6">
-            <h3 className="text-lg font-semibold text-white">Certifications and Licensure</h3>
-            <ul className="mt-4 space-y-3 text-sm leading-7 text-slate-300">
-              {credentials.certifications.map((cert) => (
-                <li key={cert}>{cert}</li>
-              ))}
-            </ul>
+          <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-7">
+            <h3 className="text-lg font-semibold text-white">Licensure and Certifications</h3>
+
+            <div className="mt-6 grid gap-5 md:grid-cols-3">
+              <div className="rounded-2xl border border-emerald-300/15 bg-emerald-400/5 p-5">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-200">
+                  North Carolina
+                </p>
+                <ul className="mt-4 space-y-3 text-sm leading-7 text-slate-300">
+                  {credentials.certifications.northCarolina.map((cert) => (
+                    <li key={cert}>{cert}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="rounded-2xl border border-sky-300/15 bg-sky-400/5 p-5">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-200">
+                  Florida
+                </p>
+                <ul className="mt-4 space-y-3 text-sm leading-7 text-slate-300">
+                  {credentials.certifications.florida.map((cert) => (
+                    <li key={cert}>{cert}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">
+                  Missouri
+                </p>
+                <ul className="mt-4 space-y-3 text-sm leading-7 text-slate-300">
+                  {credentials.certifications.missouri.map((cert) => (
+                    <li key={cert}>{cert}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
