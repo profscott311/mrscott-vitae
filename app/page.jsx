@@ -109,12 +109,12 @@ export default function HomePage() {
       label: "As Graduation Coach, assisted 200 of 206 seniors to graduate (2023–2024)",
     },
     {
-      value: "30 / 47",
-      label: "Assessed students already at or above 100% of annual typical growth across current intensive reading groups",
+      value: "+5 · +6 · +9",
+      label: "FAST PM1 to PM2 average scale score growth in grades 6, 7, and 8",
     },
     {
-      value: "148% · 170% · 174%",
-      label: "Median progress to annual typical growth in three of four current i-Ready reading groups",
+      value: "30 / 47",
+      label: "Students in current intensive reading groups already at or above annual typical growth",
     },
   ];
 
@@ -410,40 +410,11 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-300">
-              Current intensive reading snapshot
-            </p>
-
-            <div className="mt-4 grid gap-4 md:grid-cols-3">
-              <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-4">
-                <p className="text-2xl font-bold text-white">47</p>
-                <p className="mt-2 text-sm leading-6 text-slate-300">
-                  Assessed students across four current i-Ready reading groups
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-4">
-                <p className="text-2xl font-bold text-white">30 / 47</p>
-                <p className="mt-2 text-sm leading-6 text-slate-300">
-                  Students already at or above 100% of annual typical growth
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-4">
-                <p className="text-2xl font-bold text-white">84%–174%</p>
-                <p className="mt-2 text-sm leading-6 text-slate-300">
-                  Median progress to annual typical growth across the four groups
-                </p>
-              </div>
-            </div>
-
-            <p className="mt-5 text-sm leading-7 text-slate-300">
-              These current results are presented as an instructional snapshot. They
-              show meaningful growth in active intensive reading groups while still
-              acknowledging that class profiles and starting points vary.
-            </p>
-          </div>
+          <p className="mt-6 text-sm leading-7 text-slate-300">
+            These examples reflect impact across different roles and contexts,
+            including school improvement, graduation support, and current intensive
+            reading growth.
+          </p>
         </div>
       </section>
 
