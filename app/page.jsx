@@ -112,7 +112,7 @@ export default function HomePage() {
     },
     {
       value: "17% → 28%",
-      label: "FAST reading proficiency increase across grades 6–8",
+      label: "FAST reading proficiency increase across grades 6–8 in 2025–2026, with PM3 results coming May 5",
     },
     {
       value: "PLCs",
@@ -135,17 +135,17 @@ export default function HomePage() {
     ],
     certifications: {
       northCarolina: [
+        "Reading K–12",
         "ELA 6–9",
         "Social Studies 6–9",
-        "Reading K–12",
       ],
       florida: [
+        "Reading Endorsement",
+        "Literacy Coach Endorsement",
         "Language Arts 5–9",
         "Social Studies 5–9",
         "Health K–12",
         "ESOL K–12",
-        "Reading Endorsement",
-        "Literacy Coach Endorsement",
       ],
       floridaSpecial: {
         title: "Instructional Coaching Certification",
@@ -480,7 +480,7 @@ export default function HomePage() {
             <h3 className="text-lg font-semibold text-white">Licensure and Certifications</h3>
 
             <div className="mt-6 grid gap-5 md:grid-cols-3">
-              <div className="rounded-2xl border border-emerald-300/15 bg-emerald-400/5 p-5">
+              <div className="flex h-full flex-col rounded-2xl border border-emerald-300/15 bg-emerald-400/5 p-5">
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-200">
                   North Carolina
                 </p>
@@ -491,7 +491,7 @@ export default function HomePage() {
                 </ul>
               </div>
 
-              <div className="rounded-2xl border border-sky-300/15 bg-sky-400/5 p-5">
+              <div className="flex h-full flex-col rounded-2xl border border-sky-300/15 bg-sky-400/5 p-5">
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-200">
                   Florida
                 </p>
@@ -501,17 +501,19 @@ export default function HomePage() {
                   ))}
                 </ul>
 
-                <div className="mt-4 rounded-xl border border-sky-300/10 bg-white/[0.03] p-3">
-                  <p className="text-sm font-medium text-slate-100">
-                    {credentials.certifications.floridaSpecial.title}
-                  </p>
-                  <p className="mt-1 text-xs uppercase tracking-[0.16em] text-slate-400">
-                    {credentials.certifications.floridaSpecial.subtitle}
-                  </p>
+                <div className="mt-auto pt-4">
+                  <div className="rounded-xl border border-sky-300/10 bg-white/[0.03] p-3">
+                    <p className="text-sm font-medium leading-6 text-slate-100">
+                      {credentials.certifications.floridaSpecial.title}
+                    </p>
+                    <p className="mt-1 text-[0.7rem] uppercase tracking-[0.16em] text-slate-400">
+                      {credentials.certifications.floridaSpecial.subtitle}
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+              <div className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-5">
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">
                   Missouri
                 </p>
