@@ -67,11 +67,7 @@ export default function HomePage() {
       roles: [
         {
           role: "ELA Teacher",
-          text: "Delivered standards-aligned literacy instruction with a focus on reading, writing, intervention, and academic growth.",
-        },
-        {
-          role: "Reading Teacher",
-          text: "Integrated structured literacy routines and targeted Tier 2 and Tier 3 support aligned with MTSS expectations.",
+          text: "Delivered standards-aligned English language arts instruction with a focus on reading, writing, intervention, and academic growth.",
         },
         {
           role: "Instructional Coach",
@@ -106,19 +102,19 @@ export default function HomePage() {
   const impactHighlights = [
     {
       value: "D → C",
-      label: "Westridge Middle improved its school grade during that span",
+      label: "Westridge Middle improved its school grade, the highest reached during that span (2020–2023)",
     },
     {
-      value: "Highest",
-      label: "School grade reached in that time period at Westridge",
+      value: "200 / 206",
+      label: "As Graduation Coach, assisted 200 of 206 seniors to graduate (2023–2024)",
     },
     {
-      value: "+5 · +6 · +9",
-      label: "FAST PM1 to PM2 average scale score growth in grades 6, 7, and 8",
+      value: "30 / 47",
+      label: "Assessed students already at or above 100% of annual typical growth across current intensive reading groups",
     },
     {
-      value: "Multi-Role",
-      label: "Experience across teaching, coaching, mentoring, PLCs, and graduation support",
+      value: "148% · 170% · 174%",
+      label: "Median progress to annual typical growth in three of four current i-Ready reading groups",
     },
   ];
 
@@ -299,16 +295,26 @@ export default function HomePage() {
           <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-6">
             <h3 className="text-lg font-semibold text-white">Core Focus Areas</h3>
 
-            <div className="mt-6 grid grid-cols-1 gap-y-3 text-sm text-slate-200 md:grid-cols-2">
-              <div className="space-y-3">
+            <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
+              <div className="flex flex-wrap gap-3">
                 {focusLeft.map((item) => (
-                  <p key={item}>{item}</p>
+                  <span
+                    key={item}
+                    className="rounded-full border border-emerald-300/20 bg-emerald-400/10 px-3 py-1 text-sm text-emerald-100"
+                  >
+                    {item}
+                  </span>
                 ))}
               </div>
 
-              <div className="space-y-3 md:text-right">
+              <div className="flex flex-wrap gap-3 md:justify-end">
                 {focusRight.map((item) => (
-                  <p key={item}>{item}</p>
+                  <span
+                    key={item}
+                    className="rounded-full border border-sky-300/20 bg-sky-400/10 px-3 py-1 text-sm text-sky-100"
+                  >
+                    {item}
+                  </span>
                 ))}
               </div>
             </div>
@@ -392,7 +398,7 @@ export default function HomePage() {
         <div className="mt-10 rounded-3xl border border-emerald-300/15 bg-emerald-400/5 p-6">
           <h3 className="text-lg font-semibold text-white">Selected Impact Results</h3>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-4">
+          <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {impactHighlights.map((item) => (
               <div
                 key={item.label}
@@ -404,16 +410,38 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="mt-6 space-y-3 text-sm leading-7 text-slate-300">
-            <p>
-              This section is meant to show concrete outcomes without pretending
-              every result came from the same role or the same context.
+          <div className="mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-300">
+              Current intensive reading snapshot
             </p>
 
-            <p>
-              The stronger story is the combination: literacy instruction,
-              intervention, coaching, PLC work, and school support systems tied to
-              measurable improvement across multiple settings.
+            <div className="mt-4 grid gap-4 md:grid-cols-3">
+              <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-4">
+                <p className="text-2xl font-bold text-white">47</p>
+                <p className="mt-2 text-sm leading-6 text-slate-300">
+                  Assessed students across four current i-Ready reading groups
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-4">
+                <p className="text-2xl font-bold text-white">30 / 47</p>
+                <p className="mt-2 text-sm leading-6 text-slate-300">
+                  Students already at or above 100% of annual typical growth
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-4">
+                <p className="text-2xl font-bold text-white">84%–174%</p>
+                <p className="mt-2 text-sm leading-6 text-slate-300">
+                  Median progress to annual typical growth across the four groups
+                </p>
+              </div>
+            </div>
+
+            <p className="mt-5 text-sm leading-7 text-slate-300">
+              These current results are presented as an instructional snapshot. They
+              show meaningful growth in active intensive reading groups while still
+              acknowledging that class profiles and starting points vary.
             </p>
           </div>
         </div>
@@ -430,17 +458,16 @@ export default function HomePage() {
 
           <div className="mt-8 rounded-3xl border border-white/10 bg-slate-950/60 p-8">
             <p className="text-base leading-8 text-slate-300">
-              I do my best work in settings where strong teaching, collaboration,
-              and practical systems matter. I value structure, clarity, and the
-              kind of instructional support that helps both students and teachers
-              improve over time.
+              I care about instruction that is clear, demanding, and useful. I am
+              drawn to work where strong teaching, collaboration, and practical
+              systems matter more than buzzwords or appearances.
             </p>
 
             <p className="mt-4 text-base leading-8 text-slate-300">
-              I am especially drawn to literacy work that connects curriculum,
-              intervention, coaching, and feedback. The goal is not to make things
-              look good on paper. The goal is to help people get better at the
-              work itself.
+              At my best, I help build structures that teachers can sustain and
+              students can actually use. That includes curriculum, intervention,
+              coaching, feedback, and the daily classroom moves that make better
+              performance possible.
             </p>
           </div>
         </div>
