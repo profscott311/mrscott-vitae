@@ -5,13 +5,13 @@ const impactResults = [
     title: "Current Year Reading Growth",
     value: "17% → 28%",
     detail:
-      "Schoolwide proficiency growth during the 2025–2026 school year, with PM3 results still pending.",
+      "Schoolwide proficiency growth during the 2025–2026 school year in grades 6–8 intensive reading, with PM3 results pending.",
   },
   {
-    title: "Middle Grades Literacy Systems",
-    value: "Grades 6–8",
+    title: "Student Growth Example",
+    value: "201 → 231",
     detail:
-      "Instructional systems designed to strengthen comprehension, evidence use, and written explanation through repeatable routines.",
+      "One 7th grade student moved from below grade level performance to Level 3 by PM2 through structured literacy routines, benchmark aligned practice, and visible progress tracking.",
   },
   {
     title: "College Writing Instruction",
@@ -32,7 +32,7 @@ const practiceArtifacts = [
   },
   {
     title: "Benchmark Mini Task",
-    src: "/works-sample-1.jpg",
+    src: "/work-sample-1.jpg",
     alt: "Reading mini task with passage and evidence-based questions",
     caption:
       "Mini tasks target specific reading benchmarks through explicit modeling, guided practice, and independent application.",
@@ -267,7 +267,8 @@ export default function HomePage() {
                     One 7th grade student entered the year reading below grade
                     level and struggled with comprehension, especially when
                     identifying central ideas, selecting evidence, and
-                    explaining thinking in writing.
+                    explaining thinking in writing. The student began with a
+                    PM1 score of 201.
                   </p>
                   <p>
                     Instruction centered on daily literacy routines, including
@@ -277,10 +278,9 @@ export default function HomePage() {
                     written reasoning.
                   </p>
                   <p>
-                    Over time, the student showed stronger accuracy, better
-                    independence, and improved written explanation. By PM2, the
-                    student reached a Level 3, reflecting measurable growth and
-                    successful movement toward grade level expectations.
+                    By PM2, the student scored 231 and reached Level 3,
+                    reflecting measurable growth and successful movement toward
+                    grade level expectations.
                   </p>
                 </div>
               </div>
@@ -313,7 +313,7 @@ export default function HomePage() {
                     alt={item.alt}
                     fill
                     className="object-cover transition duration-500 group-hover:scale-[1.02]"
-                    style={{ objectPosition: item.objectPosition as any }}
+                    style={{ objectPosition: item.objectPosition as React.CSSProperties["objectPosition"] }}
                   />
                   <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-900/35 to-transparent" />
                 </div>
