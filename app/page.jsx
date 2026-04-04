@@ -108,7 +108,7 @@ export default function HomePage() {
                 </a>
 
                 <a
-                  href="mailto:your-email@example.com"
+                  href="mailto:scottstephena@gmail.com"
                   className="rounded-2xl border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/15"
                 >
                   Contact Mr. Scott
