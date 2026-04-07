@@ -5,20 +5,88 @@ const impactResults = [
     title: "Current Year Reading Growth",
     value: "17% → 28%",
     detail:
-      "Schoolwide proficiency growth during the 2025–2026 school year in grades 6–8 intensive reading, with PM3 results pending.",
+      "Schoolwide proficiency growth during the 2025–2026 school year in grades 6–8 intensive reading, with PM3 results pending May 5.",
   },
   {
-    title: "Student Growth Example",
-    value: "201 → 231",
+    title: "Graduation Support",
+    value: "200 of 206",
     detail:
-      "One 7th grade student moved from below grade level performance to Level 3 by PM2 through structured literacy routines, benchmark aligned practice, and visible progress tracking.",
+      "Supported 200 seniors in meeting graduation requirements as a Math Graduation Coach through targeted systems, student monitoring, and collaborative intervention planning.",
   },
   {
-    title: "College Writing Instruction",
-    value: "Valencia College",
+    title: "Teaching Range",
+    value: "16+ Years",
     detail:
-      "Developmental reading and writing instruction focused on analysis, structure, revision, and academic independence.",
+      "Experience spanning middle school literacy, reading intervention, high school support, and community college reading and writing instruction.",
   },
+];
+
+const instructionalSystems = [
+  {
+    title: "Reading Rotations",
+    description:
+      "Reading instruction organized through repeatable structures that balance direct teaching, targeted intervention, and independent application.",
+    items: [
+      "Whole-group mini lesson focused on a target benchmark",
+      "Teacher-led small group instruction based on current student data",
+      "Independent practice aligned to the same standard",
+      "Task cards for targeted skill work and accountability",
+      "Independent Learning Menu options that build choice and stamina",
+      "Progress tracker used to monitor mastery and next steps",
+      "FAST-style question formats to support transfer to assessment",
+    ],
+    accent: "border-teal-200 bg-teal-50",
+  },
+  {
+    title: "Reading Bootcamp",
+    description:
+      "Benchmark-clustered practice designed to help students close gaps quickly through modeling, repetition, and visible progress.",
+    items: [
+      "Benchmark-aligned mini tasks grouped by skill",
+      "Model, we do, you do structure for daily consistency",
+      "Mastery tracker with skill levels students can understand",
+      "Small-group pulls driven by live performance data",
+      "Daily spiral review for retention across standards",
+    ],
+    accent: "border-sky-200 bg-sky-50",
+  },
+  {
+    title: "Structured Writing Practice",
+    description:
+      "Writing instruction that helps students move from short responses to clearer, evidence-based explanation.",
+    items: [
+      "Claim, evidence, explanation structure taught explicitly",
+      "Sentence frames that strengthen analysis and elaboration",
+      "Gradual release from modeled writing to independent drafting",
+      "FAST-aligned prompts and text-based writing tasks",
+      "Progression from single paragraphs to multi-paragraph responses",
+    ],
+    accent: "border-violet-200 bg-violet-50",
+  },
+  {
+    title: "Science of Reading Bellwork",
+    description:
+      "Short, consistent routines that build reading strength through daily work with language structures.",
+    items: [
+      "Vocabulary and morphology practice",
+      "Fluency and phrasing work",
+      "Sentence structure review",
+      "Academic language development",
+      "Repeatable routines that maximize instructional time",
+    ],
+    accent: "border-slate-200 bg-slate-50",
+  },
+];
+
+const leadershipItems = [
+  "Facilitated PLC data meetings focused on literacy growth and intervention planning",
+  "Modeled reading and writing lessons aligned to standards and assessment demands",
+  "Designed schoolwide reading bootcamp systems targeting benchmark skill gaps",
+  "Supported teachers with reading rotations, small-group planning, and differentiation",
+  "Built progress-tracking systems that made student growth visible over time",
+  "Contributed to MTSS planning and Tier 2 and Tier 3 intervention support",
+  "Collaborated with administration on pacing, instructional priorities, and student support",
+  "Developed structured writing frameworks to strengthen consistency across classrooms",
 ];
 
 const practiceArtifacts = [
@@ -59,6 +127,8 @@ const practiceArtifacts = [
 const certifications = {
   northCarolina: [
     "Reading, K–12",
+    "English Language Arts 6–9",
+    "Social Studies 6–9",
   ],
   florida: [
     "English 6–12",
@@ -97,6 +167,12 @@ export default function HomePage() {
                 take greater ownership of their learning.
               </p>
 
+              <p className="mt-5 max-w-3xl text-base leading-7 text-slate-300">
+                I design structured literacy systems that move students from
+                comprehension to analysis and from basic paragraphs to
+                evidence-based writing.
+              </p>
+
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
                   href="/StephenScott_CV.pdf"
@@ -115,10 +191,10 @@ export default function HomePage() {
                 </a>
 
                 <a
-                  href="#instruction-in-practice"
+                  href="#instructional-systems"
                   className="rounded-2xl border border-teal-300/30 px-6 py-3 text-sm font-semibold text-teal-200 transition hover:bg-teal-300/10"
                 >
-                  See Instruction in Practice
+                  Explore Instructional Systems
                 </a>
               </div>
 
@@ -159,10 +235,10 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
           <div className="mb-10 max-w-3xl">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
-              Why This Work Matters
+              Selected Impact Results
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Building literacy systems that students can actually use
+              Evidence of student growth and instructional range
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
               My work centers on structured instruction, visible progress
@@ -191,52 +267,80 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section id="instructional-systems" className="bg-white">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="mb-10 max-w-3xl">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
+              Instructional Systems
+            </p>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+              Structured systems over isolated activities
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-slate-700">
+              I design instruction around repeatable structures that help
+              students know what strong reading and writing look like, how to
+              practice it, and how to improve over time.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {instructionalSystems.map((system) => (
+              <div
+                key={system.title}
+                className={`rounded-3xl border p-7 shadow-sm ${system.accent}`}
+              >
+                <h3 className="text-2xl font-bold text-slate-900">
+                  {system.title}
+                </h3>
+                <p className="mt-3 leading-7 text-slate-700">
+                  {system.description}
+                </p>
+                <ul className="mt-6 space-y-3 text-slate-700">
+                  {system.items.map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="mt-2 h-2.5 w-2.5 rounded-full bg-slate-700" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-slate-50">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
-                Instructional Approach
+                Instructional Leadership
               </p>
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                Systems over isolated activities
+                Leadership grounded in classroom practice
               </h2>
-              <div className="mt-6 space-y-5 text-lg leading-8 text-slate-700">
-                <p>
-                  I design instruction around clear, repeatable structures that
-                  help students know what strong reading and writing look like,
-                  how to practice it, and how to improve over time.
-                </p>
-                <p>
-                  That means explicit modeling, guided practice, text-based
-                  questioning, structured writing support, and progress tracking
-                  that students can understand for themselves.
-                </p>
-                <p>
-                  Whether I am teaching middle school literacy or developmental
-                  college writing, the goal is the same: stronger thinking,
-                  clearer communication, and more independent learners.
-                </p>
-              </div>
+              <p className="mt-4 text-lg leading-8 text-slate-700">
+                My leadership work is rooted in practical systems, literacy
+                instruction, and the day-to-day realities of helping teachers
+                and students move forward.
+              </p>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
-              <h3 className="text-xl font-semibold text-slate-900">
-                Core instructional priorities
-              </h3>
-              <ul className="mt-6 space-y-4 text-slate-700">
-                <li>Explicit modeling before independent work</li>
-                <li>Visible progress tracking that builds ownership</li>
-                <li>Benchmark aligned reading practice</li>
-                <li>Writing as a tool for thinking, not just output</li>
-                <li>Consistent routines students can trust and repeat</li>
+            <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+              <ul className="space-y-4 text-slate-700">
+                {leadershipItems.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-2 h-2.5 w-2.5 rounded-full bg-teal-600" />
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="instruction-in-practice" className="bg-slate-50">
+      <section id="instruction-in-practice" className="bg-white">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <div className="mb-10 max-w-3xl">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
@@ -259,7 +363,7 @@ export default function HomePage() {
                 </p>
 
                 <h3 className="text-2xl font-bold text-slate-900">
-                  Moving a below-level reader to proficiency through structured support
+                  Student A: Moving a below-level reader to proficiency through structured support
                 </h3>
 
                 <div className="mt-6 space-y-4 leading-7 text-slate-700">
@@ -267,15 +371,15 @@ export default function HomePage() {
                     One 7th grade student entered the year reading below grade
                     level and struggled with comprehension, especially when
                     identifying central ideas, selecting evidence, and
-                    explaining thinking in writing. The student began with a
-                    PM1 score of 201.
+                    explaining thinking in writing. The student began with a PM1
+                    score of 201.
                   </p>
                   <p>
                     Instruction centered on daily literacy routines, including
-                    explicit modeling, benchmark aligned mini tasks, visible
-                    progress tracking, and structured writing support that
-                    helped the student move from short answers to clearer
-                    written reasoning.
+                    explicit modeling, benchmark-aligned mini tasks, visible
+                    progress tracking, reading rotations, and structured writing
+                    support that helped the student move from short answers to
+                    clearer written reasoning.
                   </p>
                   <p>
                     By PM2, the student scored 231 and reached Level 3,
@@ -292,7 +396,8 @@ export default function HomePage() {
                   </h4>
                   <ul className="mt-4 space-y-3 text-slate-700">
                     <li>Visible progress tracking that built ownership</li>
-                    <li>Benchmark specific mini tasks for targeted practice</li>
+                    <li>Benchmark-specific mini tasks for targeted practice</li>
+                    <li>Reading rotations that matched support to student need</li>
                     <li>Repeated movement from text evidence to explanation</li>
                     <li>Consistent instructional routines students could rely on</li>
                   </ul>
@@ -313,7 +418,10 @@ export default function HomePage() {
                     alt={item.alt}
                     fill
                     className="object-cover transition duration-500 group-hover:scale-[1.02]"
-                    style={{ objectPosition: item.objectPosition as React.CSSProperties["objectPosition"] }}
+                    style={{
+                      objectPosition:
+                        item.objectPosition as React.CSSProperties["objectPosition"],
+                    }}
                   />
                   <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-900/35 to-transparent" />
                 </div>
@@ -332,7 +440,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-slate-50">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <div className="mb-10 max-w-3xl">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
@@ -345,7 +453,9 @@ export default function HomePage() {
 
           <div className="grid gap-6 md:grid-cols-3">
             <div className="rounded-3xl border border-teal-200 bg-teal-50 p-6 shadow-sm">
-              <h3 className="text-xl font-bold text-slate-900">North Carolina</h3>
+              <h3 className="text-xl font-bold text-slate-900">
+                North Carolina
+              </h3>
               <ul className="mt-4 space-y-3 text-slate-700">
                 {certifications.northCarolina.map((item) => (
                   <li key={item}>{item}</li>
@@ -399,7 +509,7 @@ export default function HomePage() {
                 View CV
               </a>
               <a
-                href="mailto:your-email@example.com"
+                href="mailto:scottstephena@gmail.com"
                 className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
               >
                 Contact Mr. Scott
