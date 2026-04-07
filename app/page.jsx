@@ -363,7 +363,8 @@ export default function HomePage() {
                 </p>
 
                 <h3 className="text-2xl font-bold text-slate-900">
-                  Student A: Moving a below-level reader to proficiency through structured support
+                  Student A: Moving a below-level reader to proficiency through
+                  structured support
                 </h3>
 
                 <div className="mt-6 space-y-4 leading-7 text-slate-700">
@@ -418,10 +419,7 @@ export default function HomePage() {
                     alt={item.alt}
                     fill
                     className="object-cover transition duration-500 group-hover:scale-[1.02]"
-                    style={{
-                      objectPosition:
-                        item.objectPosition as React.CSSProperties["objectPosition"],
-                    }}
+                    style={{ objectPosition: item.objectPosition }}
                   />
                   <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-900/35 to-transparent" />
                 </div>
