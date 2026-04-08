@@ -150,9 +150,10 @@ const certifications = {
     "Social Studies 6–9",
   ],
   florida: [
-    "English 6–12",
+    "English 5–9",
     "Reading Endorsement",
     "Literacy Coach Endorsement",
+    "English Speakers of Other Languages K-12",
   ],
   missouri: [
     "Language Arts 5–9",
