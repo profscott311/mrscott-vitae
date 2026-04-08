@@ -89,9 +89,28 @@ const leadershipItems = [
   "Developed structured writing frameworks to strengthen consistency across classrooms",
 ];
 
+const growthExamples = [
+  {
+    title: "Student Growth Example",
+    subtitle: "6th Grade Student With ADHD and 504 Support",
+    result: "Below grade level → Level 3",
+    detail:
+      "Growth supported through structured reading rotations, game-based task cards, short focused mini tasks, visible tracking, and engaging routines that improved both focus and stamina.",
+    accent: "border-teal-200 bg-teal-50",
+  },
+  {
+    title: "Student Growth Example",
+    subtitle: "8th Grade ELL Student | PM1: 222 → PM2: 247",
+    result: "Level 2 → Level 3",
+    detail:
+      "Growth supported through targeted small group instruction, academic language support, writing frames, reading rotations, and consistent effort over time.",
+    accent: "border-sky-200 bg-sky-50",
+  },
+];
+
 const practiceArtifacts = [
   {
-    title: "Student Progress Tracker",
+    title: "Reading Bootcamp Progress Tracker",
     src: "/tracker.jpg",
     alt: "Classroom literacy benchmark tracker showing student progress levels",
     caption:
@@ -99,7 +118,7 @@ const practiceArtifacts = [
     objectPosition: "left top",
   },
   {
-    title: "Benchmark Mini Task",
+    title: "R.1.1 Benchmark Mini Task",
     src: "/work-sample-1.jpg",
     alt: "Reading mini task with passage and evidence-based questions",
     caption:
@@ -107,7 +126,7 @@ const practiceArtifacts = [
     objectPosition: "right top",
   },
   {
-    title: "Writing Support Frame",
+    title: "Claim Evidence Explanation Writing Frame",
     src: "/work-sample-2.jpg",
     alt: "Structured writing scaffold with idea, evidence, explanation, and extension",
     caption:
@@ -160,6 +179,10 @@ export default function HomePage() {
                 Literacy Educator • Instructional Leader
               </h1>
 
+              <p className="mt-4 max-w-3xl text-xl font-semibold text-teal-200">
+                Structured reading systems. Visible growth. Independent learners.
+              </p>
+
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
                 Experienced across middle school literacy, reading intervention,
                 and community college instruction. I build structured systems
@@ -210,6 +233,9 @@ export default function HomePage() {
                 </span>
                 <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
                   Literacy Systems Design
+                </span>
+                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+                  Instructional Coaching
                 </span>
               </div>
             </div>
@@ -277,9 +303,10 @@ export default function HomePage() {
               Structured systems over isolated activities
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              I design instruction around repeatable structures that help
-              students know what strong reading and writing look like, how to
-              practice it, and how to improve over time.
+              These systems work together during reading rotations and
+              intervention blocks. I design instruction around repeatable
+              structures that help students know what strong reading and writing
+              look like, how to practice it, and how to improve over time.
             </p>
           </div>
 
@@ -309,7 +336,77 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-slate-50">
+      <section className="border-t border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <div className="mb-10 max-w-3xl">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
+              Reading Rotations in Practice
+            </p>
+
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+              Priority Support Rotation Model
+            </h2>
+
+            <p className="mt-4 text-lg leading-8 text-slate-700">
+              Students rotate through independent work, collaboration, and
+              teacher-led small group instruction based on instructional
+              priority, FAST data, and daily learning goals.
+            </p>
+          </div>
+
+          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+            <div className="relative w-full aspect-[16/9]">
+              <Image
+                src="/layout.png"
+                alt="Reading rotations classroom layout showing independent work, collaboration station, and teacher small group"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
+
+          <p className="mt-6 text-slate-600">
+            Students rotate based on instructional priority. Independent work
+            builds stamina. Collaboration builds reasoning. Small group targets
+            skill gaps.
+          </p>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className="rounded-2xl border border-teal-200 bg-teal-50 p-6">
+              <h3 className="font-semibold text-slate-900">
+                Independent Work Stations
+              </h3>
+              <p className="mt-2 text-slate-700">
+                Students complete task cards, annotation routines, and
+                independent learning menu choices while building reading stamina
+                and accountability.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-sky-200 bg-sky-50 p-6">
+              <h3 className="font-semibold text-slate-900">
+                Collaboration Station (ILM)
+              </h3>
+              <p className="mt-2 text-slate-700">
+                Students discuss thinking, complete ILM options, and practice
+                structured responses using evidence and academic language.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-violet-200 bg-violet-50 p-6">
+              <h3 className="font-semibold text-slate-900">
+                Teacher Small Group
+              </h3>
+              <p className="mt-2 text-slate-700">
+                Targeted instruction based on benchmark gaps, FAST data, and
+                priority student needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
             <div>
@@ -326,7 +423,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
               <ul className="space-y-4 text-slate-700">
                 {leadershipItems.map((item) => (
                   <li key={item} className="flex gap-3">
@@ -340,7 +437,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="instruction-in-practice" className="bg-white">
+      <section id="instruction-in-practice" className="bg-slate-50">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <div className="mb-10 max-w-3xl">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
@@ -363,29 +460,25 @@ export default function HomePage() {
                 </p>
 
                 <h3 className="text-2xl font-bold text-slate-900">
-                  Student A: Moving a below-level reader to proficiency through
-                  structured support
+                  Below-Level Reader to Proficiency Through Structured Support
                 </h3>
 
                 <div className="mt-6 space-y-4 leading-7 text-slate-700">
                   <p>
-                    One 7th grade student entered the year reading below grade
-                    level and struggled with comprehension, especially when
-                    identifying central ideas, selecting evidence, and
-                    explaining thinking in writing. The student began with a PM1
-                    score of 201.
+                    One 6th grade student with ADHD and 504 support entered the
+                    year reading below grade level and struggled with focus,
+                    comprehension, and explaining thinking in writing.
                   </p>
                   <p>
-                    Instruction centered on daily literacy routines, including
-                    explicit modeling, benchmark-aligned mini tasks, visible
-                    progress tracking, reading rotations, and structured writing
-                    support that helped the student move from short answers to
-                    clearer written reasoning.
+                    Instruction centered on structured reading rotations,
+                    game-based task cards, short focused mini tasks, visible
+                    progress tracking, and frequent feedback that built both
+                    engagement and stamina.
                   </p>
                   <p>
-                    By PM2, the student scored 231 and reached Level 3,
-                    reflecting measurable growth and successful movement toward
-                    grade level expectations.
+                    Over time, the student moved to Level 3 proficiency,
+                    demonstrating stronger written explanations, better reading
+                    habits, and measurable growth through consistent support.
                   </p>
                 </div>
               </div>
@@ -397,14 +490,39 @@ export default function HomePage() {
                   </h4>
                   <ul className="mt-4 space-y-3 text-slate-700">
                     <li>Visible progress tracking that built ownership</li>
-                    <li>Benchmark-specific mini tasks for targeted practice</li>
+                    <li>Game-based task cards that increased engagement</li>
                     <li>Reading rotations that matched support to student need</li>
-                    <li>Repeated movement from text evidence to explanation</li>
+                    <li>Short focused mini tasks that improved stamina</li>
                     <li>Consistent instructional routines students could rely on</li>
                   </ul>
                 </div>
               </div>
             </div>
+          </div>
+
+          <p className="mb-6 text-slate-700">
+            Student growth is monitored through this rotation model and targeted
+            intervention.
+          </p>
+
+          <div className="mb-12 grid gap-6 md:grid-cols-2">
+            {growthExamples.map((item) => (
+              <div
+                key={item.subtitle}
+                className={`rounded-3xl border p-6 shadow-sm ${item.accent}`}
+              >
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-700">
+                  {item.title}
+                </p>
+                <h3 className="mt-3 text-xl font-bold text-slate-900">
+                  {item.subtitle}
+                </h3>
+                <p className="mt-3 text-2xl font-bold text-slate-900">
+                  {item.result}
+                </p>
+                <p className="mt-4 leading-7 text-slate-700">{item.detail}</p>
+              </div>
+            ))}
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
@@ -438,7 +556,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-slate-50">
+      <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <div className="mb-10 max-w-3xl">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
@@ -447,6 +565,10 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
               Credentials across North Carolina, Florida, and Missouri
             </h2>
+            <p className="mt-4 text-lg leading-8 text-slate-700">
+              Certified to support literacy instruction across multiple grade
+              bands and settings.
+            </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
