@@ -399,7 +399,7 @@ export default function HomePage() {
                 Teacher Small Group
               </h3>
               <p className="mt-2 text-slate-700">
-                Targeted instruction based on benchmark gaps, FAST data, and
+                Targeted instruction based on benchmark gaps, FAST data, observations, MTSS, and
                 priority student needs.
               </p>
             </div>
