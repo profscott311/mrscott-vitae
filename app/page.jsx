@@ -89,18 +89,11 @@ const leadershipItems = [
   "Developed structured writing frameworks to strengthen consistency across classrooms",
 ];
 
-const growthExamples = [
+const growthSnapshots = [
   {
-    title: "Student Growth Example",
-    subtitle: "6th Grade Student With ADHD and 504 Support",
-    result: "Below grade level → Level 3",
-    detail:
-      "Growth supported through structured reading rotations, game-based task cards, short focused mini tasks, visible tracking, and engaging routines that improved both focus and stamina.",
-    accent: "border-teal-200 bg-teal-50",
-  },
-  {
-    title: "Student Growth Example",
-    subtitle: "8th Grade ELL Student | PM1: 222 → PM2: 247",
+    label: "Growth Snapshot",
+    title: "8th Grade ELL Student",
+    data: "PM1: 222 → PM2: 247",
     result: "Level 2 → Level 3",
     detail:
       "Growth supported through targeted small group instruction, academic language support, writing frames, reading rotations, and consistent effort over time.",
@@ -150,10 +143,9 @@ const certifications = {
     "Social Studies 6–9",
   ],
   florida: [
-    "English 5–9",
+    "English 6–12",
     "Reading Endorsement",
     "Literacy Coach Endorsement",
-    "English Speakers of Other Languages K-12",
   ],
   missouri: [
     "Language Arts 5–9",
@@ -399,7 +391,7 @@ export default function HomePage() {
                 Teacher Small Group
               </h3>
               <p className="mt-2 text-slate-700">
-                Targeted instruction based on benchmark gaps, FAST data, observations, MTSS, and
+                Targeted instruction based on benchmark gaps, FAST data, and
                 priority student needs.
               </p>
             </div>
@@ -506,18 +498,21 @@ export default function HomePage() {
             intervention.
           </p>
 
-          <div className="mb-12 grid gap-6 md:grid-cols-2">
-            {growthExamples.map((item) => (
+          <div className="mb-12 grid gap-6 md:grid-cols-1 lg:max-w-2xl">
+            {growthSnapshots.map((item) => (
               <div
-                key={item.subtitle}
+                key={item.title}
                 className={`rounded-3xl border p-6 shadow-sm ${item.accent}`}
               >
                 <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-700">
-                  {item.title}
+                  {item.label}
                 </p>
                 <h3 className="mt-3 text-xl font-bold text-slate-900">
-                  {item.subtitle}
+                  {item.title}
                 </h3>
+                <p className="mt-2 text-base font-semibold text-slate-700">
+                  {item.data}
+                </p>
                 <p className="mt-3 text-2xl font-bold text-slate-900">
                   {item.result}
                 </p>
