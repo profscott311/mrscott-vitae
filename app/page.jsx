@@ -3,16 +3,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 
-/* ---------------- DATA ---------------- */
-
 const practiceArtifacts = [
-  {
-    title: "Instructional Coaching Snapshot",
-    src: "/coaching.jpg", // <-- rename your uploaded image to this
-    alt: "Instructional coaching data display",
-    caption:
-      "Short-cycle observation and data tracking used to analyze instructional moves, student engagement, and response accuracy. Separates teacher-initiated monitoring from student-initiated support to identify patterns in independence, feedback, and instructional timing.",
-  },
   {
     title: "Reading Bootcamp Progress Tracker",
     src: "/tracker.jpg",
@@ -43,8 +34,6 @@ const practiceArtifacts = [
   },
 ];
 
-/* ---------------- PAGE ---------------- */
-
 export default function HomePage() {
   const audioRef = useRef(null);
 
@@ -66,7 +55,7 @@ export default function HomePage() {
     <main className="min-h-screen bg-white text-slate-900">
       <audio ref={audioRef} src="/bag-of-chips.mp3" preload="auto" />
 
-      {/* ---------------- HERO ---------------- */}
+      {/* HERO */}
 
       <section className="bg-slate-950 text-white py-20 px-6">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
@@ -90,7 +79,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ---------------- INSTRUCTION IN PRACTICE ---------------- */}
+      {/* ARTIFACTS */}
 
       <section className="bg-slate-50 py-20 px-6">
         <div className="max-w-7xl mx-auto">
@@ -99,65 +88,9 @@ export default function HomePage() {
             Instruction in Practice
           </h2>
 
-          {/* GRID */}
-
           <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
-            {/* -------- TOP ROW (3 CARDS) -------- */}
-
-            {practiceArtifacts.slice(0, 3).map((item) => (
-              <div
-                key={item.title}
-                className="rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-lg transition"
-              >
-                <div className="relative h-[220px] w-full">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-slate-600 leading-7">
-                    {item.caption}
-                  </p>
-                </div>
-              </div>
-            ))}
-
-            {/* -------- BOTTOM ROW (3 CARDS) -------- */}
-
-            {practiceArtifacts.slice(3).map((item) => (
-              <div
-                key={item.title}
-                className="rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-lg transition"
-              >
-                <div className="relative h-[220px] w-full">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-slate-600 leading-7">
-                    {item.caption}
-                  </p>
-                </div>
-              </div>
-            ))}
-
-            {/* -------- BAG OF CHIPS (BOTTOM ROW LAST) -------- */}
+            {/* BAG OF CHIPS (TOP LEFT - ORIGINAL POSITION) */}
 
             <a
               href="https://docs.google.com/document/d/1YM7dEmtcHnih-X_48h7QMoAOwf-oqmJP83aLeQGVy7o/edit?usp=sharing"
@@ -165,7 +98,7 @@ export default function HomePage() {
               rel="noreferrer"
               onMouseEnter={handleAudioEnter}
               onMouseLeave={handleAudioLeave}
-              className="rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-lg transition"
+              className="rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-lg transition border border-emerald-200"
             >
               <div className="relative h-[220px] w-full">
                 <Image
@@ -185,10 +118,37 @@ export default function HomePage() {
                 </h3>
                 <p className="mt-3 text-slate-600 leading-7">
                   A classroom engagement hook built around routine, energy, and
-                  motivation. Hover to hear the track.
+                  student motivation. Hover to hear the track. Click to open the document.
                 </p>
               </div>
             </a>
+
+            {/* OTHER ARTIFACTS */}
+
+            {practiceArtifacts.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-lg transition"
+              >
+                <div className="relative h-[220px] w-full">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-slate-600 leading-7">
+                    {item.caption}
+                  </p>
+                </div>
+              </div>
+            ))}
 
           </div>
         </div>
