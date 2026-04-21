@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState } from "react";
 
 function iconClass(className = "h-5 w-5") {
   return className;
@@ -160,25 +159,6 @@ function MapPin({ className = "h-6 w-6" }) {
   );
 }
 
-function Music2({ className = "h-6 w-6" }) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className={iconClass(className)}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M9 18V5l12-2v13" />
-      <circle cx="6" cy="18" r="3" />
-      <circle cx="18" cy="16" r="3" />
-    </svg>
-  );
-}
-
 function Phone({ className = "h-6 w-6" }) {
   return (
     <svg
@@ -257,27 +237,6 @@ function Users({ className = "h-6 w-6" }) {
 }
 
 export default function HomePage() {
-  const audioRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handleAudioEnter = async () => {
-    if (!audioRef.current) return;
-    try {
-      audioRef.current.currentTime = 0;
-      await audioRef.current.play();
-      setIsPlaying(true);
-    } catch (error) {
-      console.error("Audio playback failed:", error);
-    }
-  };
-
-  const handleAudioLeave = () => {
-    if (!audioRef.current) return;
-    audioRef.current.pause();
-    audioRef.current.currentTime = 0;
-    setIsPlaying(false);
-  };
-
   const impactItems = [
     {
       title: "Literacy Growth Systems",
@@ -325,8 +284,6 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
-      <audio ref={audioRef} src="/bag-of-chips.mp3" preload="auto" />
-
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,197,94,0.18),transparent_28%),radial-gradient(circle_at_top_left,rgba(59,130,246,0.16),transparent_32%)]" />
         <div className="relative mx-auto max-w-7xl px-6 py-16 md:px-8 md:py-24">
@@ -419,7 +376,7 @@ export default function HomePage() {
 
       <section className="border-t border-white/10 bg-slate-900/60">
         <div className="mx-auto max-w-7xl px-6 py-16 md:px-8">
-          <div className="grid gap-10 lg:grid-cols-[1fr_1fr]">
+          <div className="grid gap-10 lg:grid-cols-[1fr_1fr] items-start">
             <div>
               <div className="mb-4 flex items-center gap-3">
                 <Brain className="h-6 w-6 text-sky-300" />
@@ -452,7 +409,7 @@ export default function HomePage() {
                   alt="Classroom layout and instructional organization"
                   width={1200}
                   height={900}
-                  className="h-full w-full object-cover"
+                  className="h-auto w-full object-cover"
                 />
               </div>
               <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5">
@@ -461,7 +418,7 @@ export default function HomePage() {
                   alt="Student tracker used during literacy instruction"
                   width={1200}
                   height={900}
-                  className="h-full w-full object-cover"
+                  className="h-auto w-full object-cover"
                 />
               </div>
             </div>
@@ -477,7 +434,7 @@ export default function HomePage() {
           </h2>
         </div>
 
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-start">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-7">
             <p className="text-lg leading-8 text-slate-300">
               My reading rotations are built to keep students working with
@@ -500,7 +457,7 @@ export default function HomePage() {
               alt="Student work from reading and writing instruction"
               width={1200}
               height={900}
-              className="h-full w-full object-cover"
+              className="h-auto w-full object-cover"
             />
           </div>
         </div>
@@ -562,7 +519,7 @@ export default function HomePage() {
               alt="Instructional work sample one"
               width={1400}
               height={1000}
-              className="h-full w-full object-cover"
+              className="h-auto w-full object-cover"
             />
           </div>
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5">
@@ -571,64 +528,8 @@ export default function HomePage() {
               alt="Instructional work sample two"
               width={1400}
               height={1000}
-              className="h-full w-full object-cover"
+              className="h-auto w-full object-cover"
             />
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-white/10 bg-slate-900/60">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:px-8">
-          <div className="mb-8 flex items-center gap-3">
-            <Music2 className="h-6 w-6 text-emerald-300" />
-            <h2 className="text-3xl font-bold tracking-tight text-white">
-              Bag of Chips Challenge
-            </h2>
-          </div>
-
-          <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-            <div
-              className="group relative mx-auto w-full max-w-md cursor-pointer overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl transition duration-300 hover:scale-[1.01]"
-              onMouseEnter={handleAudioEnter}
-              onMouseLeave={handleAudioLeave}
-            >
-              <Image
-                src="/bagofchipschallenge.jpeg"
-                alt="Bag of Chips Challenge artwork"
-                width={1200}
-                height={1200}
-                className="h-auto w-full object-cover transition duration-300 group-hover:brightness-110"
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/15 to-transparent" />
-
-              <div className="absolute bottom-0 left-0 right-0 p-5">
-                <div className="inline-flex items-center gap-2 rounded-full bg-emerald-400/15 px-3 py-1 text-sm font-medium text-emerald-300 backdrop-blur">
-                  <Music2 className="h-4 w-4" />
-                  {isPlaying ? "Playing on hover" : "Hover to play"}
-                </div>
-                <p className="mt-3 text-sm leading-6 text-slate-200">
-                  Hover over the image to hear the Bag of Chips Challenge track.
-                </p>
-              </div>
-            </div>
-
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-              <h3 className="text-2xl font-semibold text-white">
-                Creativity matters too
-              </h3>
-              <p className="mt-4 leading-7 text-slate-300">
-                Good teaching is serious work, but it should not feel lifeless.
-                The Bag of Chips Challenge is one example of how energy,
-                culture, and creative hooks can make a classroom more memorable
-                without lowering expectations.
-              </p>
-              <p className="mt-4 leading-7 text-slate-300">
-                Students respond when the room feels alive. Engagement is not a
-                substitute for instruction, but it absolutely helps instruction
-                land.
-              </p>
-            </div>
           </div>
         </div>
       </section>
