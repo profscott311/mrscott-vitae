@@ -1,6 +1,8 @@
 "use client";
 
-
+import Image from "next/image";
+import Link from "next/link";
+import { useRef, useState } from "react";
 
 export default function HomePage() {
   const audioRef = useRef(null);
@@ -8,6 +10,7 @@ export default function HomePage() {
 
   const handleAudioEnter = async () => {
     if (!audioRef.current) return;
+
     try {
       audioRef.current.currentTime = 0;
       await audioRef.current.play();
@@ -19,6 +22,7 @@ export default function HomePage() {
 
   const handleAudioLeave = () => {
     if (!audioRef.current) return;
+
     audioRef.current.pause();
     audioRef.current.currentTime = 0;
     setIsPlaying(false);
@@ -29,19 +33,19 @@ export default function HomePage() {
       title: "Literacy Growth Systems",
       description:
         "Built classroom systems that move students from basic comprehension toward clearer analytical reading and stronger writing.",
-      icon: Target,
+      icon: "🎯",
     },
     {
       title: "Cross-Level Teaching Experience",
       description:
         "Brings experience across middle school and college developmental literacy, with strength in scaffolding, intervention, and writing instruction.",
-      icon: GraduationCap,
+      icon: "🎓",
     },
     {
       title: "Instructional Capacity Builder",
       description:
         "Designs routines, tools, visuals, and lesson structures that increase clarity for students and make instruction more sustainable for teachers.",
-      icon: Users,
+      icon: "👥",
     },
   ];
 
@@ -79,7 +83,7 @@ export default function HomePage() {
           <div className="grid items-center gap-12 lg:grid-cols-[1.2fr_0.8fr]">
             <div>
               <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-1.5 text-sm font-medium text-emerald-300">
-                <BookOpen className="h-4 w-4" />
+                <span>📚</span>
                 Literacy Educator • Instructional Leader
               </div>
 
@@ -103,7 +107,7 @@ export default function HomePage() {
                   className="inline-flex items-center gap-2 rounded-2xl bg-emerald-400 px-5 py-3 font-semibold text-slate-950 transition hover:scale-[1.02] hover:bg-emerald-300"
                 >
                   View CV
-                  <ArrowRight className="h-4 w-4" />
+                  <span>→</span>
                 </Link>
 
                 <a
@@ -111,7 +115,7 @@ export default function HomePage() {
                   className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-semibold text-white transition hover:bg-white/10"
                 >
                   Contact
-                  <Mail className="h-4 w-4" />
+                  <span>✉️</span>
                 </a>
               </div>
             </div>
@@ -134,32 +138,25 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-7xl px-6 py-16 md:px-8">
         <div className="mb-10 flex items-center gap-3">
-          <Target className="h-6 w-6 text-emerald-300" />
+          <span className="text-xl">🎯</span>
           <h2 className="text-3xl font-bold tracking-tight text-white">
             Selected Impact
           </h2>
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {impactItems.map((item) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={item.title}
-                className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-lg"
-              >
-                <div className="mb-4 inline-flex rounded-2xl bg-emerald-400/10 p-3 text-emerald-300">
-                  <Icon className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-semibold text-white">
-                  {item.title}
-                </h3>
-                <p className="mt-3 leading-7 text-slate-300">
-                  {item.description}
-                </p>
+          {impactItems.map((item) => (
+            <div
+              key={item.title}
+              className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-lg"
+            >
+              <div className="mb-4 inline-flex rounded-2xl bg-emerald-400/10 p-3 text-2xl text-emerald-300">
+                <span>{item.icon}</span>
               </div>
-            );
-          })}
+              <h3 className="text-xl font-semibold text-white">{item.title}</h3>
+              <p className="mt-3 leading-7 text-slate-300">{item.description}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -168,7 +165,7 @@ export default function HomePage() {
           <div className="grid gap-10 lg:grid-cols-[1fr_1fr]">
             <div>
               <div className="mb-4 flex items-center gap-3">
-                <Brain className="h-6 w-6 text-sky-300" />
+                <span className="text-xl">🧠</span>
                 <h2 className="text-3xl font-bold tracking-tight text-white">
                   Instructional Systems
                 </h2>
@@ -217,7 +214,7 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-7xl px-6 py-16 md:px-8">
         <div className="mb-8 flex items-center gap-3">
-          <Presentation className="h-6 w-6 text-violet-300" />
+          <span className="text-xl">📊</span>
           <h2 className="text-3xl font-bold tracking-tight text-white">
             Reading Rotations in Practice
           </h2>
@@ -255,7 +252,7 @@ export default function HomePage() {
       <section className="border-t border-white/10 bg-slate-900/60">
         <div className="mx-auto max-w-7xl px-6 py-16 md:px-8">
           <div className="mb-8 flex items-center gap-3">
-            <Briefcase className="h-6 w-6 text-amber-300" />
+            <span className="text-xl">💼</span>
             <h2 className="text-3xl font-bold tracking-tight text-white">
               Instructional Leadership
             </h2>
@@ -295,7 +292,7 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-7xl px-6 py-16 md:px-8">
         <div className="mb-8 flex items-center gap-3">
-          <Award className="h-6 w-6 text-rose-300" />
+          <span className="text-xl">🏆</span>
           <h2 className="text-3xl font-bold tracking-tight text-white">
             Instruction in Practice
           </h2>
@@ -326,7 +323,7 @@ export default function HomePage() {
       <section className="border-y border-white/10 bg-slate-900/60">
         <div className="mx-auto max-w-7xl px-6 py-16 md:px-8">
           <div className="mb-8 flex items-center gap-3">
-            <Music2 className="h-6 w-6 text-emerald-300" />
+            <span className="text-xl">🎵</span>
             <h2 className="text-3xl font-bold tracking-tight text-white">
               Bag of Chips Challenge
             </h2>
@@ -350,7 +347,7 @@ export default function HomePage() {
 
               <div className="absolute bottom-0 left-0 right-0 p-5">
                 <div className="inline-flex items-center gap-2 rounded-full bg-emerald-400/15 px-3 py-1 text-sm font-medium text-emerald-300 backdrop-blur">
-                  <Music2 className="h-4 w-4" />
+                  <span>🎵</span>
                   {isPlaying ? "Playing on hover" : "Hover to play"}
                 </div>
                 <p className="mt-3 text-sm leading-6 text-slate-200">
@@ -381,7 +378,7 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-7xl px-6 py-16 md:px-8">
         <div className="mb-8 flex items-center gap-3">
-          <Award className="h-6 w-6 text-cyan-300" />
+          <span className="text-xl">📜</span>
           <h2 className="text-3xl font-bold tracking-tight text-white">
             Certifications
           </h2>
@@ -407,7 +404,7 @@ export default function HomePage() {
           <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr]">
             <div>
               <div className="mb-4 flex items-center gap-3">
-                <Mail className="h-6 w-6 text-emerald-300" />
+                <span className="text-xl">✉️</span>
                 <h2 className="text-3xl font-bold tracking-tight text-white">
                   Contact
                 </h2>
@@ -423,7 +420,7 @@ export default function HomePage() {
             <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
               <div className="space-y-5 text-slate-200">
                 <div className="flex items-start gap-3">
-                  <Mail className="mt-1 h-5 w-5 text-emerald-300" />
+                  <span>✉️</span>
                   <a
                     href="mailto:scottstephena@gmail.com"
                     className="transition hover:text-emerald-300"
@@ -433,7 +430,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Phone className="mt-1 h-5 w-5 text-emerald-300" />
+                  <span>📞</span>
                   <a
                     href="tel:3143689583"
                     className="transition hover:text-emerald-300"
@@ -443,7 +440,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <MapPin className="mt-1 h-5 w-5 text-emerald-300" />
+                  <span>📍</span>
                   <p>Relocating to North Carolina</p>
                 </div>
               </div>
@@ -455,7 +452,7 @@ export default function HomePage() {
                   className="inline-flex items-center gap-2 rounded-2xl bg-emerald-400 px-5 py-3 font-semibold text-slate-950 transition hover:scale-[1.02] hover:bg-emerald-300"
                 >
                   Open CV
-                  <ArrowRight className="h-4 w-4" />
+                  <span>→</span>
                 </Link>
               </div>
             </div>
