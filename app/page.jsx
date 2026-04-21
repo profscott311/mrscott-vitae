@@ -1,4 +1,4 @@
- import Image from "next/image";
+import Image from "next/image";
 
 const impactResults = [
   {
@@ -79,14 +79,14 @@ const instructionalSystems = [
 ];
 
 const leadershipItems = [
-  "Facilitated PLC data meetings focused on literacy growth and intervention planning",
-  "Modeled reading and writing lessons aligned to standards and assessment demands",
-  "Designed schoolwide reading bootcamp systems targeting benchmark skill gaps",
-  "Supported teachers with reading rotations, small-group planning, and differentiation",
-  "Built progress-tracking systems that made student growth visible over time",
-  "Contributed to MTSS planning and Tier 2 and Tier 3 intervention support",
-  "Collaborated with administration on pacing, instructional priorities, and student support",
-  "Developed structured writing frameworks to strengthen consistency across classrooms",
+  "Instructional coaching cycles informed by Jim Knight’s partnership approach and grounded in collaboration rather than compliance",
+  "Lastinger Center for Learning Certified Instructional Coach since 2020",
+  "Florida Literacy Coach Endorsement with coaching support tied to literacy instruction, intervention, and classroom practice",
+  "Co-plan lessons and units with teachers based on standards, assessment data, and instructional priorities",
+  "Support PLCs through collaborative planning, analysis of student work, and discussion of next instructional moves",
+  "Model lessons, teach alongside colleagues, and demonstrate literacy routines in real classroom contexts",
+  "Provide data-driven feedback that is specific, practical, and tied to observable classroom patterns",
+  "Vet, modify, and create curriculum resources that strengthen clarity, rigor, and alignment",
 ];
 
 const growthSnapshots = [
@@ -413,6 +413,26 @@ export default function HomePage() {
                 My leadership work is rooted in practical systems, literacy
                 instruction, and the day-to-day realities of helping teachers
                 and students move forward.
+              </p>
+              <p className="mt-4 text-lg leading-8 text-slate-700">
+                My coaching work includes co-planning, PLC support, modeled
+                lessons, classroom visits, data-driven feedback, curriculum
+                vetting and revision, and instructional coaching cycles informed
+                by partnership-based collaboration. As a Lastinger Center for
+                Learning Certified Instructional Coach since 2020, and with a
+                Florida Literacy Coach Endorsement, I support teachers through
+                practical next steps tied to student learning, not generic
+                commentary.
+              </p>
+              <p className="mt-4 text-lg leading-8 text-slate-700">
+                In one observation data display from November 19, 2024, I tracked
+                a 21-minute literacy block from 10:20–10:41 a.m. with a specific
+                focus on how annotation think-alouds and monitoring strategies
+                influenced student accuracy. That display separated
+                teacher-initiated monitoring from student-initiated support
+                across bell work, whole-class checks, resumed practice, and
+                annotation review so feedback could be tied to instructional
+                timing, student response patterns, and independence.
               </p>
             </div>
 
