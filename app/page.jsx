@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useRef } from "react";
 
 const impactResults = [
   {
@@ -155,8 +156,28 @@ const certifications = {
 };
 
 export default function HomePage() {
+  const audioRef = useRef(null);
+
+  const handleAudioEnter = async () => {
+    if (!audioRef.current) return;
+    try {
+      audioRef.current.currentTime = 0;
+      await audioRef.current.play();
+    } catch (error) {
+      console.error("Audio playback failed:", error);
+    }
+  };
+
+  const handleAudioLeave = () => {
+    if (!audioRef.current) return;
+    audioRef.current.pause();
+    audioRef.current.currentTime = 0;
+  };
+
   return (
     <main className="min-h-screen bg-white text-slate-900">
+      <audio ref={audioRef} src="/bag-of-chips.mp3" preload="auto" />
+
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-teal-950" />
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_right,_rgba(45,212,191,0.35),_transparent_30%),radial-gradient(circle_at_bottom_left,_rgba(59,130,246,0.25),_transparent_30%)]" />
@@ -498,27 +519,62 @@ export default function HomePage() {
             intervention.
           </p>
 
-          <div className="mb-12 grid gap-6 md:grid-cols-1 lg:max-w-2xl">
-            {growthSnapshots.map((item) => (
-              <div
-                key={item.title}
-                className={`rounded-3xl border p-6 shadow-sm ${item.accent}`}
-              >
-                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-700">
-                  {item.label}
-                </p>
-                <h3 className="mt-3 text-xl font-bold text-slate-900">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-base font-semibold text-slate-700">
-                  {item.data}
-                </p>
-                <p className="mt-3 text-2xl font-bold text-slate-900">
-                  {item.result}
-                </p>
-                <p className="mt-4 leading-7 text-slate-700">{item.detail}</p>
+          <div className="mb-12 grid gap-6 lg:grid-cols-[1.15fr_0.85fr] items-start">
+            <div className="grid gap-6">
+              {growthSnapshots.map((item) => (
+                <div
+                  key={item.title}
+                  className={`rounded-3xl border p-6 shadow-sm ${item.accent}`}
+                >
+                  <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-700">
+                    {item.label}
+                  </p>
+                  <h3 className="mt-3 text-xl font-bold text-slate-900">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-base font-semibold text-slate-700">
+                    {item.data}
+                  </p>
+                  <p className="mt-3 text-2xl font-bold text-slate-900">
+                    {item.result}
+                  </p>
+                  <p className="mt-4 leading-7 text-slate-700">{item.detail}</p>
+                </div>
+              ))}
+            </div>
+
+            <a
+              href="https://docs.google.com/document/d/1YM7dEmtcHnih-X_48h7QMoAOwf-oqmJP83aLeQGVy7o/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              onMouseEnter={handleAudioEnter}
+              onMouseLeave={handleAudioLeave}
+              className="group overflow-hidden rounded-3xl border border-emerald-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+            >
+              <div className="relative h-[260px] w-full overflow-hidden bg-slate-100">
+                <Image
+                  src="/bagofchipschallenge.jpeg"
+                  alt="Bag of Chips Challenge classroom engagement idea"
+                  fill
+                  className="object-cover transition duration-500 group-hover:scale-[1.02]"
+                />
+                <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-900/40 to-transparent" />
               </div>
-            ))}
+
+              <div className="p-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-emerald-700">
+                  Free Idea
+                </p>
+                <h3 className="mt-2 text-xl font-bold text-slate-900">
+                  Bag of Chips Challenge
+                </h3>
+                <p className="mt-3 leading-7 text-slate-700">
+                  A classroom culture and engagement hook built around routine,
+                  energy, and student motivation. Hover to hear the track. Click
+                  to open the document.
+                </p>
+              </div>
+            </a>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
