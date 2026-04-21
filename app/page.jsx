@@ -1,23 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
-import { useRef, useState } from "react";
-import {
-  ArrowRight,
-  Award,
-  BookOpen,
-  Brain,
-  Briefcase,
-  GraduationCap,
-  Mail,
-  MapPin,
-  Music2,
-  Phone,
-  Presentation,
-  Target,
-  Users,
-} from "lucide-react";
+
 
 export default function HomePage() {
   const audioRef = useRef(null);
