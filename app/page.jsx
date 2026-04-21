@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -552,17 +553,17 @@ export default function HomePage() {
               onMouseLeave={handleAudioLeave}
               className="group overflow-hidden rounded-3xl border border-emerald-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
-              <div className="relative h-[260px] w-full overflow-hidden bg-slate-100">
+              <div className="relative h-[180px] w-full overflow-hidden bg-slate-100">
                 <Image
                   src="/bagofchipschallenge.jpeg"
                   alt="Bag of Chips Challenge classroom engagement idea"
                   fill
                   className="object-cover transition duration-500 group-hover:scale-[1.02]"
                 />
-                <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-900/40 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-slate-900/40 to-transparent" />
               </div>
 
-              <div className="p-6">
+              <div className="p-5">
                 <p className="text-sm font-semibold uppercase tracking-[0.16em] text-emerald-700">
                   Free Idea
                 </p>
@@ -570,9 +571,9 @@ export default function HomePage() {
                   Bag of Chips Challenge
                 </h3>
                 <p className="mt-3 leading-7 text-slate-700">
-                  A classroom culture and engagement hook built around routine,
-                  energy, and student motivation. Hover to hear the track. Click
-                  to open the document.
+                  A classroom engagement hook built around routine, energy, and
+                  motivation. Hover to hear the track. Click to open the
+                  document.
                 </p>
               </div>
             </a>
