@@ -82,27 +82,24 @@ const instructionalSystems = [
 ];
 
 const leadershipItems = [
-  "Facilitated PLC data meetings focused on literacy growth and intervention planning",
-  "Modeled reading and writing lessons aligned to standards and assessment demands",
-  "Designed schoolwide reading bootcamp systems targeting benchmark skill gaps",
-  "Supported teachers with reading rotations, small-group planning, and differentiation",
-  "Built progress-tracking systems that made student growth visible over time",
-  "Contributed to MTSS planning and Tier 2 and Tier 3 intervention support",
-  "Collaborated with administration on pacing, instructional priorities, and student support",
-  "Developed structured writing frameworks to strengthen consistency across classrooms",
+  "Instructional coaching cycles informed by Jim Knight’s partnership model and grounded in co-planning, classroom support, and reflective follow-through",
+  "Lastinger Center for Learning Certified Instructional Coach since 2020, with coaching language focused on modeling, goal setting, and data-informed feedback",
+  "Florida Literacy Coach Endorsement paired with classroom-based literacy leadership across reading intervention, writing instruction, and benchmark support",
+  "Co-plan lessons, support PLCs, model instruction, teach alongside colleagues, and follow up with practical next steps tied to student evidence",
+  "Collect observational data during classroom visits to identify patterns in engagement, independence, annotation accuracy, and instructional pacing",
+  "Vet, modify, and create curriculum resources that align standards, instructional routines, and assessment demands",
+  "Support teachers with reading rotations, benchmark bootcamps, scaffolds for multilingual learners, and structured writing routines",
+  "Use feedback that is specific enough to be actionable and realistic enough to improve instruction the next day",
 ];
 
-const growthSnapshots = [
-  {
-    label: "Growth Snapshot",
-    title: "8th Grade ELL Student",
-    data: "PM1: 222 → PM2: 247",
-    result: "Level 2 → Level 3",
-    detail:
-      "Growth supported through targeted small group instruction, academic language support, writing frames, reading rotations, and consistent effort over time.",
-    accent: "border-sky-200 bg-sky-50",
-  },
-];
+const coachingExample = {
+  title: "Observation and Coaching Example",
+  date: "November 19, 2024 | 10:20–10:41 a.m. | 4th Period",
+  focus:
+    "Focus question: How do annotation think-alouds and monitoring strategies elicit accurate student annotations?",
+  detail:
+    "In this 21-minute observation, I tracked bell work, whole-class checks, resumed practice, and annotation review while separating teacher-initiated monitoring from student-initiated support. That data display made it easier to coach around when the teacher circulated, how feedback was delivered, and whether students resumed the annotation task with stronger accuracy and independence after whole-class review.",
+};
 
 const practiceArtifacts = [
   {
@@ -201,15 +198,16 @@ export default function HomePage() {
 
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
                 Experienced across middle school literacy, reading intervention,
-                and community college instruction. I build structured systems
-                that help students read more closely, write more clearly, and
-                take greater ownership of their learning.
+                instructional coaching, and community college instruction. I
+                build structured systems that help students read more closely,
+                write more clearly, and take greater ownership of their learning.
               </p>
 
               <p className="mt-5 max-w-3xl text-base leading-7 text-slate-300">
-                I design structured literacy systems that move students from
-                comprehension to analysis and from basic paragraphs to
-                evidence-based writing.
+                My work includes classroom instruction, coaching cycles,
+                literacy-focused PLC support, modeled lessons, data-driven
+                feedback, and curriculum design that translates standards into
+                teachable routines.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -245,13 +243,13 @@ export default function HomePage() {
                   Reading Intervention
                 </span>
                 <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+                  Instructional Coaching
+                </span>
+                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
                   Community College English
                 </span>
                 <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
                   Literacy Systems Design
-                </span>
-                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-                  Instructional Coaching
                 </span>
               </div>
             </div>
@@ -356,6 +354,53 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <div className="mb-10 max-w-3xl">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
+              Instructional Leadership
+            </p>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+              Coaching, collaboration, and literacy leadership grounded in classroom practice
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-slate-700">
+              My leadership work is not separate from instruction. It includes
+              coaching cycles, PLC support, co-planning, modeled lessons,
+              classroom-based feedback, and curriculum work that helps teachers
+              translate standards into stronger daily practice.
+            </p>
+          </div>
+
+          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] items-start">
+            <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+              <ul className="space-y-4 text-slate-700">
+                {leadershipItems.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-2 h-2.5 w-2.5 rounded-full bg-teal-600" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="rounded-3xl border border-sky-200 bg-sky-50 p-8 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sky-800">
+                {coachingExample.title}
+              </p>
+              <p className="mt-3 text-sm font-semibold text-slate-700">
+                {coachingExample.date}
+              </p>
+              <p className="mt-4 font-semibold text-slate-900">
+                {coachingExample.focus}
+              </p>
+              <p className="mt-4 leading-7 text-slate-700">
+                {coachingExample.detail}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <div className="mb-10 max-w-3xl">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
               Reading Rotations in Practice
             </p>
 
@@ -417,37 +462,6 @@ export default function HomePage() {
                 Targeted instruction based on benchmark gaps, FAST data, and
                 priority student needs.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-            <div>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
-                Instructional Leadership
-              </p>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                Leadership grounded in classroom practice
-              </h2>
-              <p className="mt-4 text-lg leading-8 text-slate-700">
-                My leadership work is rooted in practical systems, literacy
-                instruction, and the day-to-day realities of helping teachers
-                and students move forward.
-              </p>
-            </div>
-
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
-              <ul className="space-y-4 text-slate-700">
-                {leadershipItems.map((item) => (
-                  <li key={item} className="flex gap-3">
-                    <span className="mt-2 h-2.5 w-2.5 rounded-full bg-teal-600" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>
@@ -516,35 +530,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <p className="mb-6 text-slate-700">
-            Student growth is monitored through this rotation model and targeted
-            intervention.
-          </p>
-
-          <div className="mb-12 grid gap-6 lg:grid-cols-[1.15fr_0.85fr] items-start">
-            <div className="grid gap-6">
-              {growthSnapshots.map((item) => (
-                <div
-                  key={item.title}
-                  className={`rounded-3xl border p-6 shadow-sm ${item.accent}`}
-                >
-                  <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-700">
-                    {item.label}
-                  </p>
-                  <h3 className="mt-3 text-xl font-bold text-slate-900">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-base font-semibold text-slate-700">
-                    {item.data}
-                  </p>
-                  <p className="mt-3 text-2xl font-bold text-slate-900">
-                    {item.result}
-                  </p>
-                  <p className="mt-4 leading-7 text-slate-700">{item.detail}</p>
-                </div>
-              ))}
-            </div>
-
+          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
             <a
               href="https://docs.google.com/document/d/1YM7dEmtcHnih-X_48h7QMoAOwf-oqmJP83aLeQGVy7o/edit?usp=sharing"
               target="_blank"
@@ -553,7 +539,7 @@ export default function HomePage() {
               onMouseLeave={handleAudioLeave}
               className="group overflow-hidden rounded-3xl border border-emerald-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
-              <div className="relative h-[180px] w-full overflow-hidden bg-slate-100">
+              <div className="relative h-[220px] w-full overflow-hidden bg-slate-100">
                 <Image
                   src="/bagofchipschallenge.jpeg"
                   alt="Bag of Chips Challenge classroom engagement idea"
@@ -563,11 +549,11 @@ export default function HomePage() {
                 <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-slate-900/40 to-transparent" />
               </div>
 
-              <div className="p-5">
+              <div className="p-6">
                 <p className="text-sm font-semibold uppercase tracking-[0.16em] text-emerald-700">
                   Free Idea
                 </p>
-                <h3 className="mt-2 text-xl font-bold text-slate-900">
+                <h3 className="mt-2 text-xl font-semibold text-slate-900">
                   Bag of Chips Challenge
                 </h3>
                 <p className="mt-3 leading-7 text-slate-700">
@@ -577,15 +563,13 @@ export default function HomePage() {
                 </p>
               </div>
             </a>
-          </div>
 
-          <div className="grid gap-8 md:grid-cols-2">
             {practiceArtifacts.map((item) => (
               <article
                 key={item.title}
                 className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
-                <div className="relative h-[280px] w-full overflow-hidden bg-slate-100 sm:h-[320px]">
+                <div className="relative h-[220px] w-full overflow-hidden bg-slate-100">
                   <Image
                     src={item.src}
                     alt={item.alt}
@@ -593,7 +577,7 @@ export default function HomePage() {
                     className="object-cover transition duration-500 group-hover:scale-[1.02]"
                     style={{ objectPosition: item.objectPosition }}
                   />
-                  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-900/35 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-slate-900/35 to-transparent" />
                 </div>
 
                 <div className="p-6">
