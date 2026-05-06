@@ -2,22 +2,22 @@ import Image from "next/image";
 
 const impactResults = [
   {
-    title: "Current Year Reading Growth",
-    value: "17% → 28%",
+    title: "FAST ELA Reading Growth",
+    value: "17% → ~50%",
     detail:
-      "Schoolwide proficiency growth during the 2025–2026 school year in grades 6–8 intensive reading, with PM3 results pending May 5.",
+      "Student proficiency increased from approximately 17% at PM1 to approximately 50% by PM3 across grades 6–8 through structured literacy intervention, targeted small-group support, annotation routines, and benchmark-aligned instruction.",
+  },
+  {
+    title: "Instructional Refinement",
+    value: "Level 2 Focus",
+    detail:
+      "Data analysis showed strong overall growth while also revealing a consistent Level 2 bottleneck. This has sharpened my focus on deeper reasoning, stronger written justification, and productive struggle.",
   },
   {
     title: "Graduation Support",
     value: "200 of 206",
     detail:
       "Supported 200 seniors in meeting graduation requirements as a Math Graduation Coach through targeted systems, student monitoring, and collaborative intervention planning.",
-  },
-  {
-    title: "Teaching Range",
-    value: "16+ Years",
-    detail:
-      "Experience spanning middle school literacy, reading intervention, high school support, and community college reading and writing instruction.",
   },
 ];
 
@@ -92,9 +92,9 @@ const leadershipItems = [
 const growthSnapshots = [
   {
     label: "Growth Snapshot",
-    title: "8th Grade ELL Student",
-    data: "PM1: 222 → PM2: 247",
-    result: "Level 2 → Level 3",
+    title: "8th Grade Multilingual Learner",
+    data: "PM1: Level 2 → PM3: Level 3",
+    result: "Proficiency Reached",
     detail:
       "Growth supported through targeted small group instruction, academic language support, writing frames, reading rotations, and consistent effort over time.",
     accent: "border-sky-200 bg-sky-50",
@@ -173,7 +173,7 @@ export default function HomePage() {
               </h1>
 
               <p className="mt-4 max-w-3xl text-xl font-semibold text-teal-200">
-                Structured reading systems. Visible growth. Independent learners.
+                Structured reading systems. Inclusive instruction. Measurable growth.
               </p>
 
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
@@ -184,9 +184,9 @@ export default function HomePage() {
               </p>
 
               <p className="mt-5 max-w-3xl text-base leading-7 text-slate-300">
-                I design structured literacy systems that move students from
-                comprehension to analysis and from basic paragraphs to
-                evidence-based writing.
+                My work focuses on combining belonging, clarity, and rigorous
+                literacy instruction so students can move from comprehension to
+                analysis and from basic paragraphs to evidence-based writing.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -425,14 +425,10 @@ export default function HomePage() {
                 commentary.
               </p>
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                In one observation data display from November 19, 2024, I tracked
-                a 21-minute literacy block from 10:20–10:41 a.m. with a specific
-                focus on how annotation think-alouds and monitoring strategies
-                influenced student accuracy. That display separated
-                teacher-initiated monitoring from student-initiated support
-                across bell work, whole-class checks, resumed practice, and
-                annotation review so feedback could be tied to instructional
-                timing, student response patterns, and independence.
+                I use data as a starting point for instructional decisions, not
+                as the whole story. Strong systems should help students feel
+                included, supported, and challenged while giving teachers clear
+                evidence about what to adjust next.
               </p>
             </div>
 
