@@ -2,156 +2,92 @@ import Image from "next/image";
 
 const impactResults = [
   {
-    title: "FAST ELA Reading Growth",
+    title: "Benchmark Reading Growth",
     value: "17% → ~50%",
     detail:
-      "Student proficiency increased from approximately 17% at PM1 to approximately 50% by PM3 across grades 6–8 through structured literacy intervention, targeted small-group support, annotation routines, and benchmark-aligned instruction.",
-  },
-  {
-    title: "Instructional Refinement",
-    value: "Level 2 Focus",
-    detail:
-      "Data analysis showed strong overall growth while also revealing a consistent Level 2 bottleneck. This has sharpened my focus on deeper reasoning, stronger written justification, and productive struggle.",
+      "Reading proficiency increased across grades 6–8 through structured literacy intervention, targeted small-group support, annotation routines, and standards-aligned instruction.",
   },
   {
     title: "Graduation Support",
     value: "200 of 206",
     detail:
-      "Supported 200 seniors in meeting graduation requirements as a Math Graduation Coach through targeted systems, student monitoring, and collaborative intervention planning.",
+      "Supported seniors in meeting graduation requirements through progress monitoring, targeted intervention systems, and collaborative student support.",
+  },
+  {
+    title: "Middle Grades to College Readiness",
+    value: "6–College",
+    detail:
+      "Experience spans middle school literacy intervention, evidence-based writing instruction, instructional coaching, and developmental college reading and writing.",
   },
 ];
 
-const instructionalSystems = [
+const coreSystems = [
   {
-    title: "Reading Rotations",
+    title: "Structured Literacy Intervention",
     description:
-      "Reading instruction organized through repeatable structures that balance direct teaching, targeted intervention, and independent application.",
+      "Repeatable reading systems that help students move from basic comprehension to stronger analysis, evidence use, and written explanation.",
     items: [
-      "Whole-group mini lesson focused on a target benchmark",
-      "Teacher-led small group instruction based on current student data",
-      "Independent practice aligned to the same standard",
-      "Task cards for targeted skill work and accountability",
-      "Independent Learning Menu options that build choice and stamina",
-      "Progress tracker used to monitor mastery and next steps",
-      "FAST-style question formats to support transfer to assessment",
+      "Targeted mini lessons tied to clear literacy goals",
+      "Teacher-led small groups based on current student need",
+      "Annotation routines that make thinking visible",
+      "Short, focused practice that builds stamina over time",
     ],
-    accent: "border-teal-200 bg-teal-50",
   },
   {
-    title: "Reading Bootcamp",
+    title: "Instructional Coaching",
     description:
-      "Benchmark-clustered practice designed to help students close gaps quickly through modeling, repetition, and visible progress.",
+      "Practical support for teachers through collaboration, modeling, planning, classroom observation, and specific next-step feedback.",
     items: [
-      "Benchmark-aligned mini tasks grouped by skill",
-      "Model, we do, you do structure for daily consistency",
-      "Mastery tracker with skill levels students can understand",
-      "Small-group pulls driven by live performance data",
-      "Daily spiral review for retention across standards",
+      "Co-planning with standards and student work at the center",
+      "Modeled lessons and classroom-based support",
+      "PLC support focused on instructional decisions",
+      "Feedback grounded in observable classroom patterns",
     ],
-    accent: "border-sky-200 bg-sky-50",
   },
   {
-    title: "Structured Writing Practice",
+    title: "College Readiness Writing",
     description:
-      "Writing instruction that helps students move from short responses to clearer, evidence-based explanation.",
+      "Writing instruction that helps students develop clearer claims, stronger evidence use, deeper explanation, and more purposeful revision.",
     items: [
       "Claim, evidence, explanation structure taught explicitly",
-      "Sentence frames that strengthen analysis and elaboration",
-      "Gradual release from modeled writing to independent drafting",
-      "FAST-aligned prompts and text-based writing tasks",
-      "Progression from single paragraphs to multi-paragraph responses",
+      "Scaffolds that move students toward independence",
+      "Revision routines focused on clarity and development",
+      "Developmental reading and writing experience at the college level",
     ],
-    accent: "border-violet-200 bg-violet-50",
-  },
-  {
-    title: "Science of Reading Bellwork",
-    description:
-      "Short, consistent routines that build reading strength through daily work with language structures.",
-    items: [
-      "Vocabulary and morphology practice",
-      "Fluency and phrasing work",
-      "Sentence structure review",
-      "Academic language development",
-      "Repeatable routines that maximize instructional time",
-    ],
-    accent: "border-slate-200 bg-slate-50",
-  },
-];
-
-const leadershipItems = [
-  "Instructional coaching cycles informed by Jim Knight’s partnership approach and grounded in collaboration rather than compliance",
-  "Lastinger Center for Learning Certified Instructional Coach since 2020",
-  "Florida Literacy Coach Endorsement with coaching support tied to literacy instruction, intervention, and classroom practice",
-  "Co-plan lessons and units with teachers based on standards, assessment data, and instructional priorities",
-  "Support PLCs through collaborative planning, analysis of student work, and discussion of next instructional moves",
-  "Model lessons, teach alongside colleagues, and demonstrate literacy routines in real classroom contexts",
-  "Provide data-driven feedback that is specific, practical, and tied to observable classroom patterns",
-  "Vet, modify, and create curriculum resources that strengthen clarity, rigor, and alignment",
-];
-
-const growthSnapshots = [
-  {
-    label: "Growth Snapshot",
-    title: "8th Grade Multilingual Learner",
-    data: "PM1: Level 2 → PM3: Level 3",
-    result: "Proficiency Reached",
-    detail:
-      "Growth supported through targeted small group instruction, academic language support, writing frames, reading rotations, and consistent effort over time.",
-    accent: "border-sky-200 bg-sky-50",
   },
 ];
 
 const practiceArtifacts = [
   {
-    title: "Reading Bootcamp Progress Tracker",
+    title: "Progress Monitoring",
     src: "/tracker.jpg",
     alt: "Classroom literacy benchmark tracker showing student progress levels",
     caption:
-      "Students track benchmark performance over time, making growth visible and strengthening ownership.",
+      "Students track performance over time, making growth visible and strengthening ownership.",
     objectPosition: "left top",
   },
   {
-    title: "R.1.1 Benchmark Mini Task",
+    title: "Targeted Reading Practice",
     src: "/work-sample-1.jpg",
     alt: "Reading mini task with passage and evidence-based questions",
     caption:
-      "Mini tasks target specific reading benchmarks through explicit modeling, guided practice, and independent application.",
+      "Mini tasks focus students on close reading, text evidence, and standard-specific reasoning.",
     objectPosition: "right top",
   },
   {
-    title: "Claim Evidence Explanation Writing Frame",
+    title: "Evidence-Based Writing",
     src: "/work-sample-2.jpg",
     alt: "Structured writing scaffold with idea, evidence, explanation, and extension",
     caption:
-      "Writing frames help students move from short answers to clearer, evidence-based explanations.",
-    objectPosition: "center top",
-  },
-  {
-    title: "Annotated Student Work",
-    src: "/Student-work.jpg",
-    alt: "Annotated student work showing evidence and text interaction",
-    caption:
-      "Students interact directly with text to identify evidence, paraphrase accurately, and justify their thinking.",
+      "Writing frames help students move from short answers to clearer, developed explanations.",
     objectPosition: "center top",
   },
 ];
 
 const certifications = {
-  northCarolina: [
-    "Reading, K–12",
-    "English Language Arts 6–9",
-    "Social Studies 6–9",
-  ],
-  florida: [
-    "English 6–12",
-    "Reading Endorsement",
-    "Literacy Coach Endorsement",
-  ],
-  missouri: [
-    "Language Arts 5–9",
-    "Social Studies 5–9",
-    "Health K–12",
-  ],
+  northCarolina: ["Reading, K–12", "English Language Arts 6–9", "Social Studies 6–9"],
+  florida: ["English 6–12", "Reading Endorsement", "Literacy Coach Endorsement"],
+  missouri: ["Language Arts 5–9", "Social Studies 5–9", "Health K–12"],
 };
 
 export default function HomePage() {
@@ -161,32 +97,27 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-teal-950" />
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_right,_rgba(45,212,191,0.35),_transparent_30%),radial-gradient(circle_at_bottom_left,_rgba(59,130,246,0.25),_transparent_30%)]" />
 
-        <div className="relative mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-24">
-          <div className="grid items-center gap-12 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="relative mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
             <div>
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-teal-300">
                 Stephen Scott
               </p>
 
               <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-                Literacy Educator • Instructional Leader
+                Literacy Educator • Instructional Coach • College Readiness
               </h1>
 
-              <p className="mt-4 max-w-3xl text-xl font-semibold text-teal-200">
-                Structured reading systems. Inclusive instruction. Measurable growth.
-              </p>
-
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
-                Experienced across middle school literacy, reading intervention,
-                and community college instruction. I build structured systems
-                that help students read more closely, write more clearly, and
-                take greater ownership of their learning.
+              <p className="mt-6 max-w-3xl text-xl leading-8 text-slate-200">
+                I build structured literacy systems that help students read
+                closely, think critically, and write with clarity across middle
+                school intervention and developmental college settings.
               </p>
 
               <p className="mt-5 max-w-3xl text-base leading-7 text-slate-300">
-                My work focuses on combining belonging, clarity, and rigorous
-                literacy instruction so students can move from comprehension to
-                analysis and from basic paragraphs to evidence-based writing.
+                Currently relocating to Western North Carolina and seeking
+                opportunities in literacy instruction, instructional coaching,
+                and college readiness.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -203,33 +134,30 @@ export default function HomePage() {
                   href="mailto:scottstephena@gmail.com"
                   className="rounded-2xl border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/15"
                 >
-                  Contact Mr. Scott
+                  Contact
                 </a>
 
                 <a
                   href="#instructional-systems"
                   className="rounded-2xl border border-teal-300/30 px-6 py-3 text-sm font-semibold text-teal-200 transition hover:bg-teal-300/10"
                 >
-                  Explore Instructional Systems
+                  Instructional Systems
                 </a>
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-3 text-sm text-slate-300">
-                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-                  Middle School ELA
-                </span>
-                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-                  Reading Intervention
-                </span>
-                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-                  Community College English
-                </span>
-                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-                  Literacy Systems Design
-                </span>
-                <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-                  Instructional Coaching
-                </span>
+              <div className="mt-8 grid gap-3 text-sm text-slate-300 sm:grid-cols-3">
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <p className="font-semibold text-white">Literacy Intervention</p>
+                  <p className="mt-1 text-slate-300">Middle grades reading support</p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <p className="font-semibold text-white">Instructional Coaching</p>
+                  <p className="mt-1 text-slate-300">Practical classroom support</p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <p className="font-semibold text-white">College Readiness</p>
+                  <p className="mt-1 text-slate-300">Reading and writing development</p>
+                </div>
               </div>
             </div>
 
@@ -251,20 +179,14 @@ export default function HomePage() {
       </section>
 
       <section className="border-b border-slate-200 bg-slate-50">
-        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="mb-10 max-w-3xl">
+        <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
+          <div className="mb-8 max-w-3xl">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
-              Selected Impact Results
+              Selected Impact
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Evidence of student growth and instructional range
+              Student growth through clear systems
             </h2>
-            <p className="mt-4 text-lg leading-8 text-slate-700">
-              My work centers on structured instruction, visible progress
-              tracking, and clear routines that move students from confusion to
-              comprehension and from short answers to developed written
-              explanation.
-            </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
@@ -287,27 +209,27 @@ export default function HomePage() {
       </section>
 
       <section id="instructional-systems" className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
           <div className="mb-10 max-w-3xl">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
               Instructional Systems
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Structured systems over isolated activities
+              Transferable literacy work across settings
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              These systems work together during reading rotations and
-              intervention blocks. I design instruction around repeatable
-              structures that help students know what strong reading and writing
-              look like, how to practice it, and how to improve over time.
+              My work connects middle grades reading intervention, instructional
+              coaching, and college readiness. The common thread is structured
+              support that helps students become more independent readers,
+              thinkers, and writers.
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
-            {instructionalSystems.map((system) => (
+          <div className="grid gap-6 lg:grid-cols-3">
+            {coreSystems.map((system) => (
               <div
                 key={system.title}
-                className={`rounded-3xl border p-7 shadow-sm ${system.accent}`}
+                className="rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm"
               >
                 <h3 className="text-2xl font-bold text-slate-900">
                   {system.title}
@@ -318,7 +240,7 @@ export default function HomePage() {
                 <ul className="mt-6 space-y-3 text-slate-700">
                   {system.items.map((item) => (
                     <li key={item} className="flex gap-3">
-                      <span className="mt-2 h-2.5 w-2.5 rounded-full bg-slate-700" />
+                      <span className="mt-2 h-2.5 w-2.5 rounded-full bg-teal-600" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -329,221 +251,58 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-t border-slate-200 bg-slate-50">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="mb-10 max-w-3xl">
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
-              Reading Rotations in Practice
-            </p>
-
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Priority Support Rotation Model
-            </h2>
-
-            <p className="mt-4 text-lg leading-8 text-slate-700">
-              Students rotate through independent work, collaboration, and
-              teacher-led small group instruction based on instructional
-              priority, FAST data, and daily learning goals.
-            </p>
-          </div>
-
-          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-            <div className="relative w-full aspect-[16/9]">
-              <Image
-                src="/layout.png"
-                alt="Reading rotations classroom layout showing independent work, collaboration station, and teacher small group"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </div>
-
-          <p className="mt-6 text-slate-600">
-            Students rotate based on instructional priority. Independent work
-            builds stamina. Collaboration builds reasoning. Small group targets
-            skill gaps.
-          </p>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            <div className="rounded-2xl border border-teal-200 bg-teal-50 p-6">
-              <h3 className="font-semibold text-slate-900">
-                Independent Work Stations
-              </h3>
-              <p className="mt-2 text-slate-700">
-                Students complete task cards, annotation routines, and
-                independent learning menu choices while building reading stamina
-                and accountability.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-sky-200 bg-sky-50 p-6">
-              <h3 className="font-semibold text-slate-900">
-                Collaboration Station (ILM)
-              </h3>
-              <p className="mt-2 text-slate-700">
-                Students discuss thinking, complete ILM options, and practice
-                structured responses using evidence and academic language.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-violet-200 bg-violet-50 p-6">
-              <h3 className="font-semibold text-slate-900">
-                Teacher Small Group
-              </h3>
-              <p className="mt-2 text-slate-700">
-                Targeted instruction based on benchmark gaps, FAST data, and
-                priority student needs.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+      <section className="border-y border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+          <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
-                Instructional Leadership
+                Instructional Philosophy
               </p>
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                Leadership grounded in classroom practice
+                Belonging, clarity, and productive struggle
               </h2>
-              <p className="mt-4 text-lg leading-8 text-slate-700">
-                My leadership work is rooted in practical systems, literacy
-                instruction, and the day-to-day realities of helping teachers
-                and students move forward.
-              </p>
-              <p className="mt-4 text-lg leading-8 text-slate-700">
-                My coaching work includes co-planning, PLC support, modeled
-                lessons, classroom visits, data-driven feedback, curriculum
-                vetting and revision, and instructional coaching cycles informed
-                by partnership-based collaboration. As a Lastinger Center for
-                Learning Certified Instructional Coach since 2020, and with a
-                Florida Literacy Coach Endorsement, I support teachers through
-                practical next steps tied to student learning, not generic
-                commentary.
-              </p>
-              <p className="mt-4 text-lg leading-8 text-slate-700">
-                I use data as a starting point for instructional decisions, not
-                as the whole story. Strong systems should help students feel
-                included, supported, and challenged while giving teachers clear
-                evidence about what to adjust next.
-              </p>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
-              <ul className="space-y-4 text-slate-700">
-                {leadershipItems.map((item) => (
-                  <li key={item} className="flex gap-3">
-                    <span className="mt-2 h-2.5 w-2.5 rounded-full bg-teal-600" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+            <div className="space-y-5 text-lg leading-8 text-slate-700">
+              <p>
+                I believe literacy instruction should be explicit enough to give
+                students access, structured enough to build confidence, and
+                rigorous enough to move students beyond task completion into
+                real thinking.
+              </p>
+              <p>
+                Strong instruction helps students see what skilled readers and
+                writers do: notice patterns, ask better questions, use evidence,
+                explain reasoning, revise thinking, and transfer those habits to
+                new academic settings.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="instruction-in-practice" className="bg-slate-50">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <section id="instruction-in-practice" className="bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
           <div className="mb-10 max-w-3xl">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
               Instruction in Practice
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Structured literacy systems that move students forward
+              Artifacts from structured literacy work
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
               These examples show how instruction, student practice, and
-              progress monitoring work together in my classroom.
+              progress monitoring work together.
             </p>
           </div>
 
-          <div className="mb-12 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-            <div className="grid lg:grid-cols-[1.1fr_0.9fr]">
-              <div className="p-8 sm:p-10">
-                <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">
-                  Case Study
-                </p>
-
-                <h3 className="text-2xl font-bold text-slate-900">
-                  Below-Level Reader to Proficiency Through Structured Support
-                </h3>
-
-                <div className="mt-6 space-y-4 leading-7 text-slate-700">
-                  <p>
-                    One 6th grade student with ADHD and 504 support entered the
-                    year reading below grade level and struggled with focus,
-                    comprehension, and explaining thinking in writing.
-                  </p>
-                  <p>
-                    Instruction centered on structured reading rotations,
-                    game-based task cards, short focused mini tasks, visible
-                    progress tracking, and frequent feedback that built both
-                    engagement and stamina.
-                  </p>
-                  <p>
-                    Over time, the student moved to Level 3 proficiency,
-                    demonstrating stronger written explanations, better reading
-                    habits, and measurable growth through consistent support.
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-slate-50 p-8 sm:p-10">
-                <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                  <h4 className="text-lg font-semibold text-slate-900">
-                    What made the difference
-                  </h4>
-                  <ul className="mt-4 space-y-3 text-slate-700">
-                    <li>Visible progress tracking that built ownership</li>
-                    <li>Game-based task cards that increased engagement</li>
-                    <li>Reading rotations that matched support to student need</li>
-                    <li>Short focused mini tasks that improved stamina</li>
-                    <li>Consistent instructional routines students could rely on</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <p className="mb-6 text-slate-700">
-            Student growth is monitored through this rotation model and targeted
-            intervention.
-          </p>
-
-          <div className="mb-12 grid gap-6 md:grid-cols-1 lg:max-w-2xl">
-            {growthSnapshots.map((item) => (
-              <div
-                key={item.title}
-                className={`rounded-3xl border p-6 shadow-sm ${item.accent}`}
-              >
-                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-700">
-                  {item.label}
-                </p>
-                <h3 className="mt-3 text-xl font-bold text-slate-900">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-base font-semibold text-slate-700">
-                  {item.data}
-                </p>
-                <p className="mt-3 text-2xl font-bold text-slate-900">
-                  {item.result}
-                </p>
-                <p className="mt-4 leading-7 text-slate-700">{item.detail}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-8 md:grid-cols-3">
             {practiceArtifacts.map((item) => (
               <article
                 key={item.title}
                 className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
-                <div className="relative h-[280px] w-full overflow-hidden bg-slate-100 sm:h-[320px]">
+                <div className="relative h-[260px] w-full overflow-hidden bg-slate-100">
                   <Image
                     src={item.src}
                     alt={item.alt}
@@ -568,67 +327,71 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="mb-10 max-w-3xl">
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
-              Certifications
-            </p>
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Credentials across North Carolina, Florida, and Missouri
-            </h2>
-            <p className="mt-4 text-lg leading-8 text-slate-700">
-              Certified to support literacy instruction across multiple grade
-              bands and settings.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="rounded-3xl border border-teal-200 bg-teal-50 p-6 shadow-sm">
-              <h3 className="text-xl font-bold text-slate-900">
-                North Carolina
-              </h3>
-              <ul className="mt-4 space-y-3 text-slate-700">
-                {certifications.northCarolina.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+      <section className="border-t border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+          <div className="grid gap-10 lg:grid-cols-[1fr_1fr]">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
+                Credentials
+              </p>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                Certified across multiple literacy settings
+              </h2>
+              <p className="mt-4 text-lg leading-8 text-slate-700">
+                Credentials support literacy instruction, reading intervention,
+                ELA, social studies, and instructional coaching across grade
+                bands and settings.
+              </p>
             </div>
 
-            <div className="rounded-3xl border border-sky-200 bg-sky-50 p-6 shadow-sm">
-              <h3 className="text-xl font-bold text-slate-900">Florida</h3>
-              <ul className="mt-4 space-y-3 text-slate-700">
-                {certifications.florida.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
+            <div className="grid gap-4 sm:grid-cols-3">
+              <div className="rounded-3xl border border-teal-200 bg-white p-6 shadow-sm">
+                <h3 className="text-lg font-bold text-slate-900">
+                  North Carolina
+                </h3>
+                <ul className="mt-4 space-y-3 text-slate-700">
+                  {certifications.northCarolina.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
 
-            <div className="rounded-3xl border border-violet-200 bg-violet-50 p-6 shadow-sm">
-              <h3 className="text-xl font-bold text-slate-900">Missouri</h3>
-              <ul className="mt-4 space-y-3 text-slate-700">
-                {certifications.missouri.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+              <div className="rounded-3xl border border-sky-200 bg-white p-6 shadow-sm">
+                <h3 className="text-lg font-bold text-slate-900">Florida</h3>
+                <ul className="mt-4 space-y-3 text-slate-700">
+                  {certifications.florida.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="rounded-3xl border border-violet-200 bg-white p-6 shadow-sm">
+                <h3 className="text-lg font-bold text-slate-900">Missouri</h3>
+                <ul className="mt-4 space-y-3 text-slate-700">
+                  {certifications.missouri.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section className="bg-slate-950">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
           <div className="max-w-3xl">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-300">
               Let’s Connect
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Available for meaningful literacy work and instructional leadership
+              Interested in literacy work that connects instruction, coaching,
+              and college readiness
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-300">
-              I am especially interested in roles where strong instruction,
-              student growth, and practical systems matter. This site is built
-              to show not only what I have done, but how I approach the work.
+              I am especially interested in Western North Carolina opportunities
+              where strong instruction, practical systems, and student growth
+              matter.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -644,7 +407,7 @@ export default function HomePage() {
                 href="mailto:scottstephena@gmail.com"
                 className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
               >
-                Contact Mr. Scott
+                Contact
               </a>
             </div>
           </div>
