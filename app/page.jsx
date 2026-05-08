@@ -14,15 +14,16 @@ const impactResults = [
       "Supported seniors in meeting graduation requirements through progress monitoring, targeted intervention systems, and collaborative student support.",
   },
   {
-    title: "Middle Grades to College Readiness",
-    value: "6–College",
+    title: "Cross-Setting Literacy Work",
+    value: "K–12 + College",
     detail:
-      "Experience spans middle school literacy intervention, evidence-based writing instruction, instructional coaching, and developmental college reading and writing.",
+      "Experience connects middle grades intervention, instructional coaching, secondary literacy, and developmental college reading and writing.",
   },
 ];
 
 const coreSystems = [
   {
+    eyebrow: "LITERACY SYSTEMS",
     title: "Structured Literacy Intervention",
     description:
       "Repeatable reading systems that help students move from basic comprehension to stronger analysis, evidence use, and written explanation.",
@@ -34,6 +35,7 @@ const coreSystems = [
     ],
   },
   {
+    eyebrow: "TEACHER DEVELOPMENT",
     title: "Instructional Coaching",
     description:
       "Practical support for teachers through collaboration, modeling, planning, classroom observation, and specific next-step feedback.",
@@ -45,9 +47,10 @@ const coreSystems = [
     ],
   },
   {
-    title: "College Readiness Writing",
+    eyebrow: "COLLEGE INSTRUCTION",
+    title: "Developmental Reading & Writing",
     description:
-      "Writing instruction that helps students develop clearer claims, stronger evidence use, deeper explanation, and more purposeful revision.",
+      "College-level reading and writing instruction that helps students build clearer claims, stronger evidence use, deeper explanation, and purposeful revision.",
     items: [
       "Claim, evidence, explanation structure taught explicitly",
       "Scaffolds that move students toward independence",
@@ -59,6 +62,22 @@ const coreSystems = [
 
 const practiceArtifacts = [
   {
+    title: "Classroom Rotation Model",
+    src: "/layout.png",
+    alt: "Classroom layout showing a literacy rotation model",
+    caption:
+      "Structured rotations create space for teacher-led small groups, independent practice, and targeted support.",
+    objectPosition: "center center",
+  },
+  {
+    title: "Student Work in Progress",
+    src: "/Student-work.jpg",
+    alt: "Student work from a literacy classroom activity",
+    caption:
+      "Student work samples make comprehension, annotation, and written thinking visible.",
+    objectPosition: "center center",
+  },
+  {
     title: "Progress Monitoring",
     src: "/tracker.jpg",
     alt: "Classroom literacy benchmark tracker showing student progress levels",
@@ -66,6 +85,9 @@ const practiceArtifacts = [
       "Students track performance over time, making growth visible and strengthening ownership.",
     objectPosition: "left top",
   },
+];
+
+const additionalArtifacts = [
   {
     title: "Targeted Reading Practice",
     src: "/work-sample-1.jpg",
@@ -81,6 +103,14 @@ const practiceArtifacts = [
     caption:
       "Writing frames help students move from short answers to clearer, developed explanations.",
     objectPosition: "center top",
+  },
+  {
+    title: "Instructional Support",
+    src: "/coaching.jpg",
+    alt: "Instructional coaching and classroom support visual",
+    caption:
+      "Coaching work connects planning, modeling, classroom evidence, and practical next steps.",
+    objectPosition: "center center",
   },
 ];
 
@@ -138,10 +168,10 @@ export default function HomePage() {
                 </a>
 
                 <a
-                  href="#instructional-systems"
+                  href="#instruction-in-practice"
                   className="rounded-2xl border border-teal-300/30 px-6 py-3 text-sm font-semibold text-teal-200 transition hover:bg-teal-300/10"
                 >
-                  Instructional Systems
+                  See Classroom Systems
                 </a>
               </div>
 
@@ -195,7 +225,7 @@ export default function HomePage() {
                 key={item.title}
                 className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
               >
-                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sky-700">
+                <p className="min-h-[40px] text-sm font-semibold uppercase tracking-[0.16em] text-sky-700">
                   {item.title}
                 </p>
                 <p className="mt-4 text-3xl font-bold text-slate-900">
@@ -231,16 +261,22 @@ export default function HomePage() {
                 key={system.title}
                 className="rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm"
               >
-                <h3 className="text-2xl font-bold text-slate-900">
+                <p className="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-teal-700">
+                  {system.eyebrow}
+                </p>
+
+                <h3 className="min-h-[64px] text-2xl font-bold leading-tight text-slate-900">
                   {system.title}
                 </h3>
-                <p className="mt-3 leading-7 text-slate-700">
+
+                <p className="mt-4 min-h-[112px] text-[15px] leading-7 text-slate-700">
                   {system.description}
                 </p>
-                <ul className="mt-6 space-y-3 text-slate-700">
+
+                <ul className="mt-5 space-y-4 text-[15px] leading-6 text-slate-800">
                   {system.items.map((item) => (
                     <li key={item} className="flex gap-3">
-                      <span className="mt-2 h-2.5 w-2.5 rounded-full bg-teal-600" />
+                      <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-teal-600" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -288,11 +324,12 @@ export default function HomePage() {
               Instruction in Practice
             </p>
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Artifacts from structured literacy work
+              Classroom systems, student work, and visible growth
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              These examples show how instruction, student practice, and
-              progress monitoring work together.
+              These artifacts give hiring teams something concrete to see:
+              structured routines, student-facing systems, and evidence of how
+              literacy instruction operates in practice.
             </p>
           </div>
 
@@ -302,7 +339,36 @@ export default function HomePage() {
                 key={item.title}
                 className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
-                <div className="relative h-[260px] w-full overflow-hidden bg-slate-100">
+                <div className="relative h-[275px] w-full overflow-hidden bg-slate-100">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    fill
+                    className="object-cover transition duration-500 group-hover:scale-[1.02]"
+                    style={{ objectPosition: item.objectPosition }}
+                  />
+                  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-900/35 to-transparent" />
+                </div>
+
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-slate-900">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 leading-7 text-slate-700">
+                    {item.caption}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-8 grid gap-8 md:grid-cols-3">
+            {additionalArtifacts.map((item) => (
+              <article
+                key={item.title}
+                className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+              >
+                <div className="relative h-[250px] w-full overflow-hidden bg-slate-100">
                   <Image
                     src={item.src}
                     alt={item.alt}
@@ -327,7 +393,40 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-t border-slate-200 bg-slate-50">
+      <section className="border-y border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">
+                Reading Rotations
+              </p>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                Small-group instruction built into the classroom design
+              </h2>
+              <p className="mt-4 text-lg leading-8 text-slate-700">
+                My classroom systems are designed so students can rotate through
+                teacher-led instruction, independent reading work, digital
+                practice, and collaborative tasks without losing the purpose of
+                the lesson.
+              </p>
+            </div>
+
+            <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-sm">
+              <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-slate-100">
+                <Image
+                  src="/layout.png"
+                  alt="Classroom rotation layout model"
+                  fill
+                  className="object-cover"
+                  style={{ objectPosition: "center center" }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-slate-200 bg-white">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-[1fr_1fr]">
             <div>
@@ -345,7 +444,7 @@ export default function HomePage() {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-3">
-              <div className="rounded-3xl border border-teal-200 bg-white p-6 shadow-sm">
+              <div className="rounded-3xl border border-teal-200 bg-slate-50 p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-slate-900">
                   North Carolina
                 </h3>
@@ -356,7 +455,7 @@ export default function HomePage() {
                 </ul>
               </div>
 
-              <div className="rounded-3xl border border-sky-200 bg-white p-6 shadow-sm">
+              <div className="rounded-3xl border border-sky-200 bg-slate-50 p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-slate-900">Florida</h3>
                 <ul className="mt-4 space-y-3 text-slate-700">
                   {certifications.florida.map((item) => (
@@ -365,7 +464,7 @@ export default function HomePage() {
                 </ul>
               </div>
 
-              <div className="rounded-3xl border border-violet-200 bg-white p-6 shadow-sm">
+              <div className="rounded-3xl border border-violet-200 bg-slate-50 p-6 shadow-sm">
                 <h3 className="text-lg font-bold text-slate-900">Missouri</h3>
                 <ul className="mt-4 space-y-3 text-slate-700">
                   {certifications.missouri.map((item) => (
