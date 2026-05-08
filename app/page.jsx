@@ -134,8 +134,10 @@ export default function HomePage() {
                 Stephen Scott
               </p>
 
-              <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-                Literacy Educator • Instructional Coach • College Readiness
+              <h1 className="max-w-4xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-[3.4rem]">
+                <span className="block">Literacy Educator</span>
+                <span className="block">Instructional Coach</span>
+                <span className="block">College Readiness</span>
               </h1>
 
               <p className="mt-6 max-w-3xl text-xl leading-8 text-slate-200">
