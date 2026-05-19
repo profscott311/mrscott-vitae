@@ -99,6 +99,23 @@ const certifications = {
   missouri: ["Language Arts 5–9", "Social Studies 5–9", "Health K–12"],
 };
 
+function MiniBar({ label, width }) {
+  return (
+    <div className="mt-2">
+      <div className="mb-1 flex justify-between text-xs text-slate-300">
+        <span>{label}</span>
+        <span>{width}</span>
+      </div>
+      <div className="h-2 overflow-hidden rounded-full bg-white/10">
+        <div
+          className="h-full rounded-full bg-teal-300"
+          style={{ width }}
+        />
+      </div>
+    </div>
+  );
+}
+
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
@@ -203,6 +220,11 @@ export default function HomePage() {
                 <p className="mt-3 text-xl font-bold text-white">
                   PM3 proficiency across Grades 6–8 intervention rosters
                 </p>
+
+                <p className="mt-3 text-sm leading-6 text-slate-300">
+                  Additional students demonstrated measurable year-over-year
+                  growth, recovery growth, or stronger competitive performance.
+                </p>
               </div>
 
               <div className="rounded-3xl bg-white/10 p-6">
@@ -222,26 +244,39 @@ export default function HomePage() {
 
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               <div className="rounded-3xl bg-white/5 p-5">
-                <p className="text-3xl font-black text-teal-300">Level 1 ↓</p>
+                <p className="text-3xl font-black text-teal-300">42% → 22%</p>
+                <p className="mt-1 text-lg font-bold text-white">Level 1 ↓</p>
                 <p className="mt-2 text-sm leading-6 text-slate-300">
-                  Reduced representation in the lowest performance band by PM3
+                  Grade 6 Level 1 representation decreased by PM3.
                 </p>
+                <MiniBar label="PM1" width="42%" />
+                <MiniBar label="PM3" width="22%" />
               </div>
 
               <div className="rounded-3xl bg-white/5 p-5">
-                <p className="text-3xl font-black text-teal-300">Level 3–5 ↑</p>
+                <p className="text-3xl font-black text-teal-300">8% → 50%</p>
+                <p className="mt-1 text-lg font-bold text-white">Level 3–5 ↑</p>
                 <p className="mt-2 text-sm leading-6 text-slate-300">
-                  Significant increase in students reaching proficient or advanced
-                  performance bands
+                  Grade 8 students reaching proficiency or higher increased sharply.
                 </p>
+                <MiniBar label="PM1" width="8%" />
+                <MiniBar label="PM3" width="50%" />
               </div>
 
               <div className="rounded-3xl bg-white/5 p-5">
                 <p className="text-3xl font-black text-teal-300">ELL Growth</p>
-                <p className="mt-2 text-sm leading-6 text-slate-300">
-                  Multilingual learners demonstrated measurable stabilization and
-                  meaningful long-term growth
+                <p className="mt-1 text-lg font-bold text-white">
+                  Stabilization + movement
                 </p>
+                <p className="mt-2 text-sm leading-6 text-slate-300">
+                  Multilingual learners showed meaningful growth through
+                  vocabulary support, routines, and sustained accountability.
+                </p>
+                <div className="mt-4 grid grid-cols-3 gap-2 text-center text-xs font-semibold text-teal-200">
+                  <div className="rounded-xl bg-white/10 p-2">Sustained</div>
+                  <div className="rounded-xl bg-white/10 p-2">Recovery</div>
+                  <div className="rounded-xl bg-white/10 p-2">Emerging</div>
+                </div>
               </div>
             </div>
           </div>
