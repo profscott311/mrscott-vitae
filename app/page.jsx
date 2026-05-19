@@ -107,10 +107,7 @@ function MiniBar({ label, width }) {
         <span>{width}</span>
       </div>
       <div className="h-2 overflow-hidden rounded-full bg-white/10">
-        <div
-          className="h-full rounded-full bg-teal-300"
-          style={{ width }}
-        />
+        <div className="h-full rounded-full bg-teal-300" style={{ width }} />
       </div>
     </div>
   );
@@ -287,11 +284,11 @@ export default function HomePage() {
                 Growth Took Multiple Forms
               </p>
               <p className="mt-4 text-2xl font-bold text-slate-900">
-                Not just pass/fail
+                Growth Beyond Proficiency
               </p>
               <p className="mt-4 leading-7 text-slate-700">
                 Students showed proficiency growth, sustained growth, recovery
-                growth, and emerging competitive performance.
+                growth, and emerging competitive performance from year to year.
               </p>
             </div>
 
@@ -390,15 +387,20 @@ export default function HomePage() {
             <div className="space-y-5 text-lg leading-8 text-slate-700">
               <p>
                 I believe literacy instruction should be explicit enough to give
-                students access, structured enough to build confidence, and
-                rigorous enough to move students beyond task completion into
-                real thinking.
+                students access, structured enough to build confidence,
+                independence, and trust in their own thinking, and rigorous enough
+                to move students beyond task completion into real thinking.
               </p>
               <p>
                 Strong instruction helps students see what skilled readers and
                 writers do: notice patterns, ask better questions, use evidence,
                 explain reasoning, revise thinking, and transfer those habits to
                 new academic settings.
+              </p>
+              <p>
+                Just as importantly, students need classrooms where they feel safe
+                enough to take academic risks, make mistakes publicly, and build
+                confidence through consistent support and clear expectations over time.
               </p>
             </div>
           </div>
