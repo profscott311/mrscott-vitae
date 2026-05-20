@@ -139,9 +139,9 @@ export default function HomePage() {
               </p>
 
               <p className="mt-5 max-w-3xl text-base leading-7 text-slate-300">
-                Currently relocating to Western North Carolina and seeking
-                opportunities in literacy instruction, instructional coaching,
-                and college readiness.
+                Focused on literacy intervention, instructional systems, and
+                measurable student growth across middle grades and college
+                readiness settings.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -166,6 +166,15 @@ export default function HomePage() {
                   className="rounded-2xl border border-teal-300/30 px-6 py-3 text-sm font-semibold text-teal-200 transition hover:bg-teal-300/10"
                 >
                   See Classroom Systems
+                </a>
+
+                <a
+                  href="/2025-2026_FAST_Data.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                >
+                  2025–2026 Data
                 </a>
               </div>
 
