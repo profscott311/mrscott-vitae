@@ -131,7 +131,6 @@ const impactStats = [
   { stat: "300+", label: "College Students Taught" },
   { stat: "90%+", label: "Would Recommend the Course" },
   { stat: "K–12 +", label: "Higher Education Experience" },
-];
   ];
 
   const quickLinks = [
