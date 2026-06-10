@@ -1,8 +1,8 @@
-export default function EducationalVitaeLandingPage() {
+export default function ProfessionalPortfolioLandingPage() {
   const highlights = [
     "Literacy Instruction | Reading Development | Writing Systems",
-    "Middle Grades Reading • Secondary ELA • Developmental Writing • Intervention Systems",
-    "Structured literacy routines grounded in Science of Reading",
+    "College Readiness • Developmental Writing • Composition Preparation",
+    "Curriculum design grounded in clarity, access, and student growth",
     "Instructional coaching, PLC facilitation, and teacher mentoring",
   ];
 
@@ -14,9 +14,9 @@ export default function EducationalVitaeLandingPage() {
       dates: "Aug 2024 – Present",
       bullets: [
         "Teach integrated reading and writing courses focused on foundational literacy development for college readers.",
-        "Use explicit instruction in vocabulary, annotation, and paragraph structure to strengthen comprehension and writing clarity.",
-        "Guide students through revision cycles and targeted feedback that build independence as writers.",
-        "Support multilingual learners with language modeling, scaffolded instruction, and structured academic routines.",
+        "Use explicit instruction in vocabulary, annotation, paragraph structure, essay development, and revision to strengthen academic confidence.",
+        "Guide students through scaffolded writing cycles that connect active reading, critical thinking, drafting, feedback, and reflection.",
+        "Support multilingual learners with language modeling, structured academic routines, and accessible pathways into college-level expectations.",
       ],
     },
     {
@@ -25,10 +25,10 @@ export default function EducationalVitaeLandingPage() {
       location: "Orlando, FL",
       dates: "Aug 2025 – Present",
       bullets: [
-        "Deliver targeted literacy instruction for students below grade level using structured, explicit routines.",
-        "Use FAST, i-Ready, and running records to identify skill gaps and adjust instruction for measurable growth.",
-        "Differentiate through small-group teaching, modeling, and scaffolded supports for diverse learners.",
-        "Collaborate with ELA teachers to align intervention strategies with grade-level standards.",
+        "Deliver targeted literacy instruction for students developing reading confidence, comprehension, vocabulary, and written response skills.",
+        "Use assessment evidence, student work, and classroom observation to identify needs and adjust instruction.",
+        "Differentiate through small-group teaching, modeling, guided practice, and scaffolded supports for diverse learners.",
+        "Collaborate with ELA teachers to align reading support with grade-level standards and classroom expectations.",
       ],
     },
     {
@@ -37,10 +37,10 @@ export default function EducationalVitaeLandingPage() {
       location: "Orlando, FL",
       dates: "Aug 2015 – May 2025",
       bullets: [
-        "Improved student performance on literacy assessments through consistent, data-informed instruction.",
-        "Led instructional coaching cycles including co-planning, modeling, observation, and feedback.",
-        "Facilitated PLCs and served as District PLC Representative focused on data analysis, standards alignment, and assessment refinement.",
-        "Supported schoolwide literacy improvement through leadership teams, curriculum vetting, digital content creation, and multilingual learner support.",
+        "Supported student growth through consistent, standards-aligned literacy instruction and responsive academic support.",
+        "Led instructional coaching cycles including co-planning, modeling, observation, feedback, and reflection.",
+        "Facilitated PLCs and served as District PLC Representative focused on curriculum alignment, assessment refinement, and instructional improvement.",
+        "Contributed to schoolwide literacy improvement through leadership teams, curriculum vetting, digital content creation, and multilingual learner support.",
       ],
     },
     {
@@ -50,7 +50,7 @@ export default function EducationalVitaeLandingPage() {
       dates: "Aug 2009 – May 2015",
       bullets: [
         "Taught 7th and 8th grade ELA, Reading, and Social Studies.",
-        "Led literacy initiatives including miscue analysis, reading diagnostics, and assessment design.",
+        "Led literacy initiatives including reading diagnostics, assessment design, writing instruction, and curriculum planning.",
         "Recognized as a Teacher of the Year Finalist.",
       ],
     },
@@ -69,27 +69,68 @@ export default function EducationalVitaeLandingPage() {
 
   const philosophy = [
     {
-      title: "Explicit Instruction",
-      text: "Students grow when instruction is modeled clearly, practiced consistently, and built around routines they can internalize.",
+      title: "Clarity Before Complexity",
+      text: "Students are more willing to take academic risks when expectations, models, and next steps are clear.",
     },
     {
-      title: "Visible Thinking",
-      text: "Reading and writing improve when students can see how strong readers annotate, infer, organize, and support claims with evidence.",
+      title: "Reading and Writing Together",
+      text: "Strong literacy instruction connects active reading, discussion, evidence, organization, drafting, and revision into one coherent process.",
     },
     {
-      title: "Systems Over Randomness",
-      text: "Strong outcomes come from aligned systems: assessment, grouping, instruction, feedback, and re-teaching working together.",
+      title: "Feedback That Moves Students",
+      text: "Feedback should help students understand what is working, what needs attention, and what specific move will improve the next draft or response.",
     },
     {
-      title: "Language + Literacy Together",
-      text: "Multilingual learners benefit most when language development is embedded directly into reading, discussion, and writing instruction.",
+      title: "Growth Through Belonging",
+      text: "Students grow when classrooms combine high expectations with trust, consistency, encouragement, and meaningful academic challenge.",
+    },
+  ];
+
+  const studentFeedback = [
+    {
+      quote: "Professor Scott genuinely cares about his students and wants us to succeed.",
+      context: "Valencia College student feedback",
+    },
+    {
+      quote: "The weekly videos and announcements helped me understand what to do and made the class feel more personal.",
+      context: "Valencia College student feedback",
+    },
+    {
+      quote: "The writing process made more sense because the assignments built on each other instead of feeling random.",
+      context: "Valencia College student feedback",
+    },
+    {
+      quote: "His feedback helped me improve my writing and feel more confident about college-level work.",
+      context: "Valencia College student feedback",
+    },
+  ];
+
+  const endorsements = [
+    {
+      name: "Ian Dreilinger",
+      title: "Associate Dean, School of Speech and Languages, Valencia College",
+      quote:
+        "Stephen’s dedication, thoughtful curriculum design, and rapport with students exemplify the qualities of an effective and impactful educator.",
+    },
+    {
+      name: "Kristen Williamson",
+      title: "Professor and Faculty Mentor, Valencia College",
+      quote:
+        "Stephen consistently demonstrates enthusiasm, a strong work ethic, and a willingness to engage with a variety of pedagogical approaches. He asks thoughtful questions and shows genuine dedication to his students’ success, while helping students build confidence for college-level composition through active reading, essay writing, research, and scaffolded instruction.",
+    },
+    {
+      name: "Alisha Teague",
+      title: "Program Specialist, Secondary Literacy",
+      quote:
+        "Stephen brings clarity, engaging instructional ideas, adolescent literacy expertise, and a strong commitment to student success.",
     },
   ];
 
   const quickLinks = [
-    { label: "What I Do", href: "#what-i-do" },
+    { label: "About", href: "#what-i-do" },
     { label: "Philosophy", href: "#philosophy" },
-    { label: "Impact", href: "#impact" },
+    { label: "Student Impact", href: "#impact" },
+    { label: "Endorsements", href: "#endorsements" },
     { label: "Experience", href: "#experience" },
     { label: "Education", href: "#education" },
   ];
@@ -100,7 +141,7 @@ export default function EducationalVitaeLandingPage() {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4 lg:px-10">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Stephen Scott</p>
-            <p className="text-sm text-slate-600">Educational Vitae</p>
+            <p className="text-sm text-slate-600">Professional Portfolio</p>
           </div>
           <nav className="hidden flex-wrap items-center gap-5 text-sm text-slate-600 lg:flex">
             {quickLinks.map((link) => (
@@ -134,15 +175,15 @@ export default function EducationalVitaeLandingPage() {
           <div className="grid gap-10 lg:grid-cols-[1.25fr_.75fr] lg:items-end">
             <div>
               <p className="mb-4 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1 text-sm tracking-wide text-sky-100 backdrop-blur">
-                Educational Vitae
+                Literacy Educator | College Instructor | Instructional Leader
               </p>
               <h1 className="max-w-4xl text-4xl font-semibold leading-tight md:text-6xl">
-                Stephen Scott
+                Stephen Scott, M.Ed.
               </h1>
               <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-100 md:text-xl">
-                Literacy educator specializing in building systems that move students from
-                comprehension to analysis and from paragraph writing to structured, evidence-based essays.
-                Experienced across middle grades, secondary ELA, and developmental college writing.
+                Literacy educator, college instructor, and instructional leader with 18 years of experience supporting readers,
+                writers, and educators across K–12 and college settings. My work centers on literacy development, student growth,
+                curriculum design, coaching, and creating learning experiences that help students become confident, independent thinkers.
               </p>
               <div className="mt-8 flex flex-wrap gap-3 text-sm text-slate-100">
                 {highlights.map((item) => (
@@ -178,9 +219,10 @@ export default function EducationalVitaeLandingPage() {
             <div className="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl backdrop-blur">
               <h2 className="text-lg font-medium">Quick Snapshot</h2>
               <div className="mt-4 space-y-3 text-sm text-slate-100">
-                <p><span className="font-semibold text-white">Experience:</span> 16 years in literacy education</p>
-                <p><span className="font-semibold text-white">Current Transition:</span> Relocating to Western North Carolina for the 2026–2027 school year</p>
-                <p><span className="font-semibold text-white">Focus:</span> Developing readers and writers through explicit instruction, strong routines, and targeted feedback</p>
+                <p><span className="font-semibold text-white">Experience:</span> 18 Years in Education</p>
+                <p><span className="font-semibold text-white">Current Role:</span> Valencia College Instructor</p>
+                <p><span className="font-semibold text-white">Credentials:</span> Reading Endorsement & Literacy Coach Endorsement</p>
+                <p><span className="font-semibold text-white">Scope:</span> Experience Across K–12 and College Settings</p>
                 <p><span className="font-semibold text-white">Contact:</span> scottstephena@gmail.com · 314.368.9583</p>
               </div>
             </div>
@@ -192,56 +234,45 @@ export default function EducationalVitaeLandingPage() {
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
             <h2 className="text-2xl font-semibold">What I Do</h2>
-            <p className="mt-3 text-sm text-slate-600">I design and implement literacy work that produces measurable growth in middle grades and developmental college settings.</p>
+            <p className="mt-3 text-sm text-slate-600">
+              I design literacy learning that is structured, human, and practical. My goal is to help students read with purpose,
+              write with clarity, and build the confidence to keep growing.
+            </p>
 
             <div className="mt-6 grid gap-4">
               <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
-                <h3 className="text-sm font-semibold">Design Reading Instruction</h3>
-                <p className="mt-1 text-sm text-slate-700">Explicit routines for comprehension, vocabulary, and fluency that make thinking visible and repeatable.</p>
+                <h3 className="text-sm font-semibold">Literacy Instruction</h3>
+                <p className="mt-1 text-sm text-slate-700">Support students in reading, writing, vocabulary, analysis, and academic confidence through clear routines and meaningful practice.</p>
               </div>
 
               <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
-                <h3 className="text-sm font-semibold">Develop Writing Progressions</h3>
-                <p className="mt-1 text-sm text-slate-700">Clear pathways from paragraph → multi-paragraph → evidence-based essays, integrated with assessment and feedback cycles to produce measurable writing growth.</p>
+                <h3 className="text-sm font-semibold">College Readiness</h3>
+                <p className="mt-1 text-sm text-slate-700">Help developing college readers and writers build the habits, skills, and independence needed for composition and future coursework.</p>
               </div>
 
               <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
-                <h3 className="text-sm font-semibold">Design Targeted Intervention</h3>
-                <p className="mt-1 text-sm text-slate-700">Data-driven grouping and instruction aligned to FAST and i-Ready to address highest-leverage skill gaps across Tier 1–3.</p>
+                <h3 className="text-sm font-semibold">Curriculum & Course Design</h3>
+                <p className="mt-1 text-sm text-slate-700">Create learning progressions that connect reading, thinking, discussion, drafting, revision, and reflection.</p>
               </div>
 
               <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
-                <h3 className="text-sm font-semibold">Integrate Language + Literacy</h3>
-                <p className="mt-1 text-sm text-slate-700">Instruction tailored for classrooms with high multilingual populations, embedding language development into reading and writing.</p>
+                <h3 className="text-sm font-semibold">Instructional Coaching</h3>
+                <p className="mt-1 text-sm text-slate-700">Support educators through collaboration, modeling, feedback, professional learning, and reflective instructional planning.</p>
               </div>
 
               <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
-                <h3 className="text-sm font-semibold">Lead Through Instructional Work</h3>
-                <p className="mt-1 text-sm text-slate-700">Support teams via PLCs, modeling, and coaching cycles that align standards, assessment, and daily instruction.</p>
+                <h3 className="text-sm font-semibold">Leadership & Collaboration</h3>
+                <p className="mt-1 text-sm text-slate-700">Contribute to teams through PLC facilitation, curriculum work, mentoring, and schoolwide literacy leadership.</p>
               </div>
             </div>
           </div>
 
           <div className="rounded-3xl bg-slate-900 p-8 text-white shadow-sm">
-            <h2 className="text-2xl font-semibold">Current Roles</h2>
+            <h2 className="text-2xl font-semibold">Current Professional Focus</h2>
 
             <div className="mt-6 grid gap-4">
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                <h3 className="text-base font-semibold">Intensive Reading Teacher (Grades 6–8)</h3>
-                <div className="mt-2 flex flex-wrap gap-2 text-xs">
-                  <span className="rounded-full bg-white/10 px-3 py-1">Intervention</span>
-                  <span className="rounded-full bg-white/10 px-3 py-1">MTSS</span>
-                  <span className="rounded-full bg-white/10 px-3 py-1">ELL Support</span>
-                </div>
-                <ul className="mt-3 space-y-2 text-sm text-slate-100">
-                  <li>Design and implement structured literacy routines for below-level readers</li>
-                  <li>Use FAST & i-Ready data to target highest-leverage skill gaps</li>
-                  <li>Deliver small-group intervention across Tier 1–3 and multilingual learners</li>
-                </ul>
-              </div>
-
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                <h3 className="text-base font-semibold">Developmental Reading & Writing Instructor – Valencia College</h3>
+                <h3 className="text-base font-semibold">College Reading & Writing Instruction</h3>
                 <div className="mt-2 flex flex-wrap gap-2 text-xs">
                   <span className="rounded-full bg-white/10 px-3 py-1">College Readiness</span>
                   <span className="rounded-full bg-white/10 px-3 py-1">Writing Systems</span>
@@ -249,8 +280,22 @@ export default function EducationalVitaeLandingPage() {
                 </div>
                 <ul className="mt-3 space-y-2 text-sm text-slate-100">
                   <li>Teach integrated reading and writing courses for developing college readers</li>
-                  <li>Build writing progression from paragraph to multi-paragraph and essay</li>
-                  <li>Support multilingual learners through modeling and scaffolded routines</li>
+                  <li>Build scaffolded progressions from paragraph writing to evidence-based essays</li>
+                  <li>Use feedback, revision, and reflection to help students develop confidence and independence</li>
+                </ul>
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <h3 className="text-base font-semibold">K–12 Literacy & Instructional Leadership</h3>
+                <div className="mt-2 flex flex-wrap gap-2 text-xs">
+                  <span className="rounded-full bg-white/10 px-3 py-1">Reading Development</span>
+                  <span className="rounded-full bg-white/10 px-3 py-1">Curriculum</span>
+                  <span className="rounded-full bg-white/10 px-3 py-1">Coaching</span>
+                </div>
+                <ul className="mt-3 space-y-2 text-sm text-slate-100">
+                  <li>Design structured reading and writing routines for diverse learners</li>
+                  <li>Collaborate with teachers to align instruction, standards, and student needs</li>
+                  <li>Lead with a practical focus on clarity, growth, and sustainable instructional systems</li>
                 </ul>
               </div>
             </div>
@@ -261,10 +306,11 @@ export default function EducationalVitaeLandingPage() {
       <section id="philosophy" className="mx-auto max-w-6xl px-6 py-16 lg:px-10">
         <div className="rounded-3xl bg-gradient-to-br from-sky-900 to-emerald-800 p-10 text-white shadow-xl">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-200">Teaching Philosophy</p>
-          <h2 className="mt-3 text-3xl font-semibold md:text-4xl">A literacy philosophy built on clarity, consistency, and systems</h2>
+          <h2 className="mt-3 text-3xl font-semibold md:text-4xl">A literacy philosophy built on clarity, consistency, and growth</h2>
           <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-100">
-            I believe literacy improves when instruction is explicit, consistent, and grounded in routines that make thinking visible.
-            Students make the strongest gains when assessment, modeling, guided practice, feedback, and revision work together as one coherent system.
+            I believe students grow when instruction is clear, expectations are visible, and feedback gives them a usable next step.
+            Strong literacy teaching is not about making reading and writing easier. It is about making the work understandable,
+            meaningful, and possible long enough for students to build skill and confidence.
           </p>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {philosophy.map((item) => (
@@ -277,112 +323,75 @@ export default function EducationalVitaeLandingPage() {
         </div>
       </section>
 
-      <section className="bg-slate-50 py-16">
+      <section id="impact" className="bg-white py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <div className="mb-10">
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-700">Instructional Systems</p>
-            <h2 className="mt-2 text-3xl font-semibold">Systems Designed to Improve Literacy Outcomes</h2>
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-700">Student Impact</p>
+            <h2 className="mt-2 text-3xl font-semibold">Student Feedback & Classroom Impact</h2>
+            <p className="mt-4 max-w-4xl text-base leading-8 text-slate-700">
+              My strongest measure of impact is whether students leave class with more confidence, clearer thinking, and stronger control over their reading and writing.
+              Across K–12 and college settings, I focus on building the conditions that help students persist, revise, and grow.
+            </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-              <h3 className="text-lg font-semibold">Reading Intervention Model</h3>
-              <p className="mt-2 text-sm text-slate-700">Targeted system focused on comprehension, vocabulary development, and reading fluency for below-level students.</p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-              <h3 className="text-lg font-semibold">FAST-Aligned Instruction</h3>
-              <p className="mt-2 text-sm text-slate-700">Instructional model aligned to assessment data, prioritizing highest-leverage reading skill gaps.</p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-              <h3 className="text-lg font-semibold">Structured Literacy Routines</h3>
-              <p className="mt-2 text-sm text-slate-700">Consistent, explicit routines grounded in Science of Reading to build comprehension and language processing.</p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-              <h3 className="text-lg font-semibold">Writing Progression Framework</h3>
-              <p className="mt-2 text-sm text-slate-700">Step-by-step progression from paragraph writing to multi-paragraph and evidence-based essays.</p>
-            </div>
+            {studentFeedback.map((item) => (
+              <div key={item.quote} className="rounded-2xl bg-slate-50 p-6 shadow-sm ring-1 ring-slate-200">
+                <p className="text-lg leading-8 text-slate-800">“{item.quote}”</p>
+                <p className="mt-4 text-sm font-semibold text-emerald-700">{item.context}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-slate-50 py-16">
+      <section id="endorsements" className="bg-slate-50 py-16">
+        <div className="mx-auto max-w-6xl px-6 lg:px-10">
+          <div className="mb-10">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-700">Professional Endorsements</p>
+            <h2 className="mt-2 text-3xl font-semibold">Colleagues on Teaching, Curriculum, and Leadership</h2>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            {endorsements.map((item) => (
+              <div key={item.name} className="rounded-3xl bg-white p-7 shadow-sm ring-1 ring-slate-200">
+                <p className="text-base leading-8 text-slate-800">“{item.quote}”</p>
+                <div className="mt-6 border-t border-slate-200 pt-4">
+                  <h3 className="text-base font-semibold text-slate-900">{item.name}</h3>
+                  <p className="mt-1 text-sm leading-6 text-slate-600">{item.title}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <div className="mb-10">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-purple-700">What You Can Expect</p>
-            <h2 className="mt-2 text-3xl font-semibold">Instructional Impact You Can Count On</h2>
+            <h2 className="mt-2 text-3xl font-semibold">Professional Strengths</h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-              <h3 className="text-lg font-semibold">Consistent Literacy Systems</h3>
-              <p className="mt-2 text-sm text-slate-700">Structured routines that reduce variability and build student independence in reading and writing.</p>
+            <div className="rounded-2xl bg-slate-50 p-6 shadow-sm ring-1 ring-slate-200">
+              <h3 className="text-lg font-semibold">Student-Centered Literacy Teaching</h3>
+              <p className="mt-2 text-sm text-slate-700">Instruction that combines high expectations with clear modeling, practice, feedback, and support.</p>
             </div>
 
-            <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-              <h3 className="text-lg font-semibold">Data-Aligned Instruction</h3>
-              <p className="mt-2 text-sm text-slate-700">Clear alignment between assessment, instruction, and intervention for measurable growth.</p>
+            <div className="rounded-2xl bg-slate-50 p-6 shadow-sm ring-1 ring-slate-200">
+              <h3 className="text-lg font-semibold">Curriculum Design & Alignment</h3>
+              <p className="mt-2 text-sm text-slate-700">Learning progressions that help students move from foundational skills toward analysis, composition, and independence.</p>
             </div>
 
-            <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-              <h3 className="text-lg font-semibold">Support for Multilingual Learners</h3>
-              <p className="mt-2 text-sm text-slate-700">Integrated language and literacy instruction designed for ELL and language-diverse classrooms.</p>
+            <div className="rounded-2xl bg-slate-50 p-6 shadow-sm ring-1 ring-slate-200">
+              <h3 className="text-lg font-semibold">Support for Diverse Learners</h3>
+              <p className="mt-2 text-sm text-slate-700">Accessible reading and writing instruction designed for multilingual learners, developing writers, and students building academic confidence.</p>
             </div>
 
-            <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
-              <h3 className="text-lg font-semibold">Collaborative Teacher Development</h3>
-              <p className="mt-2 text-sm text-slate-700">Coaching, modeling, and PLC work that strengthens instructional clarity across teams.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="impact" className="bg-white py-16">
-        <div className="mx-auto max-w-6xl px-6 lg:px-10">
-          <div className="mb-6">
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-700">Impact</p>
-            <h2 className="mt-2 text-3xl font-semibold">Selected Results</h2>
-            <p className="mt-4 text-lg font-semibold text-emerald-700">
-              Specialized in delivering literacy growth in high-ELL, intervention-based middle school settings.
-            </p>
-          </div>
-
-          <div className="mb-10 rounded-3xl bg-emerald-50 p-8 ring-1 ring-emerald-100">
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-800">Middle Grades (6–8) Data Impact</p>
-            <h3 className="mt-2 text-2xl font-semibold">System-wide literacy growth driven by targeted intervention and structured instruction</h3>
-            <p className="mt-4 text-base leading-8 text-slate-800">
-              Across 183 middle school students in grades 6–8, students demonstrated a median of 65% progress toward annual typical growth on i-Ready Diagnostic assessments.
-              Instructional systems contributed to a measurable shift in reading performance, reducing students performing three or more grade levels below from 26% to 15%,
-              while increasing students performing on or above grade level from 9% to 16%.
-            </p>
-            <p className="mt-4 text-base leading-8 text-slate-800">
-              Students demonstrated accelerated growth across tiers, with multiple students exceeding 200–500% of typical annual growth and progressing multiple grade levels.
-              Instruction emphasized structured literacy routines, vocabulary development, and data-driven small-group intervention.
-            </p>
-            <p className="mt-4 text-base leading-8 text-slate-800">
-              Instruction was delivered across multiple middle grades classrooms where approximately 45–60% of students were current or recently exited English Language Learners,
-              requiring integrated language development alongside literacy instruction.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            <div className="rounded-2xl border border-slate-200 p-6 shadow-sm">
-              <p className="text-3xl font-semibold text-slate-900">D → C</p>
-              <p className="mt-2 text-sm text-slate-700">Contributed to schoolwide improvement and the highest school grade in school history.</p>
-            </div>
-            <div className="rounded-2xl border border-slate-200 p-6 shadow-sm">
-              <p className="text-3xl font-semibold text-slate-900">97%</p>
-              <p className="mt-2 text-sm text-slate-700">Graduation rate supported as Graduation Coach: 200 of 206 seniors graduated.</p>
-            </div>
-            <div className="rounded-2xl border border-slate-200 p-6 shadow-sm">
-              <p className="text-3xl font-semibold text-slate-900">17% → 28%</p>
-              <p className="mt-2 text-sm text-slate-700">Increased FAST proficiency across tiers and multilingual learners.</p>
-            </div>
-            <div className="rounded-2xl border border-slate-200 p-6 shadow-sm">
-              <p className="text-3xl font-semibold text-slate-900">PLC + Coaching</p>
-              <p className="mt-2 text-sm text-slate-700">Led collaborative planning and literacy alignment work across teams.</p>
+            <div className="rounded-2xl bg-slate-50 p-6 shadow-sm ring-1 ring-slate-200">
+              <h3 className="text-lg font-semibold">Collaborative Instructional Leadership</h3>
+              <p className="mt-2 text-sm text-slate-700">Coaching, mentoring, PLC work, and professional learning that strengthen instruction across teams.</p>
             </div>
           </div>
         </div>
@@ -459,7 +468,8 @@ export default function EducationalVitaeLandingPage() {
               <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-300">Professional Materials</p>
               <h2 className="mt-2 text-3xl font-semibold">View credentials, philosophy, and contact information in one place</h2>
               <p className="mt-4 max-w-3xl text-base leading-8 text-slate-300">
-                This site is designed for school leaders, hiring teams, and educators who want a concise overview of my literacy work, instructional philosophy, and leadership trajectory.
+                This site is designed for college leaders, school leaders, hiring teams, and educators who want a concise overview of my literacy work,
+                teaching philosophy, curriculum experience, and instructional leadership.
               </p>
             </div>
             <div className="flex flex-wrap gap-3 lg:justify-end">
