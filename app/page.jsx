@@ -1,6 +1,3 @@
-You're right. Here’s the full `page.jsx` code:
-
-```jsx
 export default function ProfessionalPortfolioLandingPage() {
   const highlights = [
     "Literacy Instruction | Reading Development | Writing Systems",
@@ -497,4 +494,3 @@ export default function ProfessionalPortfolioLandingPage() {
     </div>
   );
 }
-```
