@@ -1,9 +1,9 @@
 export default function ProfessionalPortfolioLandingPage() {
   const highlights = [
-    "Literacy Instruction | Reading Development | Writing Systems",
-    "College Readiness • Developmental Writing • Composition Preparation",
-    "Curriculum design grounded in clarity, access, and student growth",
-    "Instructional coaching, PLC facilitation, and teacher mentoring",
+    "College Reading & Writing Instruction",
+    "Literacy Development Across K–12 and Higher Education",
+    "Curriculum Design • Revision • Feedback • Student Growth",
+    "Instructional Coaching, PLC Leadership, and Faculty Collaboration",
   ];
 
   const experience = [
@@ -13,10 +13,10 @@ export default function ProfessionalPortfolioLandingPage() {
       location: "Orlando, FL",
       dates: "Aug 2024 – Present",
       bullets: [
-        "Teach integrated reading and writing courses focused on foundational literacy development for college readers.",
-        "Use explicit instruction in vocabulary, annotation, paragraph structure, essay development, and revision to strengthen academic confidence.",
-        "Guide students through scaffolded writing cycles that connect active reading, critical thinking, drafting, feedback, and reflection.",
-        "Support multilingual learners with language modeling, structured academic routines, and accessible pathways into college-level expectations.",
+        "Teach integrated reading and writing courses focused on college readiness, academic literacy, and student confidence.",
+        "Design scaffolded learning cycles that connect active reading, annotation, discussion, drafting, feedback, revision, and reflection.",
+        "Support developing college readers and writers through clear instruction in paragraph structure, essay development, evidence use, organization, and revision.",
+        "Use consistent feedback, modeling, and accessible routines to help students build ownership of their reading and writing growth.",
       ],
     },
     {
@@ -25,10 +25,10 @@ export default function ProfessionalPortfolioLandingPage() {
       location: "Orlando, FL",
       dates: "Aug 2025 – Present",
       bullets: [
-        "Deliver targeted literacy instruction for students developing reading confidence, comprehension, vocabulary, and written response skills.",
-        "Use assessment evidence, student work, and classroom observation to identify needs and adjust instruction.",
-        "Differentiate through small-group teaching, modeling, guided practice, and scaffolded supports for diverse learners.",
-        "Collaborate with ELA teachers to align reading support with grade-level standards and classroom expectations.",
+        "Deliver structured literacy instruction that supports comprehension, vocabulary development, written response, and reading confidence.",
+        "Use student work, assessment evidence, and classroom observation to adjust instruction and provide targeted support.",
+        "Differentiate through small-group teaching, modeling, guided practice, and scaffolded academic routines.",
+        "Collaborate with ELA teachers to align reading support with grade-level standards and student needs.",
       ],
     },
     {
@@ -37,10 +37,10 @@ export default function ProfessionalPortfolioLandingPage() {
       location: "Orlando, FL",
       dates: "Aug 2015 – May 2025",
       bullets: [
-        "Supported student growth through consistent, standards-aligned literacy instruction and responsive academic support.",
-        "Led instructional coaching cycles including co-planning, modeling, observation, feedback, and reflection.",
+        "Supported student growth through standards-aligned literacy instruction, responsive academic support, and student-centered classroom systems.",
+        "Led instructional coaching cycles including co-planning, modeling, observation, feedback, and teacher reflection.",
         "Facilitated PLCs and served as District PLC Representative focused on curriculum alignment, assessment refinement, and instructional improvement.",
-        "Contributed to schoolwide literacy improvement through leadership teams, curriculum vetting, digital content creation, and multilingual learner support.",
+        "Contributed to schoolwide literacy improvement through leadership teams, curriculum vetting, digital content creation, mentoring, and multilingual learner support.",
       ],
     },
     {
@@ -49,7 +49,7 @@ export default function ProfessionalPortfolioLandingPage() {
       location: "Jefferson City, MO",
       dates: "Aug 2009 – May 2015",
       bullets: [
-        "Taught 7th and 8th grade ELA, Reading, and Social Studies.",
+        "Taught 7th and 8th grade Language Arts, Reading, and Social Studies.",
         "Led literacy initiatives including reading diagnostics, assessment design, writing instruction, and curriculum planning.",
         "Recognized as a Teacher of the Year Finalist.",
       ],
@@ -69,38 +69,38 @@ export default function ProfessionalPortfolioLandingPage() {
 
   const philosophy = [
     {
-      title: "Clarity Before Complexity",
-      text: "Students are more willing to take academic risks when expectations, models, and next steps are clear.",
+      title: "Literacy Development Is Built Through Practice",
+      text: "Students become stronger readers and writers when instruction gives them repeated chances to read actively, think clearly, draft honestly, revise meaningfully, and reflect on their growth.",
     },
     {
-      title: "Reading and Writing Together",
-      text: "Strong literacy instruction connects active reading, discussion, evidence, organization, drafting, and revision into one coherent process.",
+      title: "Feedback Should Create Movement",
+      text: "Effective feedback does more than identify mistakes. It helps students understand what is working, what needs attention, and what specific next step will strengthen the next draft or response.",
     },
     {
-      title: "Feedback That Moves Students",
-      text: "Feedback should help students understand what is working, what needs attention, and what specific move will improve the next draft or response.",
+      title: "Revision Builds Confidence",
+      text: "Revision teaches students that writing is not a one-shot performance. It is a process of discovery, decision-making, ownership, and growth.",
     },
     {
-      title: "Growth Through Belonging",
-      text: "Students grow when classrooms combine high expectations with trust, consistency, encouragement, and meaningful academic challenge.",
+      title: "Students Need Ownership",
+      text: "My goal is to help students move from compliance to control: understanding their choices as readers and writers, recognizing their progress, and building confidence as academic thinkers.",
     },
   ];
 
   const studentFeedback = [
     {
-      quote: "Professor Scott genuinely cares about his students and wants us to succeed.",
+      quote: "The professor doesn't just assign stuff—he actually coaches you through it.",
       context: "Valencia College student feedback",
     },
     {
-      quote: "The weekly videos and announcements helped me understand what to do and made the class feel more personal.",
+      quote: "The feedback provided throughout the course has really supported my learning.",
       context: "Valencia College student feedback",
     },
     {
-      quote: "The writing process made more sense because the assignments built on each other instead of feeling random.",
+      quote: "The professor gives clear instructions and helpful feedback that shows how to improve.",
       context: "Valencia College student feedback",
     },
     {
-      quote: "His feedback helped me improve my writing and feel more confident about college-level work.",
+      quote: "His teaching truly increased my confidence and helped me grow as a writer.",
       context: "Valencia College student feedback",
     },
   ];
@@ -108,7 +108,7 @@ export default function ProfessionalPortfolioLandingPage() {
   const endorsements = [
     {
       name: "Ian Dreilinger",
-      title: "Associate Dean, School of Speech and Languages, Valencia College",
+      title: "Associate Dean, Valencia College",
       quote:
         "Stephen’s dedication, thoughtful curriculum design, and rapport with students exemplify the qualities of an effective and impactful educator.",
     },
@@ -124,6 +124,13 @@ export default function ProfessionalPortfolioLandingPage() {
       quote:
         "Stephen brings clarity, engaging instructional ideas, adolescent literacy expertise, and a strong commitment to student success.",
     },
+  ];
+
+  const impactStats = [
+    { stat: "18", label: "Years in Education" },
+    { stat: "300+", label: "College Students Taught" },
+    { stat: "90%+", label: "Would Recommend the Course" },
+    { stat: "20+", label: "College Sections Taught" },
   ];
 
   const quickLinks = [
@@ -143,6 +150,7 @@ export default function ProfessionalPortfolioLandingPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">Stephen Scott</p>
             <p className="text-sm text-slate-600">Professional Portfolio</p>
           </div>
+
           <nav className="hidden flex-wrap items-center gap-5 text-sm text-slate-600 lg:flex">
             {quickLinks.map((link) => (
               <a key={link.href} href={link.href} className="transition hover:text-slate-900">
@@ -150,6 +158,7 @@ export default function ProfessionalPortfolioLandingPage() {
               </a>
             ))}
           </nav>
+
           <div className="flex items-center gap-3">
             <a
               href="/StephenScott_CV.pdf"
@@ -171,20 +180,25 @@ export default function ProfessionalPortfolioLandingPage() {
 
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-sky-900 to-emerald-800 text-white">
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_left,_white,_transparent_35%),radial-gradient(circle_at_bottom_right,_#93c5fd,_transparent_30%)]" />
+
         <div className="relative mx-auto max-w-6xl px-6 py-20 lg:px-10 lg:py-28">
-          <div className="grid gap-10 lg:grid-cols-[1.25fr_.75fr] lg:items-end">
+          <div className="grid gap-10 lg:grid-cols-[1.2fr_.8fr] lg:items-center">
             <div>
               <p className="mb-4 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1 text-sm tracking-wide text-sky-100 backdrop-blur">
                 Literacy Educator | College Instructor | Instructional Leader
               </p>
+
               <h1 className="max-w-4xl text-4xl font-semibold leading-tight md:text-6xl">
                 Stephen Scott, M.Ed.
               </h1>
+
               <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-100 md:text-xl">
-                Literacy educator, college instructor, and instructional leader with 18 years of experience supporting readers,
-                writers, and educators across K–12 and college settings. My work centers on literacy development, student growth,
-                curriculum design, coaching, and creating learning experiences that help students become confident, independent thinkers.
+                College instructor, literacy educator, and instructional leader with 18 years of experience designing learning
+                experiences that help students become stronger readers, writers, and thinkers. My work centers on literacy
+                development, writing instruction, curriculum design, feedback, revision, coaching, and student growth across
+                higher education and K–12 settings.
               </p>
+
               <div className="mt-8 flex flex-wrap gap-3 text-sm text-slate-100">
                 {highlights.map((item) => (
                   <span key={item} className="rounded-full bg-white/10 px-4 py-2">
@@ -192,6 +206,7 @@ export default function ProfessionalPortfolioLandingPage() {
                   </span>
                 ))}
               </div>
+
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
                   href="/StephenScott_CV.pdf"
@@ -216,14 +231,23 @@ export default function ProfessionalPortfolioLandingPage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl backdrop-blur">
-              <h2 className="text-lg font-medium">Quick Snapshot</h2>
-              <div className="mt-4 space-y-3 text-sm text-slate-100">
-                <p><span className="font-semibold text-white">Experience:</span> 18 Years in Education</p>
-                <p><span className="font-semibold text-white">Current Role:</span> Valencia College Instructor</p>
-                <p><span className="font-semibold text-white">Credentials:</span> Reading Endorsement & Literacy Coach Endorsement</p>
-                <p><span className="font-semibold text-white">Scope:</span> Experience Across K–12 and College Settings</p>
-                <p><span className="font-semibold text-white">Contact:</span> scottstephena@gmail.com · 314.368.9583</p>
+            <div className="space-y-5">
+              <div className="overflow-hidden rounded-3xl border border-white/15 bg-white/10 shadow-2xl backdrop-blur">
+                <img
+                  src="/headshot.jpg"
+                  alt="Stephen Scott"
+                  className="h-80 w-full object-cover object-center"
+                />
+              </div>
+
+              <div className="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl backdrop-blur">
+                <h2 className="text-lg font-medium">Quick Snapshot</h2>
+                <div className="mt-4 space-y-3 text-sm text-slate-100">
+                  <p><span className="font-semibold text-white">Experience:</span> 18 Years in Education</p>
+                  <p><span className="font-semibold text-white">Current Role:</span> Valencia College Instructor</p>
+                  <p><span className="font-semibold text-white">Credentials:</span> Reading Endorsement & Literacy Coach Endorsement</p>
+                  <p><span className="font-semibold text-white">Scope:</span> Experience Across K–12 and Higher Education</p>
+                </div>
               </div>
             </div>
           </div>
@@ -234,35 +258,45 @@ export default function ProfessionalPortfolioLandingPage() {
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
             <h2 className="text-2xl font-semibold">What I Do</h2>
-            <p className="mt-3 text-sm text-slate-600">
-              I design literacy learning that is structured, human, and practical. My goal is to help students read with purpose,
-              write with clarity, and build the confidence to keep growing.
+            <p className="mt-3 text-sm leading-7 text-slate-600">
+              I design literacy learning that is structured, practical, and human. My goal is to help students read with purpose,
+              write with clarity, revise with confidence, and take ownership of their growth.
             </p>
 
             <div className="mt-6 grid gap-4">
               <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
-                <h3 className="text-sm font-semibold">Literacy Instruction</h3>
-                <p className="mt-1 text-sm text-slate-700">Support students in reading, writing, vocabulary, analysis, and academic confidence through clear routines and meaningful practice.</p>
+                <h3 className="text-sm font-semibold">College Reading & Writing Instruction</h3>
+                <p className="mt-1 text-sm leading-7 text-slate-700">
+                  Teach developing college readers and writers through active reading, academic writing, feedback, revision, and reflection.
+                </p>
               </div>
 
               <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
-                <h3 className="text-sm font-semibold">College Readiness</h3>
-                <p className="mt-1 text-sm text-slate-700">Help developing college readers and writers build the habits, skills, and independence needed for composition and future coursework.</p>
+                <h3 className="text-sm font-semibold">Literacy Development</h3>
+                <p className="mt-1 text-sm leading-7 text-slate-700">
+                  Support students in comprehension, vocabulary, analysis, written response, academic confidence, and independent learning habits.
+                </p>
               </div>
 
               <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
                 <h3 className="text-sm font-semibold">Curriculum & Course Design</h3>
-                <p className="mt-1 text-sm text-slate-700">Create learning progressions that connect reading, thinking, discussion, drafting, revision, and reflection.</p>
+                <p className="mt-1 text-sm leading-7 text-slate-700">
+                  Build learning progressions that connect reading, thinking, discussion, drafting, revision, and student reflection.
+                </p>
               </div>
 
               <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
                 <h3 className="text-sm font-semibold">Instructional Coaching</h3>
-                <p className="mt-1 text-sm text-slate-700">Support educators through collaboration, modeling, feedback, professional learning, and reflective instructional planning.</p>
+                <p className="mt-1 text-sm leading-7 text-slate-700">
+                  Support educators through collaboration, modeling, feedback, professional learning, and reflective instructional planning.
+                </p>
               </div>
 
               <div className="rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200">
                 <h3 className="text-sm font-semibold">Leadership & Collaboration</h3>
-                <p className="mt-1 text-sm text-slate-700">Contribute to teams through PLC facilitation, curriculum work, mentoring, and schoolwide literacy leadership.</p>
+                <p className="mt-1 text-sm leading-7 text-slate-700">
+                  Contribute to teams through PLC facilitation, curriculum work, mentoring, and practical literacy leadership.
+                </p>
               </div>
             </div>
           </div>
@@ -272,30 +306,30 @@ export default function ProfessionalPortfolioLandingPage() {
 
             <div className="mt-6 grid gap-4">
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                <h3 className="text-base font-semibold">College Reading & Writing Instruction</h3>
+                <h3 className="text-base font-semibold">College Faculty Practice</h3>
                 <div className="mt-2 flex flex-wrap gap-2 text-xs">
                   <span className="rounded-full bg-white/10 px-3 py-1">College Readiness</span>
-                  <span className="rounded-full bg-white/10 px-3 py-1">Writing Systems</span>
+                  <span className="rounded-full bg-white/10 px-3 py-1">Writing Instruction</span>
                   <span className="rounded-full bg-white/10 px-3 py-1">Academic Literacy</span>
                 </div>
-                <ul className="mt-3 space-y-2 text-sm text-slate-100">
-                  <li>Teach integrated reading and writing courses for developing college readers</li>
-                  <li>Build scaffolded progressions from paragraph writing to evidence-based essays</li>
-                  <li>Use feedback, revision, and reflection to help students develop confidence and independence</li>
+                <ul className="mt-3 space-y-2 text-sm leading-7 text-slate-100">
+                  <li>Teach integrated reading and writing courses for developing college readers and writers</li>
+                  <li>Use structured writing cycles that move students from reading to drafting to revision</li>
+                  <li>Build student confidence through clear expectations, feedback, reflection, and practical next steps</li>
                 </ul>
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                <h3 className="text-base font-semibold">K–12 Literacy & Instructional Leadership</h3>
+                <h3 className="text-base font-semibold">Literacy Leadership</h3>
                 <div className="mt-2 flex flex-wrap gap-2 text-xs">
-                  <span className="rounded-full bg-white/10 px-3 py-1">Reading Development</span>
-                  <span className="rounded-full bg-white/10 px-3 py-1">Curriculum</span>
+                  <span className="rounded-full bg-white/10 px-3 py-1">Curriculum Design</span>
                   <span className="rounded-full bg-white/10 px-3 py-1">Coaching</span>
+                  <span className="rounded-full bg-white/10 px-3 py-1">Student Growth</span>
                 </div>
-                <ul className="mt-3 space-y-2 text-sm text-slate-100">
-                  <li>Design structured reading and writing routines for diverse learners</li>
-                  <li>Collaborate with teachers to align instruction, standards, and student needs</li>
-                  <li>Lead with a practical focus on clarity, growth, and sustainable instructional systems</li>
+                <ul className="mt-3 space-y-2 text-sm leading-7 text-slate-100">
+                  <li>Design reading and writing instruction that is clear, accessible, and growth-oriented</li>
+                  <li>Collaborate with teachers and faculty to strengthen instructional systems</li>
+                  <li>Lead with a practical focus on student ownership, clarity, and sustainable improvement</li>
                 </ul>
               </div>
             </div>
@@ -306,12 +340,16 @@ export default function ProfessionalPortfolioLandingPage() {
       <section id="philosophy" className="mx-auto max-w-6xl px-6 py-16 lg:px-10">
         <div className="rounded-3xl bg-gradient-to-br from-sky-900 to-emerald-800 p-10 text-white shadow-xl">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-200">Teaching Philosophy</p>
-          <h2 className="mt-3 text-3xl font-semibold md:text-4xl">A literacy philosophy built on clarity, consistency, and growth</h2>
+          <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
+            A literacy philosophy built on feedback, revision, confidence, and student ownership
+          </h2>
           <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-100">
-            I believe students grow when instruction is clear, expectations are visible, and feedback gives them a usable next step.
-            Strong literacy teaching is not about making reading and writing easier. It is about making the work understandable,
-            meaningful, and possible long enough for students to build skill and confidence.
+            I believe students grow when reading and writing are taught as connected, learnable processes. Strong literacy
+            instruction gives students clear expectations, meaningful models, active reading strategies, time to practice,
+            feedback they can use, and opportunities to revise. My teaching is built around the belief that confidence grows
+            when students understand what they are doing, why it matters, and how to improve.
           </p>
+
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {philosophy.map((item) => (
               <div key={item.title} className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur">
@@ -329,8 +367,9 @@ export default function ProfessionalPortfolioLandingPage() {
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-700">Student Impact</p>
             <h2 className="mt-2 text-3xl font-semibold">Student Feedback & Classroom Impact</h2>
             <p className="mt-4 max-w-4xl text-base leading-8 text-slate-700">
-              My strongest measure of impact is whether students leave class with more confidence, clearer thinking, and stronger control over their reading and writing.
-              Across K–12 and college settings, I focus on building the conditions that help students persist, revise, and grow.
+              My strongest measure of impact is whether students leave class with more confidence, clearer thinking, and stronger
+              control over their reading and writing. Across college and K–12 settings, I focus on the conditions that help
+              students persist, revise, and grow.
             </p>
           </div>
 
@@ -369,29 +408,55 @@ export default function ProfessionalPortfolioLandingPage() {
       <section className="bg-white py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <div className="mb-10">
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-purple-700">What You Can Expect</p>
-            <h2 className="mt-2 text-3xl font-semibold">Professional Strengths</h2>
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-purple-700">Impact at a Glance</p>
+            <h2 className="mt-2 text-3xl font-semibold">Teaching, Growth, and Student Success</h2>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {impactStats.map((item) => (
+              <div key={item.label} className="rounded-3xl bg-slate-50 p-7 text-center shadow-sm ring-1 ring-slate-200">
+                <p className="text-4xl font-semibold text-slate-900">{item.stat}</p>
+                <p className="mt-2 text-sm font-medium text-slate-600">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-slate-50 py-16">
+        <div className="mx-auto max-w-6xl px-6 lg:px-10">
+          <div className="mb-10">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-700">Professional Strengths</p>
+            <h2 className="mt-2 text-3xl font-semibold">What Hiring Committees Can Expect</h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-2xl bg-slate-50 p-6 shadow-sm ring-1 ring-slate-200">
+            <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
               <h3 className="text-lg font-semibold">Student-Centered Literacy Teaching</h3>
-              <p className="mt-2 text-sm text-slate-700">Instruction that combines high expectations with clear modeling, practice, feedback, and support.</p>
+              <p className="mt-2 text-sm leading-7 text-slate-700">
+                Instruction that combines high expectations with clear modeling, guided practice, feedback, and support.
+              </p>
             </div>
 
-            <div className="rounded-2xl bg-slate-50 p-6 shadow-sm ring-1 ring-slate-200">
+            <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
               <h3 className="text-lg font-semibold">Curriculum Design & Alignment</h3>
-              <p className="mt-2 text-sm text-slate-700">Learning progressions that help students move from foundational skills toward analysis, composition, and independence.</p>
+              <p className="mt-2 text-sm leading-7 text-slate-700">
+                Learning progressions that help students move from foundational skills toward analysis, composition, and independence.
+              </p>
             </div>
 
-            <div className="rounded-2xl bg-slate-50 p-6 shadow-sm ring-1 ring-slate-200">
+            <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
               <h3 className="text-lg font-semibold">Support for Diverse Learners</h3>
-              <p className="mt-2 text-sm text-slate-700">Accessible reading and writing instruction designed for multilingual learners, developing writers, and students building academic confidence.</p>
+              <p className="mt-2 text-sm leading-7 text-slate-700">
+                Accessible reading and writing instruction designed for multilingual learners, developing writers, and students building academic confidence.
+              </p>
             </div>
 
-            <div className="rounded-2xl bg-slate-50 p-6 shadow-sm ring-1 ring-slate-200">
+            <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
               <h3 className="text-lg font-semibold">Collaborative Instructional Leadership</h3>
-              <p className="mt-2 text-sm text-slate-700">Coaching, mentoring, PLC work, and professional learning that strengthen instruction across teams.</p>
+              <p className="mt-2 text-sm leading-7 text-slate-700">
+                Coaching, mentoring, PLC work, and professional learning that strengthen instruction across teams.
+              </p>
             </div>
           </div>
         </div>
@@ -416,6 +481,7 @@ export default function ProfessionalPortfolioLandingPage() {
                   </div>
                   <span className="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700">{job.dates}</span>
                 </div>
+
                 <ul className="mt-5 grid gap-3 text-sm leading-7 text-slate-700">
                   {job.bullets.map((bullet) => (
                     <li key={bullet} className="flex gap-3">
@@ -435,14 +501,16 @@ export default function ProfessionalPortfolioLandingPage() {
           <div className="rounded-3xl bg-emerald-50 p-8 ring-1 ring-emerald-100">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-800">Education</p>
             <h2 className="mt-2 text-3xl font-semibold">Academic Preparation</h2>
+
             <div className="mt-6 space-y-5 text-slate-800">
               <div>
                 <h3 className="text-lg font-semibold">University of Missouri – Columbia</h3>
                 <p className="text-slate-700">M.Ed. in English Education, Emphasis in Literacy · Conferred 2013</p>
               </div>
+
               <div>
                 <h3 className="text-lg font-semibold">Missouri State University</h3>
-                <p className="text-slate-700">B.S. in Middle School Education, Language Arts & Social Studies (5–9) · Conferred 2008</p>
+                <p className="text-slate-700">B.S. in Middle School Education, Language Arts & Social Studies 5–9 · Conferred 2008</p>
               </div>
             </div>
           </div>
@@ -450,6 +518,7 @@ export default function ProfessionalPortfolioLandingPage() {
           <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-700">Certifications</p>
             <h2 className="mt-2 text-3xl font-semibold">Licensure & Endorsements</h2>
+
             <div className="mt-6 flex flex-wrap gap-3">
               {certifications.map((cert) => (
                 <span key={cert} className="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700">
@@ -466,12 +535,14 @@ export default function ProfessionalPortfolioLandingPage() {
           <div className="grid gap-6 lg:grid-cols-[1.2fr_.8fr] lg:items-center">
             <div>
               <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-300">Professional Materials</p>
-              <h2 className="mt-2 text-3xl font-semibold">View credentials, philosophy, and contact information in one place</h2>
+              <h2 className="mt-2 text-3xl font-semibold">Teaching, literacy, curriculum, and leadership in one place</h2>
               <p className="mt-4 max-w-3xl text-base leading-8 text-slate-300">
-                This site is designed for college leaders, school leaders, hiring teams, and educators who want a concise overview of my literacy work,
-                teaching philosophy, curriculum experience, and instructional leadership.
+                This portfolio is designed for college leaders, hiring committees, academic leaders, and educators seeking a concise
+                overview of my work in literacy instruction, college reading and writing, curriculum design, student growth, and
+                instructional leadership.
               </p>
             </div>
+
             <div className="flex flex-wrap gap-3 lg:justify-end">
               <a
                 href="/StephenScott_CV.pdf"
