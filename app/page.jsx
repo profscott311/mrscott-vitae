@@ -1,458 +1,469 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stephen Scott, M.Ed. | Literacy Educator</title>
+export default function Home() {
+  return (
+    <>
+      <style>{`
+        :root {
+          --navy: #17324d;
+          --blue: #4f6d8a;
+          --light-blue: #e8f0f7;
+          --gray: #dce2e8;
+          --off-white: #f8f9fa;
+          --white: #ffffff;
+          --text: #222222;
+          --muted: #5f6b75;
+        }
 
-  <style>
-    :root {
-      --navy: #17324D;
-      --blue: #4F6D8A;
-      --light-blue: #E8F0F7;
-      --gray: #DCE2E8;
-      --off-white: #F8F9FA;
-      --white: #FFFFFF;
-      --text: #222222;
-      --muted: #5F6B75;
-    }
+        * {
+          box-sizing: border-box;
+        }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+        html {
+          scroll-behavior: smooth;
+        }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: var(--text);
-      background: var(--off-white);
-    }
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          line-height: 1.6;
+          color: var(--text);
+          background: var(--off-white);
+        }
 
-    header {
-      background: var(--navy);
-      color: var(--white);
-      padding: 24px 8%;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+        .nav {
+          background: var(--navy);
+          color: var(--white);
+          padding: 22px 8%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+          flex-wrap: wrap;
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+        }
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
+        .site-title {
+          font-weight: 700;
+          letter-spacing: 0.3px;
+        }
 
-    .site-title {
-      font-size: 1.1rem;
-      font-weight: bold;
-      letter-spacing: .3px;
-    }
+        .nav-links {
+          display: flex;
+          gap: 18px;
+          flex-wrap: wrap;
+        }
 
-    nav a {
-      color: var(--white);
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: .95rem;
-    }
+        .nav-links a {
+          color: var(--white);
+          text-decoration: none;
+          font-size: 0.95rem;
+        }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+        .nav-links a:hover {
+          text-decoration: underline;
+        }
 
-    .hero {
-      background: linear-gradient(135deg, var(--navy), var(--blue));
-      color: var(--white);
-      padding: 90px 8%;
-    }
+        .hero {
+          background: linear-gradient(135deg, var(--navy), var(--blue));
+          color: var(--white);
+          padding: 90px 8%;
+        }
 
-    .hero-content {
-      max-width: 900px;
-    }
+        .hero-content {
+          max-width: 950px;
+        }
 
-    .hero h1 {
-      font-size: clamp(2.5rem, 6vw, 4.5rem);
-      line-height: 1.1;
-      margin-bottom: 16px;
-    }
+        .hero h1 {
+          font-size: clamp(2.6rem, 6vw, 4.8rem);
+          line-height: 1.08;
+          margin: 0 0 16px;
+        }
 
-    .hero h2 {
-      font-size: clamp(1.3rem, 3vw, 2rem);
-      font-weight: 400;
-      margin-bottom: 20px;
-      color: var(--light-blue);
-    }
+        .hero h2 {
+          font-size: clamp(1.25rem, 3vw, 2rem);
+          font-weight: 400;
+          color: var(--light-blue);
+          margin: 0 0 20px;
+        }
 
-    .hero p {
-      font-size: 1.15rem;
-      max-width: 760px;
-      margin-bottom: 32px;
-    }
+        .hero p {
+          font-size: 1.15rem;
+          max-width: 780px;
+          margin: 0 0 32px;
+        }
 
-    .buttons {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
+        .buttons {
+          display: flex;
+          gap: 14px;
+          flex-wrap: wrap;
+        }
 
-    .button {
-      display: inline-block;
-      padding: 12px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      border: 2px solid var(--white);
-    }
+        .button {
+          display: inline-block;
+          padding: 12px 20px;
+          border-radius: 6px;
+          border: 2px solid var(--white);
+          text-decoration: none;
+          font-weight: 700;
+        }
 
-    .button.primary {
-      background: var(--white);
-      color: var(--navy);
-    }
+        .button.primary {
+          background: var(--white);
+          color: var(--navy);
+        }
 
-    .button.secondary {
-      color: var(--white);
-    }
+        .button.secondary {
+          color: var(--white);
+        }
 
-    section {
-      padding: 70px 8%;
-    }
+        section {
+          padding: 70px 8%;
+        }
 
-    .section-title {
-      color: var(--navy);
-      font-size: 2rem;
-      margin-bottom: 18px;
-    }
+        .white {
+          background: var(--white);
+        }
 
-    .section-intro {
-      max-width: 800px;
-      color: var(--muted);
-      margin-bottom: 36px;
-      font-size: 1.05rem;
-    }
+        .light {
+          background: var(--light-blue);
+        }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-    }
+        .section-title {
+          color: var(--navy);
+          font-size: 2rem;
+          margin: 0 0 18px;
+        }
 
-    .card {
-      background: var(--white);
-      border: 1px solid var(--gray);
-      border-radius: 10px;
-      padding: 26px;
-      box-shadow: 0 4px 14px rgba(0,0,0,.04);
-    }
+        .section-intro {
+          max-width: 850px;
+          color: var(--muted);
+          margin: 0 0 36px;
+          font-size: 1.05rem;
+        }
 
-    .card h3 {
-      color: var(--navy);
-      margin-bottom: 10px;
-    }
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          gap: 24px;
+        }
 
-    .stats {
-      background: var(--white);
-    }
+        .card,
+        .quote {
+          background: var(--white);
+          border: 1px solid var(--gray);
+          border-radius: 10px;
+          padding: 26px;
+          box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+        }
 
-    .stat-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
-    }
+        .card h3 {
+          color: var(--navy);
+          margin: 0 0 10px;
+        }
 
-    .stat {
-      background: var(--light-blue);
-      border-left: 5px solid var(--blue);
-      padding: 22px;
-      border-radius: 8px;
-    }
+        .card p {
+          margin: 0;
+        }
 
-    .stat strong {
-      display: block;
-      font-size: 1.6rem;
-      color: var(--navy);
-    }
+        .stats {
+          background: var(--white);
+        }
 
-    .quote-section {
-      background: var(--light-blue);
-    }
+        .stat {
+          background: var(--light-blue);
+          border-left: 5px solid var(--blue);
+          padding: 22px;
+          border-radius: 8px;
+        }
 
-    blockquote {
-      background: var(--white);
-      border-left: 5px solid var(--blue);
-      padding: 22px;
-      border-radius: 8px;
-      font-style: italic;
-    }
+        .stat strong {
+          display: block;
+          color: var(--navy);
+          font-size: 1.45rem;
+          margin-bottom: 4px;
+        }
 
-    blockquote cite {
-      display: block;
-      margin-top: 12px;
-      font-style: normal;
-      font-weight: bold;
-      color: var(--navy);
-    }
+        .quote {
+          border-left: 5px solid var(--blue);
+          font-style: italic;
+        }
 
-    footer {
-      background: var(--navy);
-      color: var(--white);
-      padding: 40px 8%;
-      text-align: center;
-    }
+        .quote cite {
+          display: block;
+          margin-top: 14px;
+          font-style: normal;
+          font-weight: 700;
+          color: var(--navy);
+        }
 
-    footer a {
-      color: var(--white);
-    }
+        .contact a {
+          color: var(--navy);
+          font-weight: 700;
+        }
 
-    @media (max-width: 700px) {
-      nav {
-        align-items: flex-start;
-      }
+        footer {
+          background: var(--navy);
+          color: var(--white);
+          text-align: center;
+          padding: 38px 8%;
+        }
 
-      nav div:last-child {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-      }
+        footer p {
+          margin: 6px 0;
+        }
 
-      nav a {
-        margin-left: 0;
-      }
-    }
-  </style>
-</head>
+        @media (max-width: 700px) {
+          .nav {
+            align-items: flex-start;
+          }
 
-<body>
+          .nav-links {
+            flex-direction: column;
+            gap: 8px;
+          }
 
-<header>
-  <nav>
-    <div class="site-title">Stephen Scott, M.Ed.</div>
-    <div>
-      <a href="#about">About</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#approach">My Approach</a>
-      <a href="#impact">Student Impact</a>
-      <a href="#endorsements">Endorsements</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-</header>
+          section {
+            padding: 56px 7%;
+          }
 
-<main>
+          .hero {
+            padding: 74px 7%;
+          }
+        }
+      `}</style>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Stephen Scott, M.Ed.</h1>
-      <h2>Literacy Educator | College Instructor | Instructional Leader</h2>
-      <p>
-        Supporting literacy growth from middle school through college through teaching,
-        curriculum design, coaching, and feedback.
-      </p>
-      <div class="buttons">
-        <a class="button primary" href="#teaching">View Teaching Work</a>
-        <a class="button secondary" href="#impact">Student Impact</a>
-        <a class="button secondary" href="#contact">Contact</a>
-      </div>
-    </div>
-  </section>
+      <nav className="nav">
+        <div className="site-title">Stephen Scott, M.Ed.</div>
+        <div className="nav-links">
+          <a href="#about">About</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#approach">My Approach</a>
+          <a href="#impact">Student Impact</a>
+          <a href="#endorsements">Endorsements</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
 
-  <section class="stats">
-    <div class="stat-grid">
-      <div class="stat">
-        <strong>17+</strong>
-        Years in Education
-      </div>
-      <div class="stat">
-        <strong>M.Ed.</strong>
-        English Education
-      </div>
-      <div class="stat">
-        <strong>K–12 → College</strong>
-        Literacy Instruction
-      </div>
-      <div class="stat">
-        <strong>Feedback</strong>
-        Revision-centered teaching
-      </div>
-    </div>
-  </section>
+      <main>
+        <section className="hero">
+          <div className="hero-content">
+            <h1>Stephen Scott, M.Ed.</h1>
+            <h2>Literacy Educator | College Instructor | Instructional Leader</h2>
+            <p>
+              Helping students and educators grow through literacy, feedback, curriculum design,
+              and meaningful relationships.
+            </p>
+            <div className="buttons">
+              <a className="button primary" href="#teaching">View Teaching Work</a>
+              <a className="button secondary" href="#impact">Student Impact</a>
+              <a className="button secondary" href="#contact">Contact</a>
+            </div>
+          </div>
+        </section>
 
-  <section id="about">
-    <h2 class="section-title">About</h2>
-    <p class="section-intro">
-      I am a literacy educator, college instructor, and instructional leader with experience
-      supporting students and teachers across middle school, high school, and college settings.
-      My work has centered on reading, writing, revision, student confidence, and practical
-      support that helps learners move forward.
-    </p>
-    <p class="section-intro">
-      Across my career, I have served as a classroom teacher, reading interventionist,
-      graduation coach, instructional coach, curriculum writer, mentor, and developmental
-      reading and writing instructor. The common thread has remained the same: helping
-      students and educators grow through clear instruction, meaningful feedback, and
-      strong relationships.
-    </p>
-  </section>
+        <section className="stats">
+          <div className="grid">
+            <div className="stat">
+              <strong>18 Years</strong>
+              In education
+            </div>
+            <div className="stat">
+              <strong>M.Ed.</strong>
+              Learning, Teaching & Curriculum
+            </div>
+            <div className="stat">
+              <strong>K–12 → College</strong>
+              Literacy instruction
+            </div>
+            <div className="stat">
+              <strong>Curriculum & Coaching</strong>
+              Instructional leadership
+            </div>
+          </div>
+        </section>
 
-  <section id="teaching">
-    <h2 class="section-title">Teaching</h2>
-    <p class="section-intro">
-      My teaching experience spans K–12 literacy instruction and college developmental
-      reading and writing. I design learning experiences that help students build confidence,
-      strengthen reading comprehension, develop writing skills, and understand revision as
-      part of the learning process.
-    </p>
+        <section id="about">
+          <h2 className="section-title">About</h2>
+          <p className="section-intro">
+            I am a literacy educator, college instructor, and instructional leader with experience
+            supporting students and teachers across middle school, high school, and college settings.
+            My work has centered on reading, writing, revision, student confidence, and practical
+            support that helps learners move forward.
+          </p>
+          <p className="section-intro">
+            Across my career, I have served as a classroom teacher, reading interventionist,
+            graduation coach, instructional coach, curriculum writer, mentor, and developmental
+            reading and writing instructor. The common thread has remained the same: helping
+            students and educators grow through clear instruction, meaningful feedback, and
+            strong relationships.
+          </p>
+        </section>
 
-    <div class="cards">
-      <div class="card">
-        <h3>College Teaching</h3>
-        <p>
-          At Valencia College, I teach Developmental Reading and Writing, focusing on active
-          reading, academic writing, revision, feedback, and college readiness.
-        </p>
-      </div>
+        <section id="teaching" className="white">
+          <h2 className="section-title">Teaching</h2>
+          <p className="section-intro">
+            My teaching experience spans K–12 literacy instruction and college developmental
+            reading and writing. I design learning experiences that help students build confidence,
+            strengthen reading comprehension, develop writing skills, and understand revision as
+            part of the learning process.
+          </p>
 
-      <div class="card">
-        <h3>K–12 Literacy</h3>
-        <p>
-          My K–12 work includes English Language Arts, intensive reading, intervention,
-          student support, and literacy development for diverse learners.
-        </p>
-      </div>
+          <div className="grid">
+            <div className="card">
+              <h3>College Teaching</h3>
+              <p>
+                At Valencia College, I teach Developmental Reading and Writing, focusing on active
+                reading, academic writing, revision, feedback, and college readiness.
+              </p>
+            </div>
 
-      <div class="card">
-        <h3>Course Design</h3>
-        <p>
-          I use scaffolded assignments, clear module structure, weekly communication, and
-          revision-centered feedback to help students understand expectations and improve.
-        </p>
-      </div>
-    </div>
-  </section>
+            <div className="card">
+              <h3>K–12 Literacy</h3>
+              <p>
+                My K–12 work includes English Language Arts, intensive reading, intervention,
+                student support, and literacy development for diverse learners.
+              </p>
+            </div>
 
-  <section id="approach">
-    <h2 class="section-title">My Approach</h2>
-    <p class="section-intro">
-      My teaching philosophy is built around active learning, meaningful feedback, revision,
-      and the belief that students grow when they are supported and challenged.
-    </p>
+            <div className="card">
+              <h3>Course Design</h3>
+              <p>
+                I use scaffolded assignments, clear module structure, weekly communication, and
+                revision-centered feedback to help students understand expectations and improve.
+              </p>
+            </div>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Literacy</h3>
-        <p>
-          Reading and writing are tools students use to think, communicate, analyze, and
-          participate in academic and professional communities.
-        </p>
-      </div>
+            <div className="card">
+              <h3>Leadership & Coaching</h3>
+              <p>
+                My experience includes instructional coaching, mentoring, curriculum development,
+                professional learning, and literacy-focused leadership.
+              </p>
+            </div>
+          </div>
+        </section>
 
-      <div class="card">
-        <h3>Feedback</h3>
-        <p>
-          Feedback should do more than explain a grade. It should give students a path
-          forward and help them understand how to improve.
-        </p>
-      </div>
+        <section id="approach">
+          <h2 className="section-title">My Approach</h2>
+          <p className="section-intro">
+            My teaching philosophy is built around active learning, meaningful feedback, revision,
+            and the belief that students grow when they are supported and challenged.
+          </p>
 
-      <div class="card">
-        <h3>Revision</h3>
-        <p>
-          Strong writing develops through practice, reflection, and revision. Students need
-          opportunities to revisit their thinking and strengthen their work.
-        </p>
-      </div>
+          <div className="grid">
+            <div className="card">
+              <h3>Literacy</h3>
+              <p>
+                Reading and writing are tools students use to think, communicate, analyze, and
+                participate in academic and professional communities.
+              </p>
+            </div>
 
-      <div class="card">
-        <h3>Relationships</h3>
-        <p>
-          Students are more willing to take academic risks when they know their instructor
-          sees them, respects them, and believes they can grow.
-        </p>
-      </div>
-    </div>
-  </section>
+            <div className="card">
+              <h3>Feedback</h3>
+              <p>
+                Feedback should do more than explain a grade. It should give students a path
+                forward and help them understand how to improve.
+              </p>
+            </div>
 
-  <section id="impact" class="quote-section">
-    <h2 class="section-title">Student Impact</h2>
-    <p class="section-intro">
-      Student feedback across courses has consistently highlighted confidence, support,
-      clear instruction, revision, and meaningful feedback.
-    </p>
+            <div className="card">
+              <h3>Revision</h3>
+              <p>
+                Strong writing develops through practice, reflection, and revision. Students need
+                opportunities to revisit their thinking and strengthen their work.
+              </p>
+            </div>
 
-    <div class="cards">
-      <blockquote>
-        “I went unsure, quiet and nervous and leaving with confidence.”
-        <cite>Valencia College Student</cite>
-      </blockquote>
+            <div className="card">
+              <h3>Relationships</h3>
+              <p>
+                Students are more willing to take academic risks when they know their instructor
+                sees them, respects them, and believes they can grow.
+              </p>
+            </div>
+          </div>
+        </section>
 
-      <blockquote>
-        “His feedback is thoughtful and detailed, which truly helped me grow as a writer.”
-        <cite>Valencia College Student</cite>
-      </blockquote>
+        <section id="impact" className="light">
+          <h2 className="section-title">Student Impact</h2>
+          <p className="section-intro">
+            Student feedback across courses has consistently highlighted confidence, support,
+            clear instruction, revision, and meaningful feedback.
+          </p>
 
-      <blockquote>
-        “He really wants you to succeed and gives feedback that pushes you without discouraging you.”
-        <cite>Valencia College Student</cite>
-      </blockquote>
-    </div>
-  </section>
+          <div className="grid">
+            <blockquote className="quote">
+              “I went unsure, quiet and nervous and leaving with confidence.”
+              <cite>Valencia College Student</cite>
+            </blockquote>
 
-  <section id="endorsements">
-    <h2 class="section-title">Professional Endorsements</h2>
-    <p class="section-intro">
-      Recommendations, observations, and student evaluations reflect a consistent emphasis on
-      student-centered teaching, literacy growth, feedback, curriculum design, and instructional leadership.
-    </p>
+            <blockquote className="quote">
+              “His feedback is thoughtful and detailed, which truly helped me grow as a writer.”
+              <cite>Valencia College Student</cite>
+            </blockquote>
 
-    <div class="cards">
-      <div class="card">
-        <h3>College Teaching</h3>
-        <p>
-          “Stephen’s instruction clearly supports the competencies expected in ENC1101.”
-        </p>
-        <p><strong>— Ian Dreilinger, Associate Dean, Valencia College</strong></p>
-      </div>
+            <blockquote className="quote">
+              “He really wants you to succeed and gives feedback that pushes you without discouraging you.”
+              <cite>Valencia College Student</cite>
+            </blockquote>
+          </div>
+        </section>
 
-      <div class="card">
-        <h3>Student-Centered Practice</h3>
-        <p>
-          “He asks thoughtful questions and shows genuine dedication to his students’ success.”
-        </p>
-        <p><strong>— Kristen Williamson, Professor, Valencia College</strong></p>
-      </div>
+        <section id="endorsements" className="white">
+          <h2 className="section-title">Professional Endorsements</h2>
+          <p className="section-intro">
+            Recommendations, observations, and student evaluations reflect a consistent emphasis on
+            student-centered teaching, literacy growth, feedback, curriculum design, and instructional leadership.
+          </p>
 
-      <div class="card">
-        <h3>Instructional Leadership</h3>
-        <p>
-          “His feedback was precise and actionable.”
-        </p>
-        <p><strong>— Professional Recommendation</strong></p>
-      </div>
-    </div>
-  </section>
+          <div className="grid">
+            <div className="card">
+              <h3>College Teaching</h3>
+              <p>
+                “Stephen’s instruction clearly supports the competencies expected in ENC1101.”
+              </p>
+              <p><strong>— Ian Dreilinger, Associate Dean, Valencia College</strong></p>
+            </div>
 
-  <section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <p class="section-intro">
-      For professional inquiries, teaching opportunities, or collaboration, please reach out.
-    </p>
-    <p>
-      <strong>Email:</strong> <a href="mailto:scottstephena@gmail.com">scottstephena@gmail.com</a>
-    </p>
-    <p>
-      <strong>Website:</strong> mrscott.education
-    </p>
-  </section>
+            <div className="card">
+              <h3>Student-Centered Practice</h3>
+              <p>
+                “He asks thoughtful questions and shows genuine dedication to his students’ success.”
+              </p>
+              <p><strong>— Kristen Williamson, Professor, Valencia College</strong></p>
+            </div>
 
-</main>
+            <div className="card">
+              <h3>Literacy & Curriculum</h3>
+              <p>
+                “Stephen supported the writing and vetting of Secondary ELA curriculum resources used by teachers across OCPS.”
+              </p>
+              <p><strong>— Alisha Teague, Secondary Literacy Program Specialist</strong></p>
+            </div>
+          </div>
+        </section>
 
-<footer>
-  <p>Stephen Scott, M.Ed. | Literacy Educator | College Instructor | Instructional Leader</p>
-  <p>&copy; 2026 Stephen Scott. All rights reserved.</p>
-</footer>
+        <section id="contact" className="contact">
+          <h2 className="section-title">Contact</h2>
+          <p className="section-intro">
+            For professional inquiries, teaching opportunities, or collaboration, please reach out.
+          </p>
+          <p>
+            <strong>Email:</strong>{" "}
+            <a href="mailto:scottstephena@gmail.com">scottstephena@gmail.com</a>
+          </p>
+          <p>
+            <strong>Website:</strong> mrscott.education
+          </p>
+        </section>
+      </main>
 
-</body>
-</html>
+      <footer>
+        <p>Stephen Scott, M.Ed. | Literacy Educator | College Instructor | Instructional Leader</p>
+        <p>© 2026 Stephen Scott. All rights reserved.</p>
+      </footer>
+    </>
+  );
+}
