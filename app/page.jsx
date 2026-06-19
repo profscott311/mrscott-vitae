@@ -1,3 +1,4 @@
+```jsx
 export default function ProfessionalPortfolioLandingPage() {
   const highlights = [
     "College Reading & Writing Instruction",
@@ -12,12 +13,12 @@ export default function ProfessionalPortfolioLandingPage() {
       text: "Teach developing college readers and writers through active reading, academic writing, feedback, revision, and reflection.",
     },
     {
-      title: "Literacy Development",
-      text: "Support students in comprehension, vocabulary, analysis, written response, academic confidence, and independent learning habits.",
+      title: "Developmental Literacy",
+      text: "Support students as they strengthen comprehension, academic vocabulary, written response, analysis, and confidence.",
     },
     {
       title: "Curriculum & Course Design",
-      text: "Build learning progressions that connect reading, thinking, discussion, drafting, revision, and student reflection.",
+      text: "Build learning progressions that connect reading, thinking, discussion, drafting, feedback, revision, and student reflection.",
     },
     {
       title: "Instructional Coaching",
@@ -26,6 +27,46 @@ export default function ProfessionalPortfolioLandingPage() {
     {
       title: "Leadership & Collaboration",
       text: "Contribute to teams through PLC facilitation, curriculum work, mentoring, and practical literacy leadership.",
+    },
+  ];
+
+  const collegeFocus = [
+    {
+      title: "College Faculty Practice",
+      tags: ["College Readiness", "Writing Instruction", "Academic Literacy"],
+      bullets: [
+        "Teach integrated reading and writing courses for developing college readers and writers.",
+        "Use structured writing cycles that move students from reading to drafting to revision.",
+        "Build student confidence through clear expectations, feedback, reflection, and practical next steps.",
+      ],
+    },
+    {
+      title: "Literacy Leadership",
+      tags: ["Curriculum Design", "Coaching", "Student Growth"],
+      bullets: [
+        "Design reading and writing instruction that is clear, accessible, and growth-oriented.",
+        "Collaborate with teachers and faculty to strengthen instructional systems.",
+        "Lead with a practical focus on student ownership, clarity, and sustainable improvement.",
+      ],
+    },
+  ];
+
+  const philosophy = [
+    {
+      title: "Feedback Should Create Movement",
+      text: "Effective feedback helps students understand what is working, what needs attention, and what specific next step will strengthen the next draft.",
+    },
+    {
+      title: "Revision Builds Confidence",
+      text: "Revision teaches students that writing is not a one-shot performance. It is a process of discovery, decision-making, ownership, and growth.",
+    },
+    {
+      title: "Academic Literacy Is Teachable",
+      text: "Students can learn how to read actively, explain ideas, use evidence, organize thinking, and build stronger academic habits.",
+    },
+    {
+      title: "Students Need Ownership",
+      text: "My goal is to help students move from compliance to control by understanding their choices as readers and writers.",
     },
   ];
 
@@ -237,7 +278,7 @@ export default function ProfessionalPortfolioLandingPage() {
                 <img
                   src="/headshot.jpg"
                   alt="Stephen Scott"
-                  className="h-80 w-full object-cover object-center"
+                  className="h-96 w-full object-cover object-center"
                 />
               </div>
 
@@ -278,33 +319,25 @@ export default function ProfessionalPortfolioLandingPage() {
             <h2 className="text-center text-2xl font-semibold">Current Professional Focus</h2>
 
             <div className="mt-6 grid gap-4">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                <h3 className="text-center text-base font-semibold">College Faculty Practice</h3>
-                <div className="mt-3 flex flex-wrap justify-center gap-2 text-xs">
-                  <span className="rounded-full bg-white/10 px-3 py-1">College Readiness</span>
-                  <span className="rounded-full bg-white/10 px-3 py-1">Writing Instruction</span>
-                  <span className="rounded-full bg-white/10 px-3 py-1">Academic Literacy</span>
-                </div>
-                <ul className="mt-4 space-y-3 text-left text-sm leading-7 text-slate-100">
-                  <li>Teach integrated reading and writing courses for developing college readers and writers</li>
-                  <li>Use structured writing cycles that move students from reading to drafting to revision</li>
-                  <li>Build student confidence through clear expectations, feedback, reflection, and practical next steps</li>
-                </ul>
-              </div>
+              {collegeFocus.map((focus) => (
+                <div key={focus.title} className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                  <h3 className="text-center text-base font-semibold">{focus.title}</h3>
 
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                <h3 className="text-center text-base font-semibold">Literacy Leadership</h3>
-                <div className="mt-3 flex flex-wrap justify-center gap-2 text-xs">
-                  <span className="rounded-full bg-white/10 px-3 py-1">Curriculum Design</span>
-                  <span className="rounded-full bg-white/10 px-3 py-1">Coaching</span>
-                  <span className="rounded-full bg-white/10 px-3 py-1">Student Growth</span>
+                  <div className="mt-3 flex flex-wrap justify-center gap-2 text-xs">
+                    {focus.tags.map((tag) => (
+                      <span key={tag} className="rounded-full bg-white/10 px-3 py-1">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <ul className="mt-4 space-y-3 text-left text-sm leading-7 text-slate-100">
+                    {focus.bullets.map((bullet) => (
+                      <li key={bullet}>{bullet}</li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="mt-4 space-y-3 text-left text-sm leading-7 text-slate-100">
-                  <li>Design reading and writing instruction that is clear, accessible, and growth-oriented</li>
-                  <li>Collaborate with teachers and faculty to strengthen instructional systems</li>
-                  <li>Lead with a practical focus on student ownership, clarity, and sustainable improvement</li>
-                </ul>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -322,6 +355,15 @@ export default function ProfessionalPortfolioLandingPage() {
             opportunities to revise. My teaching is built around the belief that confidence grows when students understand what
             they are doing, why it matters, and how to improve.
           </p>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {philosophy.map((item) => (
+              <div key={item.title} className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur">
+                <h3 className="text-base font-semibold">{item.title}</h3>
+                <p className="mt-2 text-sm leading-7 text-slate-100">{item.text}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -487,3 +529,4 @@ export default function ProfessionalPortfolioLandingPage() {
     </div>
   );
 }
+```
