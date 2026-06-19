@@ -1,4 +1,3 @@
-```jsx
 export default function ProfessionalPortfolioLandingPage() {
   const highlights = [
     "College Reading & Writing Instruction",
