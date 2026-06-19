@@ -395,7 +395,7 @@ export default function ProfessionalPortfolioLandingPage() {
 
           <div className="space-y-6">
             {experience.map((job) => (
-              <div key={`${job.role}-${job.org}`} className="rounded-3xl bg-white p-7 shadow-sm ring-1 ring-slate-200">
+              <div key={job.role + "-" + job.org} className="rounded-3xl bg-white p-7 shadow-sm ring-1 ring-slate-200">
                 <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
                   <div>
                     <h3 className="text-xl font-semibold">{job.role}</h3>
