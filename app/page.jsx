@@ -1,4 +1,3 @@
-```jsx
 export default function ProfessionalPortfolioLandingPage() {
   const highlights = [
     "College Reading & Writing Instruction",
@@ -274,12 +273,14 @@ export default function ProfessionalPortfolioLandingPage() {
             </div>
 
             <div className="space-y-5">
-              <div className="overflow-hidden rounded-3xl border border-white/15 bg-white/10 shadow-2xl backdrop-blur">
-                <img
-                  src="/headshot.jpg"
-                  alt="Stephen Scott"
-                  className="h-96 w-full object-cover object-center"
-                />
+              <div className="overflow-hidden rounded-3xl border border-white/15 bg-white/10 p-3 shadow-2xl backdrop-blur">
+                <div className="flex h-[520px] items-center justify-center overflow-hidden rounded-2xl bg-slate-950/20">
+                  <img
+                    src="/headshot.jpg"
+                    alt="Stephen Scott"
+                    className="h-full w-full object-contain object-center"
+                  />
+                </div>
               </div>
 
               <div className="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl backdrop-blur">
@@ -529,4 +530,3 @@ export default function ProfessionalPortfolioLandingPage() {
     </div>
   );
 }
-```
