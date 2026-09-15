@@ -31,7 +31,7 @@ export default function ProfessionalPortfolioLandingPage() {
 
   const collegeFocus = [
     {
-      title: "College Faculty Practice",
+      title: "College Teaching Practice",
       tags: ["College Readiness", "Writing Instruction", "Academic Literacy"],
       bullets: [
         "Teach integrated reading and writing courses for developing college readers and writers.",
@@ -71,27 +71,39 @@ export default function ProfessionalPortfolioLandingPage() {
 
   const experience = [
     {
+      role: "7th Grade English Language Arts and Social Studies Teacher",
+      org: "Apple Valley Middle School",
+      location: "Hendersonville, NC",
+      dates: "Aug 2026 – Present",
+      bullets: [
+        "Teach seventh-grade English language arts and social studies through literacy-rich, standards-aligned instruction.",
+        "Design structured learning cycles that connect reading, discussion, writing, collaboration, formative assessment, and reflection.",
+        "Differentiate instruction through teacher-led small groups, collaborative tasks, independent learning modules, and targeted literacy support.",
+        "Use student work and assessment evidence to adjust instruction and help students become more independent readers, writers, and thinkers.",
+      ],
+    },
+    {
       role: "Developmental Reading and Writing Instructor",
       org: "Valencia College",
       location: "Orlando, FL",
-      dates: "Aug 2024 – Present",
+      dates: "Aug 2024 – Summer 2026",
       bullets: [
-        "Teach integrated developmental reading and writing courses focused on college readiness, academic literacy, writing confidence, and student persistence.",
-        "Design recursive learning cycles that connect active reading, annotation, discussion, drafting, feedback, revision, and reflection.",
-        "Support developing college writers through instruction in paragraph structure, essay development, organization, evidence use, explanation, and revision.",
-        "Use consistent feedback and accessible routines to help students understand their growth and take ownership of their work.",
+        "Taught integrated developmental reading and writing courses focused on college readiness, academic literacy, writing confidence, and student persistence.",
+        "Designed recursive learning cycles that connected active reading, annotation, discussion, drafting, feedback, revision, and reflection.",
+        "Supported developing college writers through instruction in paragraph structure, essay development, organization, evidence use, explanation, and revision.",
+        "Used consistent feedback and accessible routines to help students understand their growth and take ownership of their work.",
       ],
     },
     {
       role: "Intensive Reading Teacher",
       org: "Pinecrest Four Corners",
       location: "Orlando, FL",
-      dates: "Aug 2025 – Present",
+      dates: "Aug 2025 – May 2026",
       bullets: [
-        "Teach structured literacy instruction focused on comprehension, vocabulary, written response, fluency, and reading confidence.",
-        "Use student work, assessment evidence, and classroom observation to adjust instruction and provide targeted support.",
-        "Differentiate through small-group teaching, modeling, guided practice, and scaffolded academic routines.",
-        "Collaborate with ELA teachers to align reading support with grade-level standards and student needs.",
+        "Taught structured literacy instruction focused on comprehension, vocabulary, written response, fluency, and reading confidence.",
+        "Used student work, assessment evidence, and classroom observation to adjust instruction and provide targeted support.",
+        "Differentiated through small-group teaching, modeling, guided practice, and scaffolded academic routines.",
+        "Collaborated with ELA teachers to align reading support with grade-level standards and student needs.",
       ],
     },
     {
@@ -286,7 +298,7 @@ export default function ProfessionalPortfolioLandingPage() {
               <div className="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl backdrop-blur">
                 <h2 className="text-lg font-medium">Quick Snapshot</h2>
                 <div className="mt-4 space-y-3 text-sm text-slate-100">
-                  <p><span className="font-semibold text-white">Current Role:</span> Developmental Reading & Writing Instructor, Valencia College</p>
+                  <p><span className="font-semibold text-white">Current Role:</span> 7th Grade English Language Arts & Social Studies Teacher, Apple Valley Middle School</p>
                   <p><span className="font-semibold text-white">Experience:</span> 18 Years in Education</p>
                   <p><span className="font-semibold text-white">Specialization:</span> Academic Literacy, Reading & Writing Instruction</p>
                   <p><span className="font-semibold text-white">Preparation:</span> M.Ed. English Education, Literacy Emphasis</p>
@@ -317,7 +329,7 @@ export default function ProfessionalPortfolioLandingPage() {
           </div>
 
           <div className="rounded-3xl bg-slate-900 p-8 text-white shadow-sm">
-            <h2 className="text-center text-2xl font-semibold">Current Professional Focus</h2>
+            <h2 className="text-center text-2xl font-semibold">Professional Focus</h2>
 
             <div className="mt-6 grid gap-4">
               {collegeFocus.map((focus) => (
@@ -530,3 +542,4 @@ export default function ProfessionalPortfolioLandingPage() {
     </div>
   );
 }
+
