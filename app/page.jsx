@@ -301,7 +301,7 @@ export default function ProfessionalPortfolioLandingPage() {
                   <p><span className="font-semibold text-white">Current Role:</span> 7th Grade English Language Arts & Social Studies Teacher, Apple Valley Middle School</p>
                   <p><span className="font-semibold text-white">Experience:</span> 18 Years in Education</p>
                   <p><span className="font-semibold text-white">Specialization:</span> Academic Literacy, Reading & Writing Instruction</p>
-                  <p><span className="font-semibold text-white">Preparation:</span> M.Ed. English Education, Literacy Emphasis</p>
+                  <p><span className="font-semibold text-white">Preparation:</span> M.Ed. in Learning, Teaching and Curriculum – English Education</p>
                 </div>
               </div>
             </div>
