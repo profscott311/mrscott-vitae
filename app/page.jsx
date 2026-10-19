@@ -1,128 +1,129 @@
-```
-export default function ProfessionalPortfolioLandingPage() {
-  const highlights = [
-    "College Reading & Writing Instruction",
-    "Developmental Literacy & College Readiness",
-    "Writing Process • Feedback • Revision • Student Persistence",
-    "Curriculum Design, Faculty Collaboration, and Literacy Leadership",
-  ];
+                  <h3 className="text-base font-semibold text-slate-900">{item.name}</h3>
+                  <p className="mt-1 text-sm leading-6 text-slate-600">{item.title}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-  const whatIDo = [
-    {
-      title: "College Reading & Writing Instruction",
-      text: "Teach developing college readers and writers through active reading, academic writing, feedback, revision, and reflection.",
-    },
-    {
-      title: "Developmental Literacy",
-      text: "Support students as they strengthen comprehension, academic vocabulary, written response, analysis, and confidence.",
-    },
-    {
-      title: "Curriculum & Course Design",
-      text: "Build learning progressions that connect reading, thinking, discussion, drafting, feedback, revision, and student reflection.",
-    },
-    {
-      title: "Instructional Coaching",
-      text: "Support educators through collaboration, modeling, feedback, professional learning, and reflective instructional planning.",
-    },
-    {
-      title: "Leadership & Collaboration",
-      text: "Contribute to teams through PLC facilitation, curriculum work, mentoring, and practical literacy leadership.",
-    },
-  ];
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-6xl px-6 lg:px-10">
+          <div className="mb-10 text-center">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-purple-700">Impact at a Glance</p>
+            <h2 className="mt-2 text-3xl font-semibold">Teaching, Growth, and Student Success</h2>
+          </div>
 
-  const collegeFocus = [
-    {
-      title: "College Teaching Practice",
-      tags: ["College Readiness", "Writing Instruction", "Academic Literacy"],
-      bullets: [
-        "Teach integrated reading and writing courses for developing college readers and writers.",
-        "Use structured writing cycles that move students from reading to drafting to revision.",
-        "Build student confidence through clear expectations, feedback, reflection, and practical next steps.",
-      ],
-    },
-    {
-      title: "Literacy Leadership",
-      tags: ["Curriculum Design", "Coaching", "Student Growth"],
-      bullets: [
-        "Design reading and writing instruction that is clear, accessible, and growth-oriented.",
-        "Collaborate with teachers and faculty to strengthen instructional systems.",
-        "Lead with a practical focus on student ownership, clarity, and sustainable improvement.",
-      ],
-    },
-  ];
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {impactStats.map((item) => (
+              <div key={item.label} className="rounded-3xl bg-slate-50 p-7 text-center shadow-sm ring-1 ring-slate-200">
+                <p className="text-4xl font-semibold text-slate-900">{item.stat}</p>
+                <p className="mt-2 text-sm font-medium text-slate-600">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-  const philosophy = [
-    {
-      title: "Feedback Should Create Movement",
-      text: "Effective feedback helps students understand what is working, what needs attention, and what specific next step will strengthen the next draft.",
-    },
-    {
-      title: "Revision Builds Confidence",
-      text: "Revision teaches students that writing is not a one-shot performance. It is a process of discovery, decision-making, ownership, and growth.",
-    },
-    {
-      title: "Academic Literacy Is Teachable",
-      text: "Students can learn how to read actively, explain ideas, use evidence, organize thinking, and build stronger academic habits.",
-    },
-    {
-      title: "Students Need Ownership",
-      text: "My goal is to help students move from compliance to control by understanding their choices as readers and writers.",
-    },
-  ];
+      <section id="experience" className="bg-slate-50 py-16">
+        <div className="mx-auto max-w-6xl px-6 lg:px-10">
+          <div className="mb-10 text-center">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-700">Experience</p>
+            <h2 className="mt-2 text-3xl font-semibold">Selected Professional Roles</h2>
+          </div>
 
-  const experience = [
-    {
-      role: "7th Grade English Language Arts and Social Studies Teacher",
-      org: "Apple Valley Middle School",
-      location: "Hendersonville, NC",
-      dates: "Aug 2026 – Present",
-      bullets: [
-        "Teach seventh-grade English language arts and social studies through literacy-rich, standards-aligned instruction.",
-        "Design structured learning cycles that connect reading, discussion, writing, collaboration, formative assessment, and reflection.",
-        "Differentiate instruction through teacher-led small groups, collaborative tasks, independent learning modules, and targeted literacy support.",
-        "Use student work and assessment evidence to adjust instruction and help students become more independent readers, writers, and thinkers.",
-      ],
-    },
-    {
-      role: "Developmental Reading and Writing Instructor",
-      org: "Valencia College",
-      location: "Orlando, FL",
-      dates: "Aug 2024 – Aug 2026",
-      bullets: [
-        "Taught integrated developmental reading and writing courses focused on college readiness, academic literacy, writing confidence, and student persistence.",
-        "Designed recursive learning cycles that connected active reading, annotation, discussion, drafting, feedback, revision, and reflection.",
-        "Supported developing college writers through instruction in paragraph structure, essay development, organization, evidence use, explanation, and revision.",
-        "Used consistent feedback and accessible routines to help students understand their growth and take ownership of their work.",
-      ],
-    },
-    {
-      role: "Intensive Reading Teacher",
-      org: "Pinecrest Four Corners",
-      location: "Orlando, FL",
-      dates: "Aug 2025 – May 2026",
-      bullets: [
-        "Taught structured literacy instruction focused on comprehension, vocabulary, written response, fluency, and reading confidence.",
-        "Used student work, assessment evidence, and classroom observation to adjust instruction and provide targeted support.",
-        "Differentiated through small-group teaching, modeling, guided practice, and scaffolded academic routines.",
-        "Collaborated with ELA teachers to align reading support with grade-level standards and student needs.",
-      ],
-    },
-    {
-      role: "ELA Teacher | Reading Teacher | Instructional Coach | Graduation Coach",
-      org: "Orange County Public Schools",
-      location: "Orlando, FL",
-      dates: "Aug 2015 – May 2025",
-      bullets: [
-        "Supported student growth through standards-aligned literacy instruction, responsive academic support, and student-centered classroom systems.",
-        "Led instructional coaching cycles including co-planning, modeling, observation, feedback, and teacher reflection.",
-        "Facilitated PLCs focused on curriculum alignment, assessment refinement, and instructional improvement.",
-        "Contributed to schoolwide literacy improvement through leadership teams, curriculum work, digital content creation, mentoring, and multilingual learner support.",
-      ],
-    },
-    {
-      role: "Middle School Language Arts, Social Studies, and Reading Teacher",
-      org: "Lewis and Clark Middle School & Eldon R1",
-      location: "Jefferson City, MO",
-      dates: "Aug 2009 – May 2015",
-      bullets: [
-        "Taught Language Arts, Reading, and Social Studies.",
+          <div className="space-y-6">
+            {experience.map((job) => (
+              <div key={job.role + "-" + job.org} className="rounded-3xl bg-white p-7 shadow-sm ring-1 ring-slate-200">
+                <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
+                  <div>
+                    <h3 className="text-xl font-semibold">{job.role}</h3>
+                    <p className="mt-1 text-slate-700">{job.org} · {job.location}</p>
+                  </div>
+                  <span className="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700">{job.dates}</span>
+                </div>
+
+                <ul className="mt-5 grid gap-3 text-sm leading-7 text-slate-700">
+                  {job.bullets.map((bullet) => (
+                    <li key={bullet} className="flex gap-3">
+                      <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-emerald-500" />
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="education" className="mx-auto max-w-6xl px-6 py-16 lg:px-10">
+        <div className="grid gap-8 lg:grid-cols-[1fr_.9fr]">
+          <div className="rounded-3xl bg-emerald-50 p-8 ring-1 ring-emerald-100">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-800">Education</p>
+            <h2 className="mt-2 text-3xl font-semibold">Academic Preparation</h2>
+
+            <div className="mt-6 space-y-5 text-slate-800">
+              <div>
+                <h3 className="text-lg font-semibold">University of Missouri – Columbia</h3>
+                <p className="text-slate-700">M.Ed. in Learning, Teaching and Curriculum, English Education concentration · Conferred 2013</p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold">Missouri State University</h3>
+                <p className="text-slate-700">B.S. in Middle School Education, Language Arts & Social Studies 5–9 · Conferred 2008</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-700">Credentials</p>
+            <h2 className="mt-2 text-3xl font-semibold">Licensure & Endorsements</h2>
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              {certifications.map((cert) => (
+                <span key={cert} className="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700">
+                  {cert}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-16 lg:px-10">
+        <div className="rounded-3xl bg-slate-900 px-8 py-10 text-white shadow-xl">
+          <div className="grid gap-6 lg:grid-cols-[1.2fr_.8fr] lg:items-center">
+            <div>
+              <p className="text-sm font-medium uppercase tracking-[0.2em] text-sky-300">Professional Materials</p>
+              <h2 className="mt-2 text-3xl font-semibold">College reading, writing, literacy, and instructional leadership</h2>
+              <p className="mt-4 max-w-3xl text-base leading-8 text-slate-300">
+                This portfolio is designed for college leaders, hiring committees, academic departments, and educators seeking
+                a concise overview of my work in college reading and writing, literacy development, curriculum design, student
+                growth, and instructional leadership.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-3 lg:justify-end">
+              <a
+                href="/StephenScott_Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
+              >
+                View Résumé
+              </a>
+              <a
+                href="mailto:scottstephena@gmail.com"
+                className="inline-flex items-center rounded-2xl border border-white/15 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
+              >
+                Contact Stephen
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
