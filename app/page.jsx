@@ -71,18 +71,6 @@ export default function ProfessionalPortfolioLandingPage() {
 
   const experience = [
     {
-      role: "7th Grade English Language Arts and Social Studies Teacher",
-      org: "Apple Valley Middle School",
-      location: "Hendersonville, NC",
-      dates: "Aug 2026 – Present",
-      bullets: [
-        "Teach seventh-grade English language arts and social studies through literacy-rich, standards-aligned instruction.",
-        "Design structured learning cycles that connect reading, discussion, writing, collaboration, formative assessment, and reflection.",
-        "Differentiate instruction through teacher-led small groups, collaborative tasks, independent learning modules, and targeted literacy support.",
-        "Use student work and assessment evidence to adjust instruction and help students become more independent readers, writers, and thinkers.",
-      ],
-    },
-    {
       role: "Developmental Reading and Writing Instructor",
       org: "Valencia College",
       location: "Orlando, FL",
@@ -298,7 +286,6 @@ export default function ProfessionalPortfolioLandingPage() {
               <div className="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl backdrop-blur">
                 <h2 className="text-lg font-medium">Quick Snapshot</h2>
                 <div className="mt-4 space-y-3 text-sm text-slate-100">
-                  <p><span className="font-semibold text-white">Current Role:</span> 7th Grade English Language Arts & Social Studies Teacher, Apple Valley Middle School</p>
                   <p><span className="font-semibold text-white">Experience:</span> 18 Years in Education</p>
                   <p><span className="font-semibold text-white">Specialization:</span> Academic Literacy, Reading & Writing Instruction</p>
                   <p><span className="font-semibold text-white">Preparation:</span> M.Ed. in Learning, Teaching and Curriculum – English Education</p>
