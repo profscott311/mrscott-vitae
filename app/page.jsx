@@ -392,63 +392,67 @@ export default function ProfessionalPortfolioLandingPage() {
       <section id="feedback-in-action" className="bg-slate-50 py-16">
         <div className="mx-auto max-w-6xl px-6 lg:px-10">
           <div className="mb-10 text-center">
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-700">Teaching Evidence</p>
-            <h2 className="mt-2 text-3xl font-semibold text-slate-900">Feedback in Action: From Response to Revision</h2>
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-700">Instructional Evidence</p>
+            <h2 className="mt-2 text-3xl font-semibold text-slate-900">Feedback in Action: Teaching Analysis, Not Just Summary</h2>
             <p className="mx-auto mt-4 max-w-3xl text-base leading-8 text-slate-700">
-              Two anonymized examples from developmental reading and writing instruction using Charles Duhigg&apos;s <em>The Power of Habit</em>. These cases distinguish documented revisions from student-reported growth.
+              A documented writing-and-feedback sequence from developmental reading and writing, alongside a separate body-paragraph and reflection cycle using Charles Duhigg&apos;s <em>The Power of Habit</em>. The distinction matters: revision, self-assessment, and demonstrated improvement are not interchangeable.
             </p>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-2">
             <article className="rounded-3xl bg-white p-7 shadow-sm ring-1 ring-slate-200">
-              <p className="text-sm font-semibold uppercase tracking-wider text-sky-700">Case 1 · Documented draft and revision</p>
-              <h3 className="mt-3 text-xl font-semibold text-slate-900">Clarity Improved; Analysis Still Needed Work</h3>
+              <p className="text-sm font-semibold uppercase tracking-wider text-sky-700">Case 1 · Documented revision cycle</p>
+              <h3 className="mt-3 text-xl font-semibold text-slate-900">Clearer Language Was Not Yet Deeper Analysis</h3>
               <div className="mt-6 space-y-5 text-sm leading-7 text-slate-700">
                 <div>
-                  <p className="font-semibold text-slate-900">Student response · April 22, 2026</p>
-                  <p>The writer explained the cue–routine–reward cycle and argued that repeated behaviors can shape long-term decisions. The analysis remained broad.</p>
+                  <p className="font-semibold text-slate-900">Initial writing</p>
+                  <p>In an essay on habits, the student explained the cue–routine–reward cycle and related it to automatic behavior and everyday choices. The writing developed the topic, but several explanations remained broad.</p>
                 </div>
-                <div className="border-l-4 border-sky-300 pl-4">
-                  <p className="font-semibold text-slate-900">Instructor feedback · April 23</p>
-                  <p>The student was asked to move beyond clearer wording and develop why each example matters and how it affects behavior.</p>
+                <div className="border-l-4 border-sky-400 bg-sky-50/60 py-2 pl-4 pr-3">
+                  <p className="font-semibold text-slate-900">Actual instructor feedback · April 23, 2026</p>
+                  <blockquote className="mt-2 italic text-slate-800">
+                    &ldquo;This version is a bit clearer, but it does not significantly change the depth of your explanation, which was the main focus of the feedback.&rdquo;
+                  </blockquote>
+                  <p className="mt-2">My feedback then asked the writer to explain more fully why examples mattered and how they affected behavior.</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-slate-900">Revised submission · April 27</p>
-                  <p>The writer added explanation about automatic choices, conflicting goals, and long-term outcomes. However, the central analysis remained largely unchanged.</p>
+                  <p className="font-semibold text-slate-900">Subsequent writing · April 27, 2026</p>
+                  <p>The next submission used more formal phrasing and expanded some explanations. These changes did not, by themselves, establish that the student had met the analytical goal.</p>
                 </div>
                 <div className="rounded-2xl bg-amber-50 p-4 ring-1 ring-amber-100">
-                  <p className="font-semibold text-slate-900">Reassessment · May 1</p>
-                  <p>I acknowledged improved clarity but maintained the revision score because the primary goal—deeper analysis—had not yet been met. The student was invited to try again.</p>
+                  <p className="font-semibold text-slate-900">Assessment decision</p>
+                  <p>I distinguished improved expression from improved reasoning and maintained the assessment standard for analytical depth. This case illustrates feedback that names a specific learning target rather than rewarding surface-level changes alone.</p>
                 </div>
               </div>
-              <p className="mt-6 border-t border-slate-200 pt-4 text-xs leading-6 text-slate-500">Evidence: dated instructor–student exchange and both submitted versions. Outcome: partial revision, not demonstrated mastery.</p>
+              <p className="mt-6 border-t border-slate-200 pt-4 text-xs leading-6 text-slate-500">Source basis: the original response, dated instructor feedback, and a subsequent submitted essay. Student passages are summarized pending permission for public reproduction; the instructor feedback excerpt is verbatim.</p>
             </article>
 
             <article className="rounded-3xl bg-white p-7 shadow-sm ring-1 ring-slate-200">
-              <p className="text-sm font-semibold uppercase tracking-wider text-emerald-700">Case 2 · Student-reported transfer</p>
-              <h3 className="mt-3 text-xl font-semibold text-slate-900">From Reporting Evidence to Interpreting Its Significance</h3>
+              <p className="text-sm font-semibold uppercase tracking-wider text-emerald-700">Case 2 · Writing and metacognitive reflection</p>
+              <h3 className="mt-3 text-xl font-semibold text-slate-900">Students Learning to Explain Why Evidence Matters</h3>
               <div className="mt-6 space-y-5 text-sm leading-7 text-slate-700">
                 <div>
-                  <p className="font-semibold text-slate-900">Earlier writing challenge</p>
-                  <p>In a final reflection, a student described initially summarizing Eugene Pauly&apos;s routines without fully explaining why Duhigg used the example.</p>
-                </div>
-                <div className="border-l-4 border-emerald-300 pl-4">
-                  <p className="font-semibold text-slate-900">Feedback recalled by the student</p>
-                  <p>The student reported receiving guidance to explain what Eugene&apos;s story communicated about habits, beyond recounting the events.</p>
+                  <p className="font-semibold text-slate-900">Analyze a model</p>
+                  <p>Students first identified a paragraph&apos;s main idea, supporting evidence, explanation, strength, and potential improvement. Responses revealed differences in how precisely they could distinguish evidence from analysis.</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-slate-900">Later writing and reflection</p>
-                  <p>The student reported revising an essay about Target&apos;s consumer-data practices to connect shopping patterns, predictive advertising, privacy, and consumer influence in a larger argument.</p>
+                  <p className="font-semibold text-slate-900">Compose an analytical paragraph</p>
+                  <p>Students wrote about habit formation using Duhigg&apos;s concepts and examples. Their drafts offered concrete opportunities to address repetitive explanations, textual specificity, and claims that went beyond the available evidence.</p>
+                </div>
+                <div className="border-l-4 border-emerald-400 bg-emerald-50/60 py-2 pl-4 pr-3">
+                  <p className="font-semibold text-slate-900">Reflect on the process</p>
+                  <p>In follow-up reflections, students independently identified recurring challenges: summarizing quotations instead of interpreting them, repeating the same idea, and losing sight of how evidence supports a claim. Some described specific strategies they intended to try on their next draft.</p>
                 </div>
                 <div className="rounded-2xl bg-emerald-50 p-4 ring-1 ring-emerald-100">
-                  <p className="font-semibold text-slate-900">Instructional significance</p>
-                  <p>The reflection suggests the student began applying analytical questions across different examples and writing cycles.</p>
+                  <p className="font-semibold text-slate-900">What the evidence does—and does not—show</p>
+                  <p>The artifacts document students&apos; writing and their awareness of next steps. Reflections are evidence of self-assessment, not independent proof of subsequent writing improvement.</p>
                 </div>
               </div>
-              <p className="mt-6 border-t border-slate-200 pt-4 text-xs leading-6 text-slate-500">Evidence: student final reflection. This is self-reported learning; the complete original-to-final draft sequence has not been independently verified.</p>
+              <p className="mt-6 border-t border-slate-200 pt-4 text-xs leading-6 text-slate-500">Source basis: model-paragraph breakdowns, body-paragraph drafts, and matched reflections from the same instructional sequence. Student wording is paraphrased pending permission for public use.</p>
             </article>
           </div>
-          <p className="mt-7 text-center text-xs leading-6 text-slate-500">Student identities and identifying course details are omitted. Student writing and feedback are summarized rather than reproduced verbatim.</p>
+
+          <p className="mt-7 text-center text-xs leading-6 text-slate-500">Student names, identifying details, and verbatim student passages are not published here. The case descriptions preserve the limits of the available evidence.</p>
         </div>
       </section>
 
